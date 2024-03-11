@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bed68julghpmo"]
+
+[ext_resource type="PackedScene" uid="uid://cuwxsa472wr2" path="res://scenes/table.tscn" id="1_2gpew"]
+[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/document.tscn" id="2_yysdo"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Table" parent="." instance=ExtResource("1_2gpew")]
+position = Vector2(556, 460)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 322)
+
+[node name="Document" parent="." instance=ExtResource("2_yysdo")]
+position = Vector2(353, 419)
+
+[node name="Document2" parent="." instance=ExtResource("2_yysdo")]
+position = Vector2(561, 419)
+
+[node name="Document3" parent="." instance=ExtResource("2_yysdo")]
+position = Vector2(778, 418)

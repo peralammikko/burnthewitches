@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuwxsa472wr2"]
+
+[ext_resource type="Script" path="res://scripts/Table.gd" id="1_2rnd6"]
+[ext_resource type="Texture2D" uid="uid://bwhnfj1g3g3hx" path="res://assets/360_F_369250586_z5HZqoztht4SIMRycXGNsVoELLLKrpjg.jpg" id="2_vmh1y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mjlbb"]
+size = Vector2(800, 354)
+
+[node name="Table" type="StaticBody2D" groups=["droppable"]]
+script = ExtResource("1_2rnd6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vmh1y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_mjlbb")
+
+[node name="PassButton" type="Button" parent="."]
+offset_left = -95.0
+offset_top = 90.0
+offset_right = -48.0
+offset_bottom = 121.0
+text = "PASS"
+
+[node name="BurnButton" type="Button" parent="."]
+offset_left = 28.0
+offset_top = 89.0
+offset_right = 82.0
+offset_bottom = 120.0
+text = "BURN"
+
+[connection signal="pressed" from="PassButton" to="." method="_on_pass_button_pressed"]
+[connection signal="pressed" from="BurnButton" to="." method="_on_burn_button_pressed"]
