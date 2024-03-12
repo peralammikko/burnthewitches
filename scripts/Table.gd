@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var spawner = get_node("/root/MainScene/Spawner")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,8 +13,7 @@ func _process(delta):
 
 
 func _on_pass_button_pressed():
-	print_debug("Customer passed")
-
+	print_debug(spawner.remove_customer())
 
 func _on_burn_button_pressed():
-	print_debug("Customer burned")
+	print_debug(spawner.remove_customer())

@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://0jrr16woswug"]
+[gd_scene load_steps=4 format=3 uid="uid://0jrr16woswug"]
 
+[ext_resource type="Script" path="res://scenes/goodwitch.gd" id="1_2nkxm"]
 [ext_resource type="Texture2D" uid="uid://4wqhhlurr102" path="res://assets/customers/Tw3_journal_triss.webp" id="1_wft8b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h321u"]
@@ -7,6 +8,7 @@ size = Vector2(354, 556)
 
 [node name="GoodWitch" type="Area2D"]
 scale = Vector2(0.5, 0.5)
+script = ExtResource("1_2nkxm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_wft8b")

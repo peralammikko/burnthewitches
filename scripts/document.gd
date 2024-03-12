@@ -44,24 +44,24 @@ func _on_area_2d_mouse_exited():
 
 func _on_area_2d_body_entered(body:StaticBody2D):
 	if body.is_in_group("droppable"):
-		print_debug("in droppable")
+		#print_debug("in droppable")
 		is_inside_droppable = true
 		body_ref = body
 
 
 func _on_area_2d_body_exited(body):
 	if body.is_in_group("droppable"):
-		print_debug("out of droppable")
+		#print_debug("out of droppable")
 		is_inside_droppable = false
 
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("rightclick"):
 		if not isOpen:
-			print_debug("opening")
+			#print_debug("opening")
 			isOpen = true
 			scale = Vector2(2,2)
 		else:
-			print_debug("closing")
+			#print_debug("closing")
 			isOpen = false
 			scale = Vector2(1,1)
