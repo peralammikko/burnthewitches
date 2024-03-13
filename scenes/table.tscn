@@ -21,14 +21,14 @@ offset_left = -95.0
 offset_top = 90.0
 offset_right = -48.0
 offset_bottom = 121.0
-text = "PASS"
+text = "SMASH"
 
 [node name="BurnButton" type="Button" parent="."]
 offset_left = 28.0
 offset_top = 89.0
 offset_right = 82.0
 offset_bottom = 120.0
-text = "BURN"
+text = "PASS"
 
 [connection signal="pressed" from="PassButton" to="." method="_on_pass_button_pressed"]
 [connection signal="pressed" from="BurnButton" to="." method="_on_burn_button_pressed"]

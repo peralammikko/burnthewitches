@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmfvp4x1q1gap"]
+
+[ext_resource type="Script" path="res://scripts/DialogueBox.gd" id="1_oa7na"]
+[ext_resource type="Script" path="res://scenes/dialogue_window.gd" id="1_xo27w"]
+[ext_resource type="JSON" path="res://dialogue.json" id="2_v75jn"]
+[ext_resource type="Script" path="res://addons/ez_dialogue/ez_dialogue_node.gd" id="3_viubp"]
+
+[node name="DialogueWindow" type="Node2D"]
+script = ExtResource("1_xo27w")
+dialogue_json = ExtResource("2_v75jn")
+
+[node name="DialogueBox" type="Node2D" parent="."]
+script = ExtResource("1_oa7na")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DialogueBox"]
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 40.0
+grow_vertical = 0
+
+[node name="Text" type="Label" parent="DialogueBox/VBoxContainer"]
+layout_mode = 2
+text = "This is some darn good dialogue right here"
+
+[node name="EzDialogue" type="Node" parent="."]
+script = ExtResource("3_viubp")
+
+[connection signal="dialogue_generated" from="EzDialogue" to="." method="_on_ez_dialogue_dialogue_generated"]

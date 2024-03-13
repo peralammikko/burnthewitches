@@ -1,0 +1,72 @@
+[
+	{
+		"commands_raw": "I'm a cool witch. Choose one wish and I'll grant it.\n\n?>Choice number one: money -> choice 1 node\n?>Choice number two: love -> choice 2 node",
+		"gnode_name": "start",
+		"id": 0,
+		"name": "start",
+		"position": [
+			320,
+			-80
+		]
+	},
+	{
+		"commands_raw": "You have chosen: riches. What exactly do you want?\n?> I want fat stacks & bad bitches -> choice 1 cont 1\n?> I want showers of gold! -> choice 1 cont 2",
+		"gnode_name": "choice 1 node",
+		"id": 1,
+		"name": "choice 1 node",
+		"position": [
+			480,
+			-140
+		]
+	},
+	{
+		"commands_raw": "You have chosen: love. What exactly do you want?\n?> I want to a hot girlfriend -> choice 2 cont 1\n?> I want to be loved... -> choice 2 cont 2",
+		"gnode_name": "choice 2 node",
+		"id": 2,
+		"name": "choice 2 node",
+		"position": [
+			480,
+			-20
+		]
+	},
+	{
+		"commands_raw": "Sorry, this is a game about 'witches', not 'bitches'. Now die.\n?> ...",
+		"gnode_name": "choice 1 cont 1",
+		"id": 3,
+		"name": "choice 1 cont 1",
+		"position": [
+			700,
+			-240
+		]
+	},
+	{
+		"commands_raw": "Go to horny jail. Bonk!\n?> ...",
+		"gnode_name": "choice 1 cont 2",
+		"id": 4,
+		"name": "choice 1 cont 2",
+		"position": [
+			700,
+			-140
+		]
+	},
+	{
+		"commands_raw": "Done, you are now attracted to ovens and charcoal kilns.\n?> ...",
+		"gnode_name": "choice 2 cont 1",
+		"id": 6,
+		"name": "choice 2 cont 1",
+		"position": [
+			700,
+			-60
+		]
+	},
+	{
+		"commands_raw": "Yeah lol don't we all, get in line nerd\n?> ...",
+		"gnode_name": "choice 2 cont 2",
+		"id": 7,
+		"name": "choice 2 cont 2",
+		"position": [
+			700,
+			20
+		]
+	}
+]
