@@ -44,13 +44,13 @@ func _on_ez_dialogue_dialogue_generated(response):
 	clear_dialogue_box()
 	print("EOD reached: ", response.eod_reached)
 	print("Text: ", response.text)
-	if response.text != "":
-		add_text(response.text)
-		if response.choices.is_empty():
-			add_choice("...")
-		else:
-			for choice in response.choices:
-				add_choice(choice)
+	
+	add_text(response.text)
+	if response.choices.is_empty():
+		add_choice("...")
+	else:
+		for choice in response.choices:
+			add_choice(choice)
 
 
 func _on_ez_dialogue_end_of_dialogue_reached():
