@@ -1,5 +1,5 @@
 class_name ChoiceButton extends Button
-var choice_index = 0
+var choice_index: int = -1
 
 signal choice_selected(choice_index)
 

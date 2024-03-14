@@ -1,28 +1,32 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmfvp4x1q1gap"]
+[gd_scene load_steps=4 format=3 uid="uid://dmfvp4x1q1gap"]
 
 [ext_resource type="Script" path="res://scripts/DialogueBox.gd" id="1_oa7na"]
-[ext_resource type="Script" path="res://scenes/dialogue_window.gd" id="1_xo27w"]
 [ext_resource type="JSON" path="res://dialogue.json" id="2_v75jn"]
 [ext_resource type="Script" path="res://addons/ez_dialogue/ez_dialogue_node.gd" id="3_viubp"]
 
 [node name="DialogueWindow" type="Node2D"]
-script = ExtResource("1_xo27w")
-dialogue_json = ExtResource("2_v75jn")
 
 [node name="DialogueBox" type="Node2D" parent="."]
 script = ExtResource("1_oa7na")
+dialogue_json = ExtResource("2_v75jn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="DialogueBox"]
-anchors_preset = -1
-offset_right = 40.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -164.5
+offset_right = 164.5
 offset_bottom = 40.0
-grow_vertical = 0
+grow_horizontal = 2
+alignment = 1
 
 [node name="Text" type="Label" parent="DialogueBox/VBoxContainer"]
 layout_mode = 2
 text = "This is some darn good dialogue right here"
+horizontal_alignment = 1
 
-[node name="EzDialogue" type="Node" parent="."]
+[node name="EzDialogue" type="Node" parent="DialogueBox"]
 script = ExtResource("3_viubp")
 
-[connection signal="dialogue_generated" from="EzDialogue" to="." method="_on_ez_dialogue_dialogue_generated"]
+[connection signal="dialogue_generated" from="DialogueBox/EzDialogue" to="DialogueBox" method="_on_ez_dialogue_dialogue_generated"]
+[connection signal="end_of_dialogue_reached" from="DialogueBox/EzDialogue" to="DialogueBox" method="_on_ez_dialogue_end_of_dialogue_reached"]

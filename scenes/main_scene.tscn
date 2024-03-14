@@ -26,4 +26,4 @@ position = Vector2(568, 471)
 position = Vector2(785, 470)
 
 [node name="DialogueWindow" parent="." instance=ExtResource("4_kgo8v")]
-position = Vector2(377, 287)
+position = Vector2(577, 253)
