@@ -42,8 +42,6 @@ func _on_choice_selected(choice_index: int):
 
 func _on_ez_dialogue_dialogue_generated(response):
 	clear_dialogue_box()
-	print("EOD reached: ", response.eod_reached)
-	print("Text: ", response.text)
 	
 	add_text(response.text)
 	if response.choices.is_empty():

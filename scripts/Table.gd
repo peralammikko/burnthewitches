@@ -13,7 +13,7 @@ func _process(delta):
 
 
 func _on_pass_button_pressed():
-	print_debug(spawner.remove_customer())
+	spawner.remove_customer()
 
 func _on_burn_button_pressed():
-	print_debug(spawner.remove_customer())
+	spawner.remove_customer()

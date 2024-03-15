@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d0xwchpeb5sb4"]
 
-[ext_resource type="Texture2D" uid="uid://bel7a022q2wxt" path="res://assets/customers/Tw3_bram.webp" id="1_jkhce"]
+[ext_resource type="Texture2D" uid="uid://bel7a022q2wxt" path="res://assets/customers/Tw3_bram.webp" id="1_0ox6u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3h000"]
 size = Vector2(266, 364)
@@ -9,7 +9,7 @@ size = Vector2(266, 364)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("1_jkhce")
+texture = ExtResource("1_0ox6u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.7, 0.7)

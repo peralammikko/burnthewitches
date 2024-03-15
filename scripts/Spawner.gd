@@ -20,7 +20,6 @@ func _process(delta):
 	
 func spawn_new_customer():
 	type_number = randi_range(1,3)
-	print_debug("Random number: ", type_number)
 	match type_number:
 		1: 
 			customer = villager.instantiate()
@@ -33,7 +32,6 @@ func spawn_new_customer():
 	customer_in = true
 	
 func remove_customer():
-	print_debug("Removing child: ", customer)
 	remove_child(customer)
 	customer_in = false
 	$SpawnTimer.start()
