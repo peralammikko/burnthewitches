@@ -1,5 +1,7 @@
 extends Area2D
 
+@export var goodwitchdialogue: JSON
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var texture_index = randi_range(1,3)
@@ -10,6 +12,8 @@ func _ready():
 			$Sprite2D.texture = load("res://assets/customers/Tw3_journal_yennefer.webp")
 		3:
 			$Sprite2D.texture = load("res://assets/customers/Tw3_journal_philippa.webp")
+			
+	$DialogueBox.create_new_dialogue(goodwitchdialogue)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

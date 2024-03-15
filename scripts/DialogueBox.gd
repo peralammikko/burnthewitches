@@ -1,7 +1,10 @@
 extends Node2D
 
 
-@export var dialogue_json: JSON
+@export var dialogue1: JSON
+@export var dialogue2: JSON
+@export var dialogue3: JSON
+
 @onready var state = {}
 
 @onready var choice_button_scene = preload("res://scenes/ChoiceButton.tscn")
@@ -11,9 +14,10 @@ var choice_buttons: Array[Button] = []
 var dialogue_finished = false
 
 func _ready():
-	dialogue_handler.start_dialogue(dialogue_json, state)
 	pass
 
+func create_new_dialogue(dialogue_json: JSON):
+	dialogue_handler.start_dialogue(dialogue_json, state)
 
 func clear_dialogue_box():
 	$VBoxContainer/Text.text = ""

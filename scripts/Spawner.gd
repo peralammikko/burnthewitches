@@ -8,11 +8,12 @@ var customer
 @export var goodwitch: PackedScene
 @export var badwitch: PackedScene
 
+@onready var dialogue_box = $"../DialogueBox"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	spawn_new_customer()
-
+	generate_dialogue()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -30,7 +31,10 @@ func spawn_new_customer():
 				
 	add_child(customer)
 	customer_in = true
-	
+
+func generate_dialogue():
+	pass
+
 func remove_customer():
 	remove_child(customer)
 	customer_in = false

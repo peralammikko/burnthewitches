@@ -1,0 +1,32 @@
+[
+	{
+		"commands_raw": "Good witch dialogue example\n?> Option 1 -> node 1 option 1\n?> Option 2 -> node 1 option 2",
+		"gnode_name": "start",
+		"id": 0,
+		"name": "start",
+		"position": [
+			320,
+			620
+		]
+	},
+	{
+		"commands_raw": "Option 1. Yay!",
+		"gnode_name": "node 1 option 1",
+		"id": 1,
+		"name": "node 1 option 1",
+		"position": [
+			500,
+			540
+		]
+	},
+	{
+		"commands_raw": "Option 2. Boo!",
+		"gnode_name": "node 1 option 2",
+		"id": 2,
+		"name": "node 1 option 2",
+		"position": [
+			500,
+			660
+		]
+	}
+]
