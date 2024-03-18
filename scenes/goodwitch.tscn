@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/goodwitch.gd" id="1_6taw8"]
 [ext_resource type="Texture2D" uid="uid://4wqhhlurr102" path="res://assets/customers/Tw3_journal_triss.webp" id="1_wft8b"]
-[ext_resource type="JSON" path="res://assets/dialogue/witch1.json" id="2_bwevh"]
+[ext_resource type="JSON" path="res://thirla_merina.json" id="2_cwf7r"]
 [ext_resource type="PackedScene" uid="uid://dmfvp4x1q1gap" path="res://scenes/dialoguebox.tscn" id="3_jdats"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h321u"]
@@ -11,7 +11,7 @@ size = Vector2(354, 556)
 [node name="GoodWitch" type="Area2D"]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_6taw8")
-goodwitchdialogue = ExtResource("2_bwevh")
+goodwitchdialogue = ExtResource("2_cwf7r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_wft8b")

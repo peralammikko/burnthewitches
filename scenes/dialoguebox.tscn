@@ -16,16 +16,16 @@ dialogue3 = ExtResource("4_73ckk")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -164.5
-offset_right = 164.5
-offset_bottom = 40.0
+offset_left = -164.0
+offset_right = 165.0
+offset_bottom = 131.0
 grow_horizontal = 2
 alignment = 1
 
 [node name="Text" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "This is some darn good dialogue right here"
-horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="EzDialogue" type="Node" parent="."]
 script = ExtResource("3_viubp")
