@@ -20,5 +20,5 @@ texture = ExtResource("1_l1bpa")
 shape = SubResource("RectangleShape2D_nvsr1")
 
 [node name="DialogueBox" parent="." instance=ExtResource("3_r0tau")]
-position = Vector2(0, 150)
+position = Vector2(0, 320)
 scale = Vector2(2, 2)

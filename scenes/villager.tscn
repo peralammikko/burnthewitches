@@ -21,4 +21,4 @@ scale = Vector2(0.7, 0.7)
 shape = SubResource("RectangleShape2D_3h000")
 
 [node name="DialogueBox" parent="." instance=ExtResource("3_pyh1u")]
-position = Vector2(-1, 77)
+position = Vector2(-1, 174)

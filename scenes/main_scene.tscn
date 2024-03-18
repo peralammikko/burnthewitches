@@ -1,25 +1,53 @@
-[gd_scene load_steps=4 format=3 uid="uid://bed68julghpmo"]
+[gd_scene load_steps=7 format=3 uid="uid://bed68julghpmo"]
 
 [ext_resource type="PackedScene" uid="uid://cuwxsa472wr2" path="res://scenes/table.tscn" id="1_2gpew"]
-[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/document.tscn" id="2_yysdo"]
+[ext_resource type="Texture2D" uid="uid://b8t2ecbulc7ct" path="res://assets/spp_background__dungeon_room_by_zarry_dcoikvj-414w-2x.jpg" id="1_3wdi2"]
+[ext_resource type="Script" path="res://scenes/main_scene.gd" id="1_iyn26"]
+[ext_resource type="Script" path="res://scenes/Camera2D.gd" id="3_5bdfg"]
 [ext_resource type="PackedScene" uid="uid://b28eo3lb5xdby" path="res://scenes/spawner.tscn" id="3_h7qsx"]
+[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/document.tscn" id="5_gxuiy"]
 
 [node name="MainScene" type="Node2D"]
+script = ExtResource("1_iyn26")
+
+[node name="Background" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(543, 443)
+scale = Vector2(2.59866, 3.51333)
+texture = ExtResource("1_3wdi2")
 
 [node name="Spawner" parent="." instance=ExtResource("3_h7qsx")]
-position = Vector2(565, 122)
+position = Vector2(569, 268)
 
 [node name="Table" parent="." instance=ExtResource("1_2gpew")]
-position = Vector2(577, 510)
+position = Vector2(570, 705)
+
+[node name="Document" parent="." instance=ExtResource("5_gxuiy")]
+position = Vector2(367, 713)
+
+[node name="Document2" parent="." instance=ExtResource("5_gxuiy")]
+position = Vector2(791, 720)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 322)
+position = Vector2(576, 326)
+script = ExtResource("3_5bdfg")
 
-[node name="Document" parent="." instance=ExtResource("2_yysdo")]
-position = Vector2(374, 469)
+[node name="Camera_up_button" type="Button" parent="Camera2D"]
+offset_left = -34.9989
+offset_top = -313.0
+offset_right = 11.0011
+offset_bottom = -282.0
+text = "^"
 
-[node name="Document2" parent="." instance=ExtResource("2_yysdo")]
-position = Vector2(582, 469)
+[node name="Camera_down_button" type="Button" parent="Camera2D"]
+offset_left = -29.001
+offset_top = 282.0
+offset_right = 16.999
+offset_bottom = 313.0
+text = "v"
 
-[node name="Document3" parent="." instance=ExtResource("2_yysdo")]
-position = Vector2(799, 468)
+[node name="lowerCamPos" type="Node2D" parent="."]
+position = Vector2(576, 650)
+
+[connection signal="pressed" from="Camera2D/Camera_up_button" to="Camera2D" method="_on_camera_up_button_pressed"]
+[connection signal="pressed" from="Camera2D/Camera_down_button" to="Camera2D" method="_on_camera_down_button_pressed"]

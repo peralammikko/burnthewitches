@@ -8,8 +8,6 @@ var customer
 @export var goodwitch: PackedScene
 @export var badwitch: PackedScene
 
-@onready var dialogue_box = $"../DialogueBox"
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	spawn_new_customer()
