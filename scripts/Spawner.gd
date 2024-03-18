@@ -3,6 +3,7 @@ extends Area2D
 var type_number
 var customer_in = false
 var customer
+var customer_type
 
 @export var villager: PackedScene
 @export var goodwitch: PackedScene
@@ -21,10 +22,13 @@ func spawn_new_customer():
 	type_number = randi_range(1,3)
 	match type_number:
 		1: 
+			customer_type = "villager"
 			customer = villager.instantiate()
 		2: 
+			customer_type = "goodwitch"
 			customer = goodwitch.instantiate()
 		3:
+			customer_type = "badwitch"
 			customer = badwitch.instantiate()
 				
 	add_child(customer)
