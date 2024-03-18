@@ -11,13 +11,12 @@
 script = ExtResource("1_iyn26")
 
 [node name="Background" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(543, 443)
 scale = Vector2(2.59866, 3.51333)
 texture = ExtResource("1_3wdi2")
 
 [node name="Spawner" parent="." instance=ExtResource("3_h7qsx")]
-position = Vector2(569, 268)
+position = Vector2(571, 369)
 
 [node name="Table" parent="." instance=ExtResource("1_2gpew")]
 position = Vector2(570, 705)
