@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://brwjujr4ttow4"]
+
+[ext_resource type="Script" path="res://end_day_screen.gd" id="1_1qo5b"]
+
+[node name="end_day_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1qo5b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 645.0
+color = Color(0, 0, 0, 1)
+
+[node name="witches_killed" type="Label" parent="."]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 265.0
+offset_right = 653.0
+offset_bottom = 288.0
+text = "Maleficants executed: "
+horizontal_alignment = 1
+
+[node name="people_saved" type="Label" parent="."]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 292.0
+offset_right = 646.0
+offset_bottom = 315.0
+text = "Guiltless absolved:"
+horizontal_alignment = 1
+
+[node name="continue_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 556.0
+offset_right = 646.0
+offset_bottom = 587.0
+text = "Proceed to next day"
+
+[node name="date_text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 427.0
+offset_top = 137.0
+offset_right = 710.0
+offset_bottom = 160.0
+text = "Flavor text about date etc. goes here"
+horizontal_alignment = 1
+
+[node name="flavor_text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 421.0
+offset_top = 448.0
+offset_right = 704.0
+offset_bottom = 471.0
+text = "Loyalty is its own reward"
+horizontal_alignment = 1
