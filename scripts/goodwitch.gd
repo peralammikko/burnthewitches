@@ -3,6 +3,7 @@ extends Area2D
 @export var goodwitchdialogue: JSON
 
 # Called when the node enters the scene tree for the first time.
+# For now, it randoms one of three sprites for a 'good witch'
 func _ready():
 	var texture_index = randi_range(1,3)
 	match texture_index:

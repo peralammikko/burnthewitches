@@ -16,9 +16,11 @@ var dialogue_finished = false
 func _ready():
 	pass
 
+# Starts dialogue using the JSON from NPC node
 func create_new_dialogue(dialogue_json: JSON):
 	dialogue_handler.start_dialogue(dialogue_json, state)
 
+# Empties the dialogue box from existing NPC text and possible dialogue options
 func clear_dialogue_box():
 	$VBoxContainer/Text.text = ""
 	for choice in choice_buttons:
@@ -26,9 +28,11 @@ func clear_dialogue_box():
 		choice.queue_free()
 	choice_buttons = []
 
+# Add text to current dialogue
 func add_text(text: String):
 	$VBoxContainer/Text.text  = text
 	
+# Adds an clickable dialogue option on current dialogue node.
 func add_choice(choice_text: String):
 	var button_obj: ChoiceButton = choice_button_scene.instantiate()
 	button_obj.choice_index = choice_buttons.size()
@@ -37,13 +41,14 @@ func add_choice(choice_text: String):
 	button_obj.choice_selected.connect(_on_choice_selected)
 	$VBoxContainer.add_child(button_obj)
 	
+# Proceed dialogue to next node after clicking option. If dialogue is done, clears the dialog box.
 func _on_choice_selected(choice_index: int):
 	if !dialogue_finished:
 		dialogue_handler.next(choice_index)
 	else:
 		clear_dialogue_box()
 
-
+# Generates a dialogue box from the corresponding node on EzDialogue node map.
 func _on_ez_dialogue_dialogue_generated(response):
 	clear_dialogue_box()
 	
@@ -54,7 +59,7 @@ func _on_ez_dialogue_dialogue_generated(response):
 		for choice in response.choices:
 			add_choice(choice)
 
-
+# If there is no 'next' node for the dialogue, this function is fired.
 func _on_ez_dialogue_end_of_dialogue_reached():
 	dialogue_finished = true
 

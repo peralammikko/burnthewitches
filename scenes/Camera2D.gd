@@ -9,21 +9,23 @@ func _ready():
 	$Camera_up_button.hide()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Called every frame.
+# If player pushes 'down' or 's', camera moves down.
+# If player pushes 'up' or 'w', camera moves up.
 func _process(delta):
 	if Input.is_action_just_pressed("down"):
 		_on_camera_down_button_pressed()
 	elif Input.is_action_just_pressed("up"):
 		_on_camera_up_button_pressed()
 
-
+# Smooth camera scrolling down
 func _on_camera_down_button_pressed():
 	var tween = create_tween()
 	tween.tween_property(self, "position", low_camera.global_position, 0.2).set_ease(Tween.EASE_OUT)
 	$Camera_down_button.hide()
 	$Camera_up_button.show()
 
-
+# Smooth camera scrolling up
 func _on_camera_up_button_pressed():
 	var tween = create_tween()
 	tween.tween_property(self, "position", upper_position, 0.2).set_ease(Tween.EASE_OUT)
