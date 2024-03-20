@@ -29,26 +29,34 @@ func _process(delta):
 
 # When customer is saved, adds value to "this-customer-type saved" variable for end screen.
 func _on_pass_button_pressed():
-	current_customer_type = spawner.customer_type
-	match current_customer_type:
-		"villager":
-			villagers_saved += 1
-		"goodwitch":
-			good_witches_saved += 1
-		"badwitch":
-			bad_witches_saved += 1
-	customer_count += 1
-	spawner.remove_customer()
+	if spawner.customer_in == false:
+		print("no customer")
+		pass
+	else:
+		current_customer_type = spawner.customer_type
+		match current_customer_type:
+			"villager":
+				villagers_saved += 1
+			"goodwitch":
+				good_witches_saved += 1
+			"badwitch":
+				bad_witches_saved += 1
+		customer_count += 1
+		spawner.remove_customer()
 	
 # When customer is killed, adds value to "this-customer-type killed" variable for end screen.
 func _on_burn_button_pressed():
-	current_customer_type = spawner.customer_type
-	match current_customer_type:
-		"villager":
-			villagers_killed += 1
-		"goodwitch":
-			good_witches_killed += 1
-		"badwitch":
-			bad_witches_killed += 1
-	customer_count += 1
-	spawner.remove_customer()
+	if spawner.customer_in == false:
+		print("no customer")
+		pass
+	else:
+		current_customer_type = spawner.customer_type
+		match current_customer_type:
+			"villager":
+				villagers_killed += 1
+			"goodwitch":
+				good_witches_killed += 1
+			"badwitch":
+				bad_witches_killed += 1
+		customer_count += 1
+		spawner.remove_customer()
