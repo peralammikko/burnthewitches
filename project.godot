@@ -24,10 +24,12 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Kordon_Alhambra": "res://timelines/kordon/Kordon_Alhambra.dch",
+"Suspect3": "res://assets/customers/Suspect3.dch",
 "ThirlaMerina": "res://timelines/thirla/ThirlaMerina.dch"
 }
 directories/dtl_directory={
 "kordon_intro": "res://timelines/kordon/kordon_intro.dtl",
+"suspect_3": "res://assets/customers/suspect_3.dtl",
 "thirla_intro": "res://timelines/thirla/thirla_intro.dtl",
 "thirla_questions": "res://timelines/thirla/thirla_questions.dtl"
 }

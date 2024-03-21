@@ -1,0 +1,25 @@
+Suspect3: A middle aged woman who appears to be anxious but her movement is very controlled. Slowly but confidently moves, trying to hide her stress.
+label suspect3_questioning
+Suspect3: "Greetings, good sir."
+- What have you to explain about the charges against you?
+	Suspect3: "Good sir, I swear I am innocent. I have done nothing wrong."
+	- It doesn’t appear that way. (Negative)
+		Suspect3: "Please sir, you have to believe me! I have children! I did nothing of evil sorts, whatever I have did, I did for the sake of the townsfolk"
+		- So, do you admit to your crime, witch?
+			Suspect3: "I only say that I did what I could to protect my husband and children. I cannot say anything more, just please do not punish me for that man’s greed!"
+			jump suspect3_questioning
+		- What do you mean by sake of the townsfolk?
+			Suspect3: "That foreman was the embodiment of evil."
+			Suspect3: "You can ask around and everyone will tell you the same, he enjoyed pushing the folks to their limits."
+			Suspect3: "His death gave the townsfolk room to breathe once again. Please, do not look at others to punish when it was his greed that caused his death!"
+			jump suspect3_questioning
+	- Then, please explain why people think you are connected to the death of the foreman. (Positive)
+		Suspect3: "I do not know, sir. I only know that whatever happened to that foreman was well deserved."
+		- How do you mean he deserved what happened to him?
+			Suspect3: "He was a cruel man who almost killed my husband and children as well as every other miner who worked under him for his greed."
+			- I see your point.
+				jump suspect3_questioning
+		- How can you think that you are the one to decide the fate of  a person above you?
+			Suspect3: "Good sir, I did not mean to provide judgment but every townsfolk knew he was a cruel man who tortured people under him."
+			- Nevertheless, I shall decide on your fate!
+				jump suspect3_questioning
