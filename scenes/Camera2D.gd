@@ -1,6 +1,7 @@
 extends Camera2D
 
 @onready var low_camera = get_node("../lowerCamPos")
+
 var upper_position: Vector2
 
 # Called when the node enters the scene tree for the first time.
@@ -24,6 +25,10 @@ func _on_camera_down_button_pressed():
 	tween.tween_property(self, "position", low_camera.global_position, 0.2).set_ease(Tween.EASE_OUT)
 	$Camera_down_button.hide()
 	$Camera_up_button.show()
+	if Dialogic.Text.is_textbox_visible():
+		Dialogic.Text.hide_text_boxes()
+	else:
+		Dialogic.Text.show_text_boxes()
 
 # Smooth camera scrolling up
 func _on_camera_up_button_pressed():
