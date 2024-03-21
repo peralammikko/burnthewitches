@@ -1,9 +1,10 @@
-"At last we meet, Quaestor."
+ThirlaMerina: "At last we meet, Quaestor."
 - "Lady Thirla Merina. I trust you know why you are here."
-Thirla Merina smiles. A practiced, cold smile that betrays nothing behind it.
-"That unpleasantness? I assure thee, me and mine are untouched by esoterica. Ill words brought to thine ears by jealousness and envy."
+ThirlaMerina: Thirla Merina smiles. A practiced, cold smile that betrays nothing behind it.
+ThirlaMerina: "That unpleasantness? I assure thee, me and mine are untouched by esoterica. Ill words brought to thine ears by jealousness and envy."
 - "The truth will come out, whatever it may be."
-ThirlaMerina: "..."
+label thirla_questioning
+ThirlaMerina: "At last we meet, Quaestor."
 - "Lady Merina. Tell me about yourself."
 	ThirlaMerina: "Oh, Quaestor, doth thine parchments not detail the legacy of mine noble house in sufficient majesty?
 	- "Humor me."
@@ -12,10 +13,10 @@ ThirlaMerina: "..."
 			ThirlaMerina: The noblewoman eyes you closely. Her emerald eye seems to sparkle in the darkness of the room like a corona in the darkness of space. Her gaze is that of a bird of prey instead of a prisoner being interrogated.
 			- ...
 				ThirlaMerina: "Deeds of our line number countless as the stars, accolades upon accolades are heaped at our feet. Doth this not answer thy inquiry? I hold the fate of millions in mine grasp, mine wealth and influence matchless as the brightness of sun to a candle."
-				jump thirla_questions/
+				jump thirla_questions/thirla_questioning
 - "What have you to say about the charges brought against you?"'
 	ThirlaMerina: The pleasant facade on Lady Merina's face cracks for a split second.\
-	"Thy must understand, greatness such as that of I doth foster resentment. Doubtless these must be fabrications of fools not to be taken seriously."
+"Thy must understand, greatness such as that of I doth foster resentment. Doubtless these must be fabrications of fools not to be taken seriously."
 	- "So you deny all accusations?"
 		ThirlaMerina: "I denounce all charges. If thee doth wish to prolong this farce, know that thine efforts are naught but waste."
-		jump thirla_questions/
+		jump thirla_questions/thirla_questioning

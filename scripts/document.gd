@@ -9,7 +9,8 @@ var isOpen = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	scale.x = 0.6
+	scale.y = 0.6
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
@@ -48,13 +49,13 @@ func _process(delta):
 func _on_area_2d_mouse_entered():
 	if not globalCheck.is_dragging:
 		draggable = true
-		scale = Vector2(1.05, 1.05)
+		scale = Vector2(0.65, 0.65)
 
 # When mouse is not hovering over, scale it back to original size.
 func _on_area_2d_mouse_exited():
 	if not globalCheck.is_dragging:
 		draggable = false
-		scale = Vector2(1,1)
+		scale = Vector2(0.6, 0.6)
 
 # Check if document is inside a body group marked as 'droppable'
 # Marks the document so that it could be dropped there.
@@ -77,4 +78,4 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			scale = Vector2(2,2)
 		else:
 			isOpen = false
-			scale = Vector2(1,1)
+			scale = Vector2(0.6, 0.6)

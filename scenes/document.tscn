@@ -1,32 +1,24 @@
 [gd_scene load_steps=4 format=3 uid="uid://ehh2ig14eqbk"]
 
-[ext_resource type="Texture2D" uid="uid://bmll314g2j4rr" path="res://assets/old_paper_stock_02_by_ftourini_d48ubt0-pre.png" id="1_05pkb"]
 [ext_resource type="Script" path="res://scripts/document.gd" id="1_kjxie"]
+[ext_resource type="Texture2D" uid="uid://cxrdt7h7n0dw3" path="res://assets/objects/InvestigationDoc_Merina_2.png" id="2_c36s0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_abnth"]
-size = Vector2(134, 200)
+size = Vector2(236, 321)
 
 [node name="Document" type="Node2D"]
 script = ExtResource("1_kjxie")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("1_05pkb")
+position = Vector2(1, 31)
+scale = Vector2(0.261458, 0.261458)
+texture = ExtResource("2_c36s0")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 29.5)
 shape = SubResource("RectangleShape2D_abnth")
-
-[node name="Label" type="Label" parent="."]
-offset_left = -39.0
-offset_top = -11.0
-offset_right = 39.0
-offset_bottom = 12.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "TEST TEXT"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
