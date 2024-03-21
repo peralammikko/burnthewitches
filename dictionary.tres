@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogicGlossary" load_steps=2 format=3 uid="uid://xiyfo54rgiq"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Glossary/glossary_resource.gd" id="1_02ws1"]
+
+[resource]
+script = ExtResource("1_02ws1")
+entries = {
+"Astra Nova": {
+"case_sensitive": true,
+"name": "Astra Nova",
+"text": "some place in space lol"
+}
+}
+enabled = true
+_translation_id = ""
+_translation_keys = {}

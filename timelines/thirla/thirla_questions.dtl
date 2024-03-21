@@ -10,7 +10,7 @@ ThirlaMerina: ...
 				jump thirla_questions/
 - "What have you to say about the charges brought against you?"'
 	ThirlaMerina: The pleasant facade on Lady Merina's face cracks for a split second.\
-"Thy must understand, greatness such as that of I doth foster resentment. Doubtless these must be fabrications of fools not to be taken seriously."
+	"Thy must understand, greatness such as that of I doth foster resentment. Doubtless these must be fabrications of fools not to be taken seriously."
 	- "So you deny all accusations?"
 		ThirlaMerina: "I denounce all charges. If thee doth wish to prolong this farce, know that thine efforts are naught but waste."
 		jump thirla_questions/

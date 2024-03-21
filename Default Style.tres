@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="1_ap86h"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_npefx"]
 [ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_hyjit"]
-[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="4_35rrw"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://styles/layouts/VisualNovelTextbox/custom_vn_textbox_layer.tscn" id="4_5rlas"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="5_76yox"]
 [ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="6_xtrj4"]
 [ext_resource type="PackedScene" uid="uid://byy7m8ml2pefh" path="res://styles/layouts/CenteredChoices/custom_vn_choice_layer.tscn" id="7_pp0o1"]
@@ -23,7 +23,7 @@ overrides = {}
 
 [sub_resource type="Resource" id="Resource_hhq4y"]
 script = ExtResource("2_npefx")
-scene = ExtResource("4_35rrw")
+scene = ExtResource("4_5rlas")
 overrides = {}
 
 [sub_resource type="Resource" id="Resource_ko2sl"]
@@ -61,4 +61,4 @@ base_overrides = {
 "global_font_color": "Color(0, 0, 0, 1)"
 }
 layers = Array[ExtResource("2_npefx")]([SubResource("Resource_a60hq"), SubResource("Resource_iuw5x"), SubResource("Resource_hhq4y"), SubResource("Resource_ko2sl"), SubResource("Resource_kwjv6"), SubResource("Resource_ucknp"), SubResource("Resource_a67ld"), SubResource("Resource_reo4i")])
-metadata/_latest_layer = 5
+metadata/_latest_layer = 2
