@@ -1,0 +1,47 @@
+The man before you sits before you straight-backed and confident, greeting you with a solemn nod.
+"Interrogator."
+- "Kordon Alhambra. It says here you were a.. gunnery sergeant?"
+	The man responds with a curt nod. "Gloria Imperatrix was my latest command."\
+He seems as about to continue, but bites his tongue.
+	label kordon_questions
+	- "Was there something else you wanted to say?" (Negative)
+		"No, sir."
+	- "Was there something else you wanted to say?" (Positive)
+		Sergeant Alhambra struggles with himself for just a moment, and the strict formality of a professional soldier fades just slightly.
+		"Nothing of import, sir. Simply wanted to say that's she's a fine ship and a commendable crew with her.
+		- "What was service aboard the Gloria like?"
+			"Some of my best years aboard that ship, sir. She's an Empress-class Destroyer; they don't make them as they used to anymore. Fast and reliable. Low profile and every inch of hull fitted with cannon. Nothing but good things to say about the Gloria and the crew."
+			- "Not even if I told you that one of the crew revealed your involvement with the occult?"
+				The man sighs heavily.
+				"I had some inkling, sir. I don't wish to know who it was, won't make a difference, and I want to go to the gallows thinking the best of all my colleagues."
+			- "Then what purpose did your witchcraft aboard the Gloria serve?"
+				The expression on the old soldiers' face turns sour, before he catches himself.
+				"There was no witchcraft performed on my part, nor by any personnel aboard. I swear on my life. But that isn't what this is about, is it?"
+				- "What do you think this is about, then?"
+					"Same as ever, sir, had I to hazard a guess. Have to make an example every now and then, and what's one old soldier in the grand scheme of things?"
+					- "You claim innocence?"
+						"I swear on my immortal soul I did no witchcraft, nor do I know anyone else who did either. Take that as you will, Interrogator, sir."
+						jump kordon_intro/kordon_questions
+				- "How do you explain all the carved bones and runes, then?"
+		- "You seem very attached."
+	- "Where was your ship stationed?"
+		"At Astra Bohetia, sir. It's an Imperial holding, but far out. We often have misunderstandings between the local counts and other lords there, and sometimes we would have to step in before things escalated. Or put an end to things after they did."
+		- "So you have seen your share of combat, then?"
+			"Yes, sir." As if to demonstrate, the man lifts up his right hand, which ends at an elbow. The attachment ports tell you that his implant was confiscated when the sergeant was apprehended.
+			"Lost this arm during an action. Boarding torch seared the limb right to the bone. And I've been part in more engagements than I care to remember, sir."
+			- "Enough. I had other questions."
+				<Empty Text Event>
+				jump kordon_questions
+		- "I see. Astra Bohetia is a far-flung system. How did you end up there?"
+			"No exciting story here, sir, I'm afraid. The ship I previously served on as a quartermaster was decommisioned. Udatná Duše. An Owl-class signal sloop. I happened to hear that there was an open gunnery sergeant position on the Gloria, and requested to be transfered there. Serving on an Empress-class had always been a dream of mine, sir. Nothing else to it."
+			- "Enough. I had other questions."
+				jump kordon_questions
+	- "Can you tell me about your duties aboard the Gloria?"
+		"Yes, sir. I was assigned to the second starboard broadside battery and was responsible for the training of cannoneers and the maintenance of equipment. I also upheld discipline and acted as tactical counsel to the Mistress-at-Arms."
+		- "I am not familiar with fleet hierarchy. Mistress-at-Arms?"
+			"Apologies, sir. Master, or Mistress-at-Arms, is the person responsible for the operation and command of a gunnery group, subordinate to the Tac-Com."
+			"Gloria Imperatrix had three such positions, one for each broadside and one for auxilary systems." The explanation comes out as if directly from the pages of a fleet training manual."
+			"Does this answer your question sufficiently, sir?"
+			- "It does. Thank you. I had other questions."
+		- "My papers say you were involved in Spacer Guild activities."
+			"I was, sir. I was our ships' liaison to the Spacers' Guild and scribe of our war log. Mainly I recorded the activities of the ship as whole for the future generations and passed along any Guild messages to the crew."

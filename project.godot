@@ -26,6 +26,7 @@ directories/dch_directory={
 "ThirlaMerina": "res://timelines/thirla/ThirlaMerina.dch"
 }
 directories/dtl_directory={
+"kordon_intro": "res://timelines/kordon/kordon_intro.dtl",
 "thirla_intro": "res://timelines/thirla/thirla_intro.dtl",
 "thirla_questions": "res://timelines/thirla/thirla_questions.dtl"
 }

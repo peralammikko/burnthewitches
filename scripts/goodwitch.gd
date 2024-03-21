@@ -16,7 +16,7 @@ func _ready():
 			$Sprite2D.texture = load("res://assets/customers/Tw3_journal_philippa.webp")
 			
 	#$DialogueBox.create_new_dialogue(goodwitchdialogue)
-	Dialogic.start("thirla_intro")
+	Dialogic.start("thirla_questions")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
