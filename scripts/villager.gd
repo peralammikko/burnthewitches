@@ -6,6 +6,7 @@ extends Area2D
 func _ready():
 	#$DialogueBox.create_new_dialogue(villagerdialogue)
 	$DialogueBox.hide()
+	Dialogic.Save.delete_slot("Default")
 	Dialogic.start("kordon_intro")
 	
 

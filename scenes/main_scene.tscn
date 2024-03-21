@@ -25,13 +25,13 @@ texture = ExtResource("1_3wdi2")
 position = Vector2(571, 369)
 
 [node name="Table" parent="." instance=ExtResource("1_2gpew")]
-position = Vector2(570, 705)
+position = Vector2(574, 748)
 
 [node name="Document" parent="." instance=ExtResource("5_gxuiy")]
-position = Vector2(367, 713)
+position = Vector2(298, 653)
 
 [node name="Document2" parent="." instance=ExtResource("5_gxuiy")]
-position = Vector2(791, 720)
+position = Vector2(886, 666)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 326)

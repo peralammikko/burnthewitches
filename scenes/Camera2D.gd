@@ -9,7 +9,6 @@ func _ready():
 	upper_position = global_position
 	$Camera_up_button.hide()
 
-
 # Called every frame.
 # If player pushes 'down' or 's', camera moves down.
 # If player pushes 'up' or 'w', camera moves up.
