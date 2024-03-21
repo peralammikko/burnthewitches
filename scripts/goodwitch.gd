@@ -5,6 +5,7 @@ extends Area2D
 # Called when the node enters the scene tree for the first time.
 # For now, it randoms one of three sprites for a 'good witch'
 func _ready():
+	$DialogueBox.hide()
 	var texture_index = randi_range(1,3)
 	match texture_index:
 		1:
@@ -14,7 +15,8 @@ func _ready():
 		3:
 			$Sprite2D.texture = load("res://assets/customers/Tw3_journal_philippa.webp")
 			
-	$DialogueBox.create_new_dialogue(goodwitchdialogue)
+	#$DialogueBox.create_new_dialogue(goodwitchdialogue)
+	Dialogic.start("thirla_intro")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
