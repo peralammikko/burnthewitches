@@ -43,6 +43,7 @@ func _on_pass_button_pressed():
 				bad_witches_saved += 1
 		customer_count += 1
 		spawner.remove_customer()
+		Dialogic.Save.delete_slot("Default")
 	
 # When customer is killed, adds value to "this-customer-type killed" variable for end screen.
 func _on_burn_button_pressed():
@@ -60,3 +61,4 @@ func _on_burn_button_pressed():
 				bad_witches_killed += 1
 		customer_count += 1
 		spawner.remove_customer()
+		Dialogic.Save.delete_slot("Default")

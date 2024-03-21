@@ -5,6 +5,7 @@ extends Area2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#$DialogueBox.create_new_dialogue(villagerdialogue)
+	$DialogueBox.hide()
 	Dialogic.start("kordon_intro")
 	
 

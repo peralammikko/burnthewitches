@@ -26,9 +26,8 @@ func _on_camera_down_button_pressed():
 	$Camera_down_button.hide()
 	$Camera_up_button.show()
 	if Dialogic.Text.is_textbox_visible():
-		Dialogic.Text.hide_text_boxes()
-	else:
-		Dialogic.Text.show_text_boxes()
+		Dialogic.Save.save("",false,Dialogic.Save.ThumbnailMode.NONE)
+		Dialogic.end_timeline()
 
 # Smooth camera scrolling up
 func _on_camera_up_button_pressed():
@@ -36,5 +35,7 @@ func _on_camera_up_button_pressed():
 	tween.tween_property(self, "position", upper_position, 0.2).set_ease(Tween.EASE_OUT)
 	$Camera_up_button.hide()
 	$Camera_down_button.show()
+	if Dialogic.Save.has_slot("Default"):
+		Dialogic.Save.load()
 	
 	

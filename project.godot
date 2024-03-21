@@ -23,6 +23,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Kordon_Alhambra": "res://timelines/kordon/Kordon_Alhambra.dch",
 "ThirlaMerina": "res://timelines/thirla/ThirlaMerina.dch"
 }
 directories/dtl_directory={
