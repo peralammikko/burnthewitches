@@ -22,10 +22,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if customer_count > 5:
+	if customer_count > 3:
 		end_screen.show()
 		var goodies_saved = good_witches_saved + villagers_saved
 		end_screen.display_stats(bad_witches_killed, goodies_saved)
+		Dialogic.end_timeline()
 
 # When customer is saved, adds value to "this-customer-type saved" variable for end screen.
 func _on_pass_button_pressed():
