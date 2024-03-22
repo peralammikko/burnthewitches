@@ -55,5 +55,25 @@ text = "v"
 [node name="lowerCamPos" type="Node2D" parent="."]
 position = Vector2(576, 650)
 
+[node name="Label" type="Label" parent="."]
+offset_left = 15.0
+offset_top = 401.0
+offset_right = 265.0
+offset_bottom = 502.0
+text = "Camera up - UP
+Camera down - DOWN
+Move document - Left mouse
+Inspect document - Right mouse"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 876.0
+offset_top = 399.0
+offset_right = 1131.0
+offset_bottom = 500.0
+text = "Hear out 3 suspects of witchcraft
+and decide on their fate
+before ending the day"
+horizontal_alignment = 2
+
 [connection signal="pressed" from="Camera2D/Camera_up_button" to="Camera2D" method="_on_camera_up_button_pressed"]
 [connection signal="pressed" from="Camera2D/Camera_down_button" to="Camera2D" method="_on_camera_down_button_pressed"]

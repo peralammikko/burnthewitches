@@ -58,6 +58,7 @@ func _on_burn_button_pressed():
 				villagers_killed += 1
 			"goodwitch":
 				good_witches_killed += 1
+				Dialogic.start("thirla_outro")
 			"badwitch":
 				bad_witches_killed += 1
 		customer_count += 1

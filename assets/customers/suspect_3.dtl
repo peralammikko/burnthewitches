@@ -1,6 +1,6 @@
 Suspect3: A middle aged woman who appears to be anxious but her movement is very controlled. Slowly but confidently moves, trying to hide her stress.
-label suspect3_questioning
 Suspect3: "Greetings, good sir."
+label suspect3_questioning
 - What have you to explain about the charges against you?
 	Suspect3: "Good sir, I swear I am innocent. I have done nothing wrong."
 	- It doesn’t appear that way. (Negative)

@@ -55,6 +55,7 @@ func _on_area_2d_mouse_entered():
 func _on_area_2d_mouse_exited():
 	if not globalCheck.is_dragging:
 		draggable = false
+		isOpen = false
 		scale = Vector2(0.6, 0.6)
 
 # Check if document is inside a body group marked as 'droppable'
