@@ -46,7 +46,3 @@ func remove_customer():
 # After timer ends, spawns a new customer to screen
 func _on_spawn_timer_timeout():
 	pass
-
-func _on_door_input_event(viewport, event, shape_idx):
-	if Input.is_action_just_pressed('leftclick') && not customer_in:
-			spawn_new_customer()
