@@ -23,11 +23,13 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"GanymedeAthena": "res://GanymedeAthena.dch",
 "Kordon_Alhambra": "res://timelines/kordon/Kordon_Alhambra.dch",
 "Suspect3": "res://assets/customers/Suspect3.dch",
 "ThirlaMerina": "res://timelines/thirla/ThirlaMerina.dch"
 }
 directories/dtl_directory={
+"Athena_intro": "res://Athena_intro.dtl",
 "kordon_intro": "res://timelines/kordon/kordon_intro.dtl",
 "suspect_3": "res://assets/customers/suspect_3.dtl",
 "thirla_intro": "res://timelines/thirla/thirla_intro.dtl",
