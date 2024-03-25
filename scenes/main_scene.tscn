@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bed68julghpmo"]
+[gd_scene load_steps=10 format=3 uid="uid://bed68julghpmo"]
 
 [ext_resource type="PackedScene" uid="uid://cuwxsa472wr2" path="res://scenes/table.tscn" id="1_2gpew"]
 [ext_resource type="Texture2D" uid="uid://b8t2ecbulc7ct" path="res://assets/spp_background__dungeon_room_by_zarry_dcoikvj-414w-2x.jpg" id="1_3wdi2"]
@@ -8,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://b28eo3lb5xdby" path="res://scenes/spawner.tscn" id="3_h7qsx"]
 [ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/document.tscn" id="5_gxuiy"]
 [ext_resource type="PackedScene" uid="uid://b6mo3l6100khf" path="res://scenes/document_testimonies.tscn" id="7_aoeur"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tfmu6"]
+size = Vector2(168, 350)
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_kqbv6")
@@ -21,6 +24,7 @@ visible = false
 position = Vector2(543, 443)
 scale = Vector2(2.59866, 3.51333)
 texture = ExtResource("1_3wdi2")
+flip_h = true
 
 [node name="Spawner" parent="." instance=ExtResource("3_h7qsx")]
 position = Vector2(571, 369)
@@ -75,5 +79,12 @@ and decide on their fate
 before ending the day"
 horizontal_alignment = 2
 
+[node name="Door" type="Area2D" parent="."]
+
+[node name="DoorCollision" type="CollisionShape2D" parent="Door"]
+position = Vector2(125, 209)
+shape = SubResource("RectangleShape2D_tfmu6")
+
 [connection signal="pressed" from="Camera2D/Camera_up_button" to="Camera2D" method="_on_camera_up_button_pressed"]
 [connection signal="pressed" from="Camera2D/Camera_down_button" to="Camera2D" method="_on_camera_down_button_pressed"]
+[connection signal="input_event" from="Door" to="Spawner" method="_on_door_input_event"]
