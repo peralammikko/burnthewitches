@@ -29,6 +29,7 @@ directories/dch_directory={
 "ThirlaMerina": "res://timelines/thirla/ThirlaMerina.dch"
 }
 directories/dtl_directory={
+"AthenaQuestions": "res://AthenaQuestions.dtl",
 "Athena_intro": "res://Athena_intro.dtl",
 "kordon_intro": "res://timelines/kordon/kordon_intro.dtl",
 "suspect_3": "res://assets/customers/suspect_3.dtl",

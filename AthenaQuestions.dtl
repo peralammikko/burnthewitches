@@ -1,0 +1,42 @@
+GanymedeAthena: Ganymede awaits for your questions in mocking silence.
+- "You were once an Imperial admiral. Why turn your back on your people?"
+	GanymedeAthena: "You turned your back on us!" The statement comes out almost as a bellow, accusatory and full of fire. "When you began to care more about your gilded castles and turned us against each other by your witch hunts, that was when I knew I was fighting for the wrong side."
+	- "The Empire is vast. There are those in power who abuse their stations, but that is not the will of the Imperial Couple."
+		GanymedeAthena: "The Imperial Couple. Another rung of tyrants. I have seen nothing to imply they were any different."
+		- "Then you are blind. Your fanaticism has made you as bad as those you sought to destroy."
+			jump 
+		- "Interesting. I had other questions."
+			jump 
+	- "Why bring these abuses of power to the attention of the Empire?"
+		GanymedeAthena: Ganymede laughs coldly. "You're serious? I did! I told my superiors what I saw, but they told me to keep quiet and take the money. The whole system is corrupt. Every single one of them. All you can do is purge the entirety of the Empire and start anew. With people who actually care about something other than themselves."
+	- Do you truly believe your rebellion has a chance?"
+		GanymedeAthena: Athena's answer is immediate. "No", she says. "But someone else will carry it to the end. I am the spark that will light a great conflagration."
+	- "What do you even hope to achieve with this rebellion?"
+		GanymedeAthena: "Something you could never understand", she answers, her words full of venom, thick as honey and deadly as nuclear radiation. "We must uproot the Empire. Tear down all the false edifices. Throw down those who loom over us."
+		GanymedeAthena: "We have to rebuild the Empire from scratchs. Too many old families with illusions of grandeur, too many arrogant parasites feeding on the people who provide for them. We must have leaders who care. Leaders who serve the people, instead of the other way around."
+		- "You are delusional, Athena. This is the thrashing of a mad dog against its leash."
+			GanymedeAthena: "This is the death throes of an Empire", she responds. "If I do not succeed, someone else will."
+		- "I see."
+			jump 
+- "You have been accused of numerous instances of witchcraft. How do you plead?"
+	"Guilty."
+	- "That's it? Nothing to say for your defense?"
+		GanymedeAthena: "What would I say? If you don't send me to my death, then the SIA will. I am a dead woman walking."
+		jump 
+	- "I cannot help you, Ganymede. Not if you don't answer my questions."
+		GanymedeAthena: "You would help me?" Ganymede almost lets out a half-hearted chuckle. "I won't fall for your tricks, Imperial lapdog."
+		jump 
+	- "Describe to me your offenses."
+		GanymedeAthena: "If that will end this charade more expediently." Ganymede rattles the manacles holding her to the chair. "I used it as a weapon! I had spells cast that would divine the future to ensure victory, others that would cripple the crews of enemy ships with disease."
+	- "Understood."
+		jump 
+- "Tell me of your service in the Imperial fleet."
+	GanymedeAthena: Ganymede sighs heavily, with the weight of both troubled memories and fond nostalgia. "Why?" She dismisses the question before you can respond, and continues. "I graduated from the Imperial Academy at twenty-five. Went on to serve as a midshipman, before being given my own command after a few years."
+	GanymedeAthena: "I was captain of the Lanza de Voluntad, a light frigate, and first to arrive in Astra Lux during the Luxor Revolt. That war made me a hero and an admiral. Many people paid with their lives for that title."
+	GanymedeAthena: "Afterwards, as you certainly know, I served as the captain of the battlecruiser known as the Forge of Will and the admiral of Fleet Ferrum. That was where I saw through the veil of deception that the Empire has laid over us."
+	- "Thank you. I had other questions."
+	jump 
+- "How were you captured?"
+	GanymedeAthena: Ganymede Athena scoffs. "Your documents don't tell you? Or do you just want to make me relieve that shame?" The admiral lets out a sigh, venting her frustrations. "I was betrayed. I meant to meet a contact with my retinue, but instead I met inquisitorial agents. Lost a lot of good people that day. People far better than you or me."
+	- "I had other questions."
+	jump AthenaQuestions/

@@ -8,7 +8,19 @@ entries = {
 "Astra Nova": {
 "case_sensitive": true,
 "name": "Astra Nova",
-"text": "some place in space lol"
+"text": "A segment of space ruled over by the house of Mercurio. Known for the asteroid belts they mine for ice to import to other systems."
+},
+"Imperial Academy": {
+"name": "Imperial Academy",
+"text": "The academies are state-funded schools for the rich and powerful. They provide education for the future leaders of the Empire, focusing on subjects like economics, politics and military affairs."
+},
+"SIA": {
+"name": "SIA",
+"text": "Service of Internal Affairs. This organisation is responsible for the internal security of the Empire, and often conflicts with the Inquisition."
+},
+"Theatron": {
+"name": "Theatron",
+"text": "A device used to view broadcast messages. Common in almost every corner of the Empire."
 }
 }
 enabled = true

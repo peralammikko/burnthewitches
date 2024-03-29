@@ -2,9 +2,19 @@ The woman before you is familiar from theatron broadcasts. She sits in silence, 
 join GanymedeAthena 1 [animation="Slide In Left" wait="true"]
 GanymedeAthena: "I am pleased to see that the blood of my brothers and sisters has bought you such a pleasant office, Interrogator."
 - "Thank you. The desk is authentic iroko from Nova Qarth'Hadasht."
-	GanymedeAthena: "Just as flippant with the lives of those deemed beneath you as I suspected, Interrogator. Ask your questions so we can end this ridiculous farce."
+	GanymedeAthena: "Just as flippant with the lives of those deemed beneath you as I suspected, Interrogator. Ask your questions so we can end this farce."
+	- "I have never ordered an orbital bombardment of entire planets, Athena. You have shed your share of blood."
+	- "Criminals need to be punished for there to be any degree of safety for our citizens. You and your followers have broken the law."
+	jump AthenaQuestions/
 - "What of the blood of those crushed under the treads of your revolution?"
-	GanymedeAthena: "Change always requires sacrifice." Ganymede pauses briefly. A smile creeps on her lips quietly, mocking you. "I have reduced planets to glimmering glass, sent ships and crews screaming into the cold abyss. I have done things terrible enough to damn my soul to a thousand hells."
-	GanymedeAthena: "Yet", she stops abruptly, her smile disappearing in an instant. "The cold bureaucracy with which you condemn millions to their fates with a stroke of a quill makes my deeds look like the fumbling of children. I applaud your ability to commit crimes far beyond mine with a fraction of the effort."
+	GanymedeAthena: "Change always requires sacrifice." Ganymede pauses briefly. A smile creeps on her lips quietly, mocking you. "I have reduced planets to glimmering glass, sent ships and crews screaming into the cold dark, had armies baptised in nuclear fire."
+	GanymedeAthena: "Yet", she stops abruptly, her smile disappearing in an instant. "The cold bureaucracy which allows you to condemn millions to their fates makes my best efforts look like the fumbling of children. I applaud your ability to commit crimes far beyond my abilities with but a single stroke of your quill."
+	- "Enough. I will ask and you will answer."
+	- "Your rebellion is nothing but a power grab, Athena. Enough lies, I have questions for you."
+	- "The rebellion you spearhead has caused more misfortune than any fringe-world governor. Answer my questions, now."
+	jump AthenaQuestions/
 - "I'd rather discuss the charges against you, than the decor of my chambers, miss Athena."
-	GanymedeAthena: "Why?" The question is genuine, if laced with venom. "I am the most hunted criminal in the Empire. This is naught but a formality, as we both know. We could just as well discuss your crimes and reach the same outcome."
+	GanymedeAthena: "Why?" The question is genuine, if laced with venom. "I am the most hunted criminal in the Empire. This is naught but a formality, isn't it? We could just as well discuss your crimes and reach the same outcome. I in the fire and you still waiting for your own turn."
+	- "Allow me my inquiries nevertheless."
+	- "Very well, witch. I've made my judgment."
+	jump AthenaQuestions/
