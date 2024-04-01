@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://b12nmdg30l5d0"]
+
+[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/tableObject.tscn" id="1_yprhk"]
+[ext_resource type="Texture2D" uid="uid://bigq312t4i5ls" path="res://icon.svg" id="2_f0iaw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_br4pk"]
+size = Vector2(135, 20)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d7les"]
+radius = 21.587
+
+[node name="TableObject" instance=ExtResource("1_yprhk")]
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(1.8125, 2.45313)
+texture = ExtResource("2_f0iaw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickAreas" index="0"]
+position = Vector2(0, 57)
+shape = SubResource("RectangleShape2D_br4pk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ClickAreas" index="1"]
+position = Vector2(-37, 4)
+shape = SubResource("CircleShape2D_d7les")

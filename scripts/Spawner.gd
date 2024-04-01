@@ -21,7 +21,8 @@ func _process(delta):
 # Currently randoms customer type with 3 possible choices.
 func spawn_new_customer():
 	if !customer_in:
-		type_number = randi_range(1,3)
+		type_number = 2;
+		#type_number = randi_range(1,3)
 		match type_number:
 			1: 
 				customer_type = "villager"
