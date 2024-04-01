@@ -1,5 +1,7 @@
 extends Area2D
 
+var hintFound = false;
+
 # Called when the node enters the scene tree for the first time.
 # For now, it randoms one of three sprites for a 'good witch'
 func _ready():

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/Spawner.gd" id="1_wysqh"]
 [ext_resource type="PackedScene" uid="uid://d0xwchpeb5sb4" path="res://scenes/villager.tscn" id="2_dab2d"]
-[ext_resource type="PackedScene" uid="uid://0jrr16woswug" path="res://scenes/goodwitch.tscn" id="3_0jxvu"]
+[ext_resource type="PackedScene" uid="uid://0jrr16woswug" path="res://scenes/thirla/goodwitch.tscn" id="3_0jxvu"]
 [ext_resource type="PackedScene" uid="uid://cxsej4mcuglls" path="res://scenes/badwitch.tscn" id="4_oqmkk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4a7x1"]
