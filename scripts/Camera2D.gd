@@ -26,7 +26,6 @@ func _on_camera_down_button_pressed():
 	$Camera_down_button.hide()
 	$Camera_up_button.show()
 	if camera_up:
-		Dialogic.Save.save("",false,Dialogic.Save.ThumbnailMode.NONE)
 		Dialogic.end_timeline()
 		camera_up = false
 		#Dialogic.Text.hide_textbox()
@@ -38,7 +37,6 @@ func _on_camera_up_button_pressed():
 	$Camera_up_button.hide()
 	$Camera_down_button.show()
 	if !camera_up:
-		Dialogic.Save.load()
 		camera_up = true
 	
 	

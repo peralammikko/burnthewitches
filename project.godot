@@ -57,7 +57,11 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 glossary/glossary_files=["res://dictionary.tres"]
-variables={}
+variables={
+"Thirla": {
+"EyesFound": false
+}
+}
 
 [display]
 

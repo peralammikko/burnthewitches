@@ -23,3 +23,5 @@ position = Vector2(-2, 600)
 
 [node name="thirla_obj1" parent="." instance=ExtResource("4_m6nom")]
 position = Vector2(-340, 596)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

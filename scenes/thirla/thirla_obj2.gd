@@ -8,3 +8,5 @@ func _on_click_areas_input_event(viewport, event, shape_idx):
 				Dialogic.start("thirla_obj1", "smile")
 			1:
 				Dialogic.start("thirla_obj1", "eyes")
+				Dialogic.VAR.Thirla.EyesFound = true;
+				print("EYES: ", Dialogic.VAR.Thirla.EyesFound)

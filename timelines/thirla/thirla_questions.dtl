@@ -20,3 +20,8 @@ ThirlaMerina: "At last we meet, Quaestor."
 	- "So you deny all accusations?"
 		ThirlaMerina: "I denounce all charges. If thee doth wish to prolong this farce, know that thine efforts are naught but waste."
 		jump thirla_questions/thirla_questioning
+- Did you know Godot has eyes?
+	if {Thirla.EyesFound} == true:
+		ThirlaMerina: EYE see what you mean haha lol
+	else:
+		ThirlaMerina: Godot? Who?
