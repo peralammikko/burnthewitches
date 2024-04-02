@@ -24,5 +24,6 @@ ThirlaMerina: "At last we meet, Quaestor."
 - Did you know Godot has eyes?
 	if {Thirla.EyesFound} == true:
 		ThirlaMerina: EYE see what you mean haha lol
+		set {Thirla.Mood} = 1
 	else:
 		ThirlaMerina: Godot? Who?

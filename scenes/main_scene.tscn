@@ -88,8 +88,9 @@ _data = {
 script = ExtResource("1_kqbv6")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(610, 416)
-scale = Vector2(0.436893, 0.368235)
+position = Vector2(593.155, 344.588)
+rotation = -0.0261799
+scale = Vector2(0.341559, 0.286987)
 texture = ExtResource("2_0kgck")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -102,10 +103,10 @@ offset_left = 15.0
 offset_top = 401.0
 offset_right = 265.0
 offset_bottom = 502.0
-text = "Camera up - UP
-Camera down - DOWN
-Move document - Left mouse
-Inspect document - Right mouse"
+text = "Suspect view - SCROLL UP
+Desk view - SCROLL DOWN
+Inspect object - LEFT MOUSE
+Put down object - RIGHT MOUSE"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 876.0

@@ -61,7 +61,7 @@ glossary/glossary_files=["res://dictionary.tres"]
 variables={
 "Thirla": {
 "EyesFound": false,
-"Mood": 0
+"Mood": "calm"
 }
 }
 
