@@ -1,4 +1,3 @@
-label thirla_intro
 ThirlaMerina: "At last we meet, Quaestor."
 - "Lady Thirla Merina. I trust you know why you are here."
 ThirlaMerina: Thirla Merina smiles. A practiced, cold smile that betrays nothing behind it.
@@ -6,6 +5,7 @@ ThirlaMerina: "That unpleasantness? I assure thee, me and mine are untouched by 
 - "The truth will come out, whatever it may be."
 label thirla_questioning
 ThirlaMerina: "At last we meet, Quaestor."
+- jhjh
 - "Lady Merina. Tell me about yourself."
 	ThirlaMerina: "Oh, Quaestor, doth thine parchments not detail the legacy of mine noble house in sufficient majesty?
 	- "Humor me."
@@ -21,9 +21,15 @@ ThirlaMerina: "At last we meet, Quaestor."
 	- "So you deny all accusations?"
 		ThirlaMerina: "I denounce all charges. If thee doth wish to prolong this farce, know that thine efforts are naught but waste."
 		jump thirla_questions/thirla_questioning
-- Did you know Godot has eyes?
-	if {Thirla.EyesFound} == true:
-		ThirlaMerina: EYE see what you mean haha lol
-		set {Thirla.Mood} = 1
-	else:
-		ThirlaMerina: Godot? Who?
+		- "The charges against you were laid by lord Felibe Astudore. What is your relationship to him?"
+			ThirlaMerina: "But whom else could have come up with such an outlandish lie! Lord Astudore is but a covetous cretin, utterly untrustworthy. For years his House has envied the glory of House Merina."
+			jump 
+		- "There was no mechanical reason for lady Astudore's accident. What do you make of that?"
+			ThirlaMerina: "How ought I know? Surely thee and thine hath greater ken of these matters than I? Perhaps, had I to hazard a guess, pilot error could be the cause?"
+			- "I had other questions, if you will."
+				jump 
+			- "Reigna Astudore was an excellent pilot. Seems unlikely she would have crashed on accident."
+				ThirlaMerina: "Even the brighest of us may err once now and then. And believe mine word, Reigna was hardly a shining star." There is a venomous undercurrent in her voice at the mention of Reigna Astudore, which lady Merina gives little effort to hide.
+				- "I had other questions, if you will."
+				jump 
+			jump 
