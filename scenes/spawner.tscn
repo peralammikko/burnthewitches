@@ -1,18 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://b28eo3lb5xdby"]
+[gd_scene load_steps=4 format=3 uid="uid://b28eo3lb5xdby"]
 
 [ext_resource type="Script" path="res://scripts/Spawner.gd" id="1_wysqh"]
-[ext_resource type="PackedScene" uid="uid://d0xwchpeb5sb4" path="res://scenes/villager.tscn" id="2_dab2d"]
 [ext_resource type="PackedScene" uid="uid://0jrr16woswug" path="res://scenes/thirla/goodwitch.tscn" id="3_0jxvu"]
-[ext_resource type="PackedScene" uid="uid://cxsej4mcuglls" path="res://scenes/badwitch.tscn" id="4_oqmkk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4a7x1"]
 size = Vector2(190, 246)
 
 [node name="Spawner" type="Area2D"]
 script = ExtResource("1_wysqh")
-villager = ExtResource("2_dab2d")
 goodwitch = ExtResource("3_0jxvu")
-badwitch = ExtResource("4_oqmkk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_4a7x1")
