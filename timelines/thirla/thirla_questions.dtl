@@ -5,6 +5,7 @@ ThirlaMerina: "That unpleasantness? I assure thee, me and mine are untouched by 
 - "The truth will come out, whatever it may be."
 label thirla_questioning
 ThirlaMerina: "At last we meet, Quaestor."
+- jhjh
 - "Lady Merina. Tell me about yourself."
 	ThirlaMerina: "Oh, Quaestor, doth thine parchments not detail the legacy of mine noble house in sufficient majesty?
 	- "Humor me."
