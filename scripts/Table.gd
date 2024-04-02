@@ -14,6 +14,11 @@ var bad_witches_saved: int
 var villagers_killed: int
 var villagers_saved: int
 
+var orderTotal: int
+var rebelTotal: int
+var goodTotal: int
+var evilTotal: int
+
 var current_customer_type
 
 # Called when the node enters the scene tree for the first time.
@@ -44,7 +49,6 @@ func _on_pass_button_pressed():
 				bad_witches_saved += 1
 		customer_count += 1
 		spawner.remove_customer()
-		Dialogic.Save.delete_slot("Default")
 	
 # When customer is killed, adds value to "this-customer-type killed" variable for end screen.
 func _on_burn_button_pressed():
@@ -63,4 +67,3 @@ func _on_burn_button_pressed():
 				bad_witches_killed += 1
 		customer_count += 1
 		spawner.remove_customer()
-		Dialogic.Save.delete_slot("Default")

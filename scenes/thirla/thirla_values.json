@@ -1,0 +1,31 @@
+{
+  "name": "thirla",
+  "killValues": [
+	{
+	  "order": -1
+	},
+	{
+	  "rebel": 2
+	},
+	{
+	  "good": 2
+	},
+	{
+	  "evil": -1
+	}
+  ],
+  "saveValues": [
+	{
+	  "order": 2
+	},
+	{
+	  "rebel": -1
+	},
+	{
+	  "good": -2
+	},
+	{
+	  "evil": 1
+	}
+  ]
+}

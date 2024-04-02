@@ -1,24 +1,3 @@
-[gd_scene load_steps=6 format=3 uid="uid://cxsej4mcuglls"]
+[gd_scene format=3 uid="uid://b4heefh48fmhd"]
 
-[ext_resource type="Script" path="res://scripts/badwitch.gd" id="1_2ckgh"]
-[ext_resource type="Texture2D" uid="uid://1yij8n7yyuwt" path="res://assets/customers/Tw3_journal_weavess.webp" id="1_l1bpa"]
-[ext_resource type="JSON" path="res://assets/dialogue/witch2.json" id="2_vpw6y"]
-[ext_resource type="PackedScene" uid="uid://dmfvp4x1q1gap" path="res://scenes/dialoguebox.tscn" id="3_r0tau"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nvsr1"]
-size = Vector2(380, 518)
-
-[node name="BadWitch" type="Area2D"]
-scale = Vector2(0.5, 0.5)
-script = ExtResource("1_2ckgh")
-badwitchdialogue = ExtResource("2_vpw6y")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_l1bpa")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_nvsr1")
-
-[node name="DialogueBox" parent="." instance=ExtResource("3_r0tau")]
-position = Vector2(0, -524)
-scale = Vector2(2, 2)
+[node name="Badwitch" type="Node2D"]

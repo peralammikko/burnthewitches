@@ -34,6 +34,7 @@ directories/dtl_directory={
 "kordon_intro": "res://timelines/kordon/kordon_intro.dtl",
 "suspect_3": "res://assets/customers/suspect_3.dtl",
 "thirla_intro": "res://timelines/thirla/thirla_intro.dtl",
+"thirla_obj1": "res://timelines/thirla/thirla_obj1.dtl",
 "thirla_outro": "res://timelines/thirla/thirla_outro.dtl",
 "thirla_questions": "res://timelines/thirla/thirla_questions.dtl"
 }
@@ -57,7 +58,12 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 glossary/glossary_files=["res://dictionary.tres"]
-variables={}
+variables={
+"Thirla": {
+"EyesFound": false,
+"Mood": 0
+}
+}
 
 [display]
 
@@ -70,7 +76,7 @@ version_control/autoload_on_startup=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/ez_dialogue/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 [input]
 
