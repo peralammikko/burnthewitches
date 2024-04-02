@@ -14,11 +14,6 @@ var bad_witches_saved: int
 var villagers_killed: int
 var villagers_saved: int
 
-var orderTotal: int
-var rebelTotal: int
-var goodTotal: int
-var evilTotal: int
-
 var current_customer_type
 
 # Called when the node enters the scene tree for the first time.
@@ -31,7 +26,6 @@ func _process(delta):
 		end_screen.show()
 		var goodies_saved = good_witches_saved + villagers_saved
 		end_screen.display_stats(bad_witches_killed, goodies_saved)
-		Dialogic.end_timeline()
 
 # When customer is saved, adds value to "this-customer-type saved" variable for end screen.
 func _on_pass_button_pressed():
@@ -39,14 +33,8 @@ func _on_pass_button_pressed():
 		print("no customer")
 		pass
 	else:
-		current_customer_type = spawner.customer_type
-		match current_customer_type:
-			"villager":
-				villagers_saved += 1
-			"goodwitch":
-				good_witches_saved += 1
-			"badwitch":
-				bad_witches_saved += 1
+		var customerNode = get_tree().get_first_node_in_group("customer")
+		addTotalStats(customerNode.saveValues)
 		customer_count += 1
 		spawner.remove_customer()
 	
@@ -56,14 +44,14 @@ func _on_burn_button_pressed():
 		print("no customer")
 		pass
 	else:
-		current_customer_type = spawner.customer_type
-		match current_customer_type:
-			"villager":
-				villagers_killed += 1
-			"goodwitch":
-				good_witches_killed += 1
-				Dialogic.start("thirla_outro")
-			"badwitch":
-				bad_witches_killed += 1
+		var customerNode = get_tree().get_first_node_in_group("customer")
+		addTotalStats(customerNode.killValues)
 		customer_count += 1
 		spawner.remove_customer()
+		
+func addTotalStats(valueArray):
+	globalStats.alignStats["order"] += valueArray[0]
+	globalStats.alignStats["rebel"] += valueArray[1]
+	globalStats.alignStats["good"]+= valueArray[2]
+	globalStats.alignStats["evil"] += valueArray[3]
+	

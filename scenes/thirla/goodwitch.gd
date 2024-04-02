@@ -1,19 +1,17 @@
 extends Area2D
 
 var dialog
-
 @export var npcValues: JSON
 
-#var killValues = [-1, +2, +2, -1]
-#var saveValues = [+2, -1, -2, +1]
+var killValues = [-1, +2, +2, -1]
+var saveValues = [+2, -1, -2, +1]
 
 # Called when the node enters the scene tree for the first time.
 # For now, it randoms one of three sprites for a 'good witch'
 func _ready():
 	$Sprite2D.texture = load("res://assets/customers/Tw3_journal_triss.webp")
 	Dialogic.start("thirla_questions")
-	print(npcValues)
-	
+
 	#var texture_index = randi_range(1,3)
 	#match texture_index:
 	#	1:

@@ -9,7 +9,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h321u"]
 size = Vector2(354, 556)
 
-[node name="GoodWitch" type="Area2D"]
+[node name="GoodWitch" type="Area2D" groups=["customer"]]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_5p73o")
 npcValues = ExtResource("2_ueahb")

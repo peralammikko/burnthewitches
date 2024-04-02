@@ -11,9 +11,11 @@ func _process(delta):
 
 
 func display_stats(bads_killed, goods_saved):
-	$witches_killed.text = "Maleficants Executed " + str(bads_killed)
-	$innocents_saved.text = "Guiltless Absolved " + str(goods_saved)
-
+	$witches_killed.text = "Order: " + str(globalStats.alignStats["order"])
+	$innocents_saved.text = "Rebel: " + str(globalStats.alignStats["rebel"])
 
 func _on_continue_button_pressed():
 	get_tree().reload_current_scene()
+
+func getHighest():
+	print(globalStats.alignStats)
