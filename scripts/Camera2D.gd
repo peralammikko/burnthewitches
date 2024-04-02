@@ -18,6 +18,11 @@ func _process(delta):
 		_on_camera_down_button_pressed()
 	elif Input.is_action_just_pressed("scrollup"):
 		_on_camera_up_button_pressed()
+	elif Input.is_action_just_pressed("spacebar"):
+		if camera_up:
+			_on_camera_down_button_pressed()
+		else:
+			_on_camera_up_button_pressed()
 
 # Smooth camera scrolling down
 func _on_camera_down_button_pressed():
