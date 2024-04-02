@@ -36,7 +36,8 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			global_position = cameraCenter
 			print("move to: ", cameraCenter)
 			scale = Vector2(2,2)
-		else:
+	elif event.is_action_pressed("rightclick"):
+		if isOpen:
 			isOpen = false
 			#var tween = get_tree().create_tween()
 			#tween.tween_property(self, "position", initialPosition,0.2).set_ease(Tween.EASE_OUT)
@@ -46,5 +47,13 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 
 
 func _on_click_areas_input_event(viewport, event, shape_idx):
-	if event.is_action_pressed("rightclick") && isOpen:
+	if event.is_action_pressed("leftclick") && isOpen:
 		print(shape_idx)
+
+func _on_click_areas_mouse_entered():
+	if isOpen:
+		Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
+
+func _on_click_areas_mouse_exited():
+	if isOpen:
+		Input.set_default_cursor_shape(Input.CURSOR_ARROW)
