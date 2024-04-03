@@ -22,10 +22,15 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if customer_count > 3:
-		end_screen.show()
-		var goodies_saved = good_witches_saved + villagers_saved
-		end_screen.display_stats(bad_witches_killed, goodies_saved)
+	pass
+
+func check_end_day():
+	if customer_count == 3:
+		end_day()
+
+func end_day():
+	end_screen.show()
+	end_screen.display_stats()
 
 # When customer is saved, adds value to "this-customer-type saved" variable for end screen.
 func _on_pass_button_pressed():
@@ -37,6 +42,7 @@ func _on_pass_button_pressed():
 		addTotalStats(customerNode.saveValues)
 		customer_count += 1
 		spawner.remove_customer()
+	check_end_day()
 	
 # When customer is killed, adds value to "this-customer-type killed" variable for end screen.
 func _on_burn_button_pressed():
@@ -48,6 +54,7 @@ func _on_burn_button_pressed():
 		addTotalStats(customerNode.killValues)
 		customer_count += 1
 		spawner.remove_customer()
+	check_end_day()
 		
 func addTotalStats(valueArray):
 	globalStats.alignStats["order"] += valueArray[0]

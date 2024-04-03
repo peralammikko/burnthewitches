@@ -28,18 +28,18 @@ offset_top = 265.0
 offset_right = 653.0
 offset_bottom = 288.0
 theme_override_fonts/font = ExtResource("2_6a1qy")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 25
 text = "Maleficants executed: "
 horizontal_alignment = 1
 
 [node name="innocents_saved" type="Label" parent="."]
 layout_mode = 0
-offset_left = 473.0
-offset_top = 292.0
-offset_right = 646.0
-offset_bottom = 315.0
+offset_left = 487.0
+offset_top = 302.0
+offset_right = 660.0
+offset_bottom = 325.0
 theme_override_fonts/font = ExtResource("2_6a1qy")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 25
 text = "Guiltless absolved:"
 horizontal_alignment = 1
 
