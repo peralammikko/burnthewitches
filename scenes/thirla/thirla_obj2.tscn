@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/tableObject.tscn" id="1_w5800"]
 [ext_resource type="Script" path="res://scenes/thirla/thirla_obj2.gd" id="2_if687"]
-[ext_resource type="Texture2D" uid="uid://bigq312t4i5ls" path="res://icon.svg" id="3_u8hfq"]
+[ext_resource type="Texture2D" uid="uid://b6wu413440o5" path="res://assets/icon.svg" id="3_6rcpj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmwdk"]
 size = Vector2(108, 20)
@@ -15,7 +15,7 @@ script = ExtResource("2_if687")
 
 [node name="Sprite2D" parent="." index="0"]
 scale = Vector2(1.6875, 2.42188)
-texture = ExtResource("3_u8hfq")
+texture = ExtResource("3_6rcpj")
 
 [node name="mouth" type="CollisionShape2D" parent="ClickAreas" index="0"]
 position = Vector2(-2, 56)

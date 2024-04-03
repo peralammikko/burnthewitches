@@ -11,6 +11,7 @@ var customer_type
 # Spawns a new customer and generates dialogue.
 func _ready():
 	spawn_new_customer()
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

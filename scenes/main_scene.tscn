@@ -163,10 +163,8 @@ libraries = {
 movie_quit_on_finish = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Door/AnimationPlayer"]
-visible = false
 
 [node name="TextureRect" type="TextureRect" parent="Door/AnimationPlayer/CanvasLayer"]
-visible = false
 self_modulate = Color(0, 0, 0, 0)
 offset_left = -478.0
 offset_top = -81.0

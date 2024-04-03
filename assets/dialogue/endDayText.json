@@ -1,0 +1,30 @@
+{
+  "orderText": [
+    "The Empire may yet survive.",
+    "Our endeavours bear fruit.",
+    "The Empire prospers.",
+    "All must serve the Primum Imperii.",
+    "Free will cannot be tolerated."
+  ],
+  "rebelText": [
+    "The Empire may yet survive.",
+    "Shadows whisper of conspiracy.",
+    "The spark has become a great conflagration. Freedom and justice for all!",
+    "The Empire is crumbling.",
+    "The Galaxy must burn."
+  ],
+  "goodText": [
+    "The Empire may yet survive.",
+    "The Empire is its people.",
+    "The old ways must give in.",
+    "Let the lessons of history guide us to a brighter future.",
+    "A golden age dawns."
+  ],
+  "evilText": [
+    "The Empire may yet survive.",
+    "Shadows deepen over the Empire.",
+    "Corruption festers.",
+    "All falls apart.",
+    "Vae Victis."
+  ]
+}

@@ -11,11 +11,15 @@ func _process(delta):
 	pass
 
 func _on_animation_player_animation_finished(anim_name):
-	$AnimationPlayer/CanvasLayer.hide()
-
+	print(anim_name)
+	if anim_name == "TransitionOut":
+		spawner.spawn_new_customer()
+		$AnimationPlayer.play("TransitionIn")
+	elif anim_name == "TransitionIn":
+		$AnimationPlayer/CanvasLayer.hide()
 
 func _on_input_event(viewport, event, shape_idx):
-	if Input.is_action_just_pressed('leftclick') && !spawner.customer_in:
-		$AnimationPlayer/CanvasLayer.show()
-		$AnimationPlayer.play("TransitionInOut")
-		spawner.spawn_new_customer()
+	if Input.is_action_just_pressed('leftclick'):
+		if !spawner.customer_in:
+			$AnimationPlayer/CanvasLayer.show()
+			$AnimationPlayer.play("TransitionOut")
