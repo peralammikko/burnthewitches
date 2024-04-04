@@ -5,6 +5,9 @@ ThirlaMerina: "That unpleasantness? I assure thee, me and mine are untouched by 
 - "The truth will come out, whatever it may be."
 label thirla_questioning
 ThirlaMerina: "At last we meet, Quaestor."
+- "This text will make you angry!"
+	ThirlaMerina: Wow I am so angry right now
+	[signal arg="mood_angry"]
 - "Tell me about Kisle Lumis."
 	# This choice should only become available once the player has gone through the documents and identified Kisle Lumis.
 	ThirlaMerina: "Oh, my handmaiden? A loyal servant, but of low birth and thus no-one of consequence. Why wouldst thee know of her?"
