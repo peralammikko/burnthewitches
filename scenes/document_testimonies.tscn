@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqq51o4er0yns"]
-
-[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/tableObject.tscn" id="1_8v0ub"]
-[ext_resource type="Texture2D" uid="uid://cfgpbgsw6s7kj" path="res://assets/objects/InvestigationDocMerina2.png" id="2_ejx8q"]
-
-[node name="Document" instance=ExtResource("1_8v0ub")]
-
-[node name="Sprite2D" parent="." index="0"]
-texture = ExtResource("2_ejx8q")

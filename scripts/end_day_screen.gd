@@ -24,7 +24,7 @@ func display_stats():
 	$flavor_text.text = str(dailyText)
 
 func _on_continue_button_pressed():
-	get_tree().reload_current_scene()
+	hide()
 
 func getHighest():
 	var valueArr = []

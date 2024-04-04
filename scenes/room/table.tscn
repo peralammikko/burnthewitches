@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/Table.gd" id="1_2rnd6"]
 [ext_resource type="Texture2D" uid="uid://crsp2ubb1uasc" path="res://assets/objects/desk2.png" id="2_pnnx7"]
 [ext_resource type="Texture2D" uid="uid://dv7pdwmnppf4o" path="res://assets/objects/icence.png" id="3_v1o75"]
-[ext_resource type="Script" path="res://scenes/MoodDetector.gd" id="4_88bs8"]
+[ext_resource type="Script" path="res://scenes/room/MoodDetector.gd" id="4_88bs8"]
 [ext_resource type="Texture2D" uid="uid://bas7pusp634dy" path="res://styles/moodflames/mood_calm.tres" id="5_o3ah7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mjlbb"]
@@ -18,8 +18,8 @@ curve = SubResource("Curve_khe0s")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ek8bh"]
 particle_flag_disable_z = true
-angle_min = 120.0
-angle_max = 144.0
+angle_min = 135.0
+angle_max = 135.0
 gravity = Vector3(0, -100, 0)
 scale_min = 14.0
 scale_max = 14.0
@@ -27,7 +27,8 @@ scale_curve = SubResource("CurveTexture_1o0ux")
 scale_over_velocity_max = 708.33
 color_ramp = ExtResource("5_o3ah7")
 turbulence_enabled = true
-turbulence_noise_scale = 1.084
+turbulence_noise_strength = 15.03
+turbulence_noise_scale = 7.67
 
 [node name="Table" type="StaticBody2D" groups=["droppable"]]
 script = ExtResource("1_2rnd6")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwhnfj1g3g3hx"
-path="res://.godot/imported/360_F_369250586_z5HZqoztht4SIMRycXGNsVoELLLKrpjg.jpg-7aae88c3d0a14351ccc460d03b49cab7.ctex"
+uid="uid://b8t2ecbulc7ct"
+path="res://.godot/imported/spp_background__dungeon_room_by_zarry_dcoikvj-414w-2x.jpg-12ca7d9448e85328b958ca2381c889fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/360_F_369250586_z5HZqoztht4SIMRycXGNsVoELLLKrpjg.jpg"
-dest_files=["res://.godot/imported/360_F_369250586_z5HZqoztht4SIMRycXGNsVoELLLKrpjg.jpg-7aae88c3d0a14351ccc460d03b49cab7.ctex"]
+source_file="res://assets/objects/spp_background__dungeon_room_by_zarry_dcoikvj-414w-2x.jpg"
+dest_files=["res://.godot/imported/spp_background__dungeon_room_by_zarry_dcoikvj-414w-2x.jpg-12ca7d9448e85328b958ca2381c889fe.ctex"]
 
 [params]
 

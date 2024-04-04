@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://0jrr16woswug"]
+
+[ext_resource type="Script" path="res://scenes/thirla/thirla.gd" id="1_0af3p"]
+[ext_resource type="JSON" path="res://scenes/thirla/thirla_values.json" id="2_lb6jn"]
+[ext_resource type="Texture2D" uid="uid://4wqhhlurr102" path="res://assets/customers/Tw3_journal_triss.webp" id="3_114gr"]
+[ext_resource type="PackedScene" uid="uid://1r72nvltgc7i" path="res://scenes/thirla/thirla_obj2.tscn" id="4_p1i8a"]
+[ext_resource type="PackedScene" uid="uid://dwchhbu2d6030" path="res://scenes/thirla/thirla_obj1.tscn" id="5_sl73x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h321u"]
+size = Vector2(354, 556)
+
+[node name="GoodWitch" type="Area2D" groups=["customer"]]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_0af3p")
+npcValues = ExtResource("2_lb6jn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_114gr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_h321u")
+
+[node name="thirla_obj2" parent="." instance=ExtResource("4_p1i8a")]
+position = Vector2(-2, 600)
+
+[node name="thirla_obj1" parent="." instance=ExtResource("5_sl73x")]
+position = Vector2(-340, 596)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

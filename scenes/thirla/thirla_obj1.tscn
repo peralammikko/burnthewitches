@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dwchhbu2d6030"]
 
-[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/tableObject.tscn" id="1_3cobt"]
+[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/room/tableObject.tscn" id="1_3cobt"]
 [ext_resource type="Script" path="res://scenes/thirla/thirla_obj1.gd" id="2_blk6y"]
 [ext_resource type="Texture2D" uid="uid://cpn8liiye6qsy" path="res://assets/objects/InvestigationDocMain_2.png" id="3_a21su"]
 

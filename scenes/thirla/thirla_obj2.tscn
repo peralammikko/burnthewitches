@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://1r72nvltgc7i"]
 
-[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/tableObject.tscn" id="1_w5800"]
+[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/room/tableObject.tscn" id="1_s4cv0"]
 [ext_resource type="Script" path="res://scenes/thirla/thirla_obj2.gd" id="2_if687"]
-[ext_resource type="Texture2D" uid="uid://b6wu413440o5" path="res://assets/icon.svg" id="3_6rcpj"]
+[ext_resource type="Texture2D" uid="uid://b6wu413440o5" path="res://assets/objects/icon.svg" id="3_grsp5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmwdk"]
 size = Vector2(108, 20)
@@ -10,12 +10,12 @@ size = Vector2(108, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cu1f6"]
 size = Vector2(45, 51)
 
-[node name="tableThing" instance=ExtResource("1_w5800")]
+[node name="tableThing" instance=ExtResource("1_s4cv0")]
 script = ExtResource("2_if687")
 
 [node name="Sprite2D" parent="." index="0"]
 scale = Vector2(1.6875, 2.42188)
-texture = ExtResource("3_6rcpj")
+texture = ExtResource("3_grsp5")
 
 [node name="mouth" type="CollisionShape2D" parent="ClickAreas" index="0"]
 position = Vector2(-2, 56)

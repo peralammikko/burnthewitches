@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8t2ecbulc7ct"
-path="res://.godot/imported/spp_background__dungeon_room_by_zarry_dcoikvj-414w-2x.jpg-d8f98d198baf4cadc071be2f90654499.ctex"
+uid="uid://cu1gel440luev"
+path="res://.godot/imported/EasterBunny_crop.png-ee0cd52df33c2add8fdf7703913e46be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spp_background__dungeon_room_by_zarry_dcoikvj-414w-2x.jpg"
-dest_files=["res://.godot/imported/spp_background__dungeon_room_by_zarry_dcoikvj-414w-2x.jpg-d8f98d198baf4cadc071be2f90654499.ctex"]
+source_file="res://assets/customers/EasterBunny_crop.png"
+dest_files=["res://.godot/imported/EasterBunny_crop.png-ee0cd52df33c2add8fdf7703913e46be.ctex"]
 
 [params]
 
