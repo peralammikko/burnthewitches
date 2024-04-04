@@ -21,7 +21,7 @@ func openJson():
 func display_stats():
 	var dailyText = getEndQuote()
 	$witches_killed.text = "Order: " + str(stats["order"]) + " / Rebel: " + str(stats["rebel"]) + " / Good: " + str(stats["good"]) + " / Evil: " + str(stats["evil"])
-	$innocents_saved.text = str(dailyText)
+	$flavor_text.text = str(dailyText)
 
 func _on_continue_button_pressed():
 	get_tree().reload_current_scene()

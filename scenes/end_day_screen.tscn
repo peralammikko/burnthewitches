@@ -11,6 +11,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1qo5b")
+metadata/_edit_vertical_guides_ = [575.0]
+metadata/_edit_horizontal_guides_ = [323.0]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -23,55 +25,55 @@ color = Color(0, 0, 0, 1)
 
 [node name="witches_killed" type="Label" parent="."]
 layout_mode = 0
-offset_left = 480.0
-offset_top = 265.0
-offset_right = 653.0
-offset_bottom = 288.0
+offset_left = 2.0
+offset_top = 214.0
+offset_right = 1150.0
+offset_bottom = 238.0
 theme_override_fonts/font = ExtResource("2_6a1qy")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 30
 text = "Maleficants executed: "
 horizontal_alignment = 1
 
 [node name="innocents_saved" type="Label" parent="."]
 layout_mode = 0
-offset_left = 487.0
-offset_top = 302.0
-offset_right = 660.0
-offset_bottom = 325.0
+offset_left = 9.0
+offset_top = 269.0
+offset_right = 1151.0
+offset_bottom = 293.0
 theme_override_fonts/font = ExtResource("2_6a1qy")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 30
 text = "Guiltless absolved:"
 horizontal_alignment = 1
 
 [node name="continue_button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 484.0
+offset_left = 456.0
 offset_top = 556.0
-offset_right = 646.0
-offset_bottom = 587.0
+offset_right = 694.0
+offset_bottom = 603.0
 theme_override_fonts/font = ExtResource("2_6a1qy")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 25
 text = "Proceed to next day"
 
 [node name="date_text" type="Label" parent="."]
 layout_mode = 0
-offset_left = 427.0
-offset_top = 137.0
-offset_right = 710.0
-offset_bottom = 160.0
+offset_left = 3.0
+offset_top = 76.0
+offset_right = 1151.0
+offset_bottom = 108.0
 theme_override_fonts/font = ExtResource("2_6a1qy")
-theme_override_font_sizes/font_size = 20
-text = "Flavor text about date etc. goes here"
+theme_override_font_sizes/font_size = 40
+text = "The day comes to an end"
 horizontal_alignment = 1
 
 [node name="flavor_text" type="Label" parent="."]
 layout_mode = 0
-offset_left = 421.0
-offset_top = 448.0
-offset_right = 704.0
-offset_bottom = 471.0
+offset_left = 2.0
+offset_top = 466.0
+offset_right = 1149.0
+offset_bottom = 494.0
 theme_override_fonts/font = ExtResource("2_6a1qy")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 35
 text = "Loyalty is its own reward"
 horizontal_alignment = 1
 
