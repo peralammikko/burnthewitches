@@ -4,16 +4,6 @@ extends Node2D
 @onready var end_screen = get_node("/root/MainScene/CanvasLayer/end_day_screen")
 
 var customer_count: int
-
-var good_witches_killed: int
-var good_witches_saved: int
-
-var bad_witches_killed: int
-var bad_witches_saved: int
-
-var villagers_killed: int
-var villagers_saved: int
-
 var current_customer_type
 
 # Called when the node enters the scene tree for the first time.

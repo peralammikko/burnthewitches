@@ -27,7 +27,6 @@ func _on_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("leftclick"):
 		dialog = Dialogic.start("thirla_questions", "thirla_questioning")
 		
-
 func _on_mouse_entered():
 	Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
 
