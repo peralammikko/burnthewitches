@@ -11,7 +11,6 @@ func _process(delta):
 	pass
 
 func _on_animation_player_animation_finished(anim_name):
-	print(anim_name)
 	if anim_name == "TransitionOut":
 		spawner.spawn_new_customer()
 		$AnimationPlayer.play("TransitionIn")

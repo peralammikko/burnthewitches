@@ -25,7 +25,7 @@ func _process(delta):
 	pass
 
 func check_end_day():
-	if customer_count == 3:
+	if customer_count >= 1:
 		end_day()
 
 func end_day():
