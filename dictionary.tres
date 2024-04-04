@@ -14,6 +14,16 @@ entries = {
 "name": "Imperial Academy",
 "text": "The academies are state-funded schools for the rich and powerful. They provide education for the future leaders of the Empire, focusing on subjects like economics, politics and military affairs."
 },
+"Mechajoust": "Mechajousting",
+"Mechajousting": {
+"alternatives": ["Mechajoust"],
+"name": "Mechajousting",
+"text": "A traditional pasttime in the Empire. Mechajousting involves two or more knights battling each other in a high-speed performance."
+},
+"Primum Imperii": {
+"name": "Primum Imperii",
+"text": "The Imperial Couple, the Emperor and the Empress, the twin rulers of the Empire. While the current couple is a husband and wife, this is not necessarily always the case."
+},
 "SIA": {
 "name": "SIA",
 "text": "Service of Internal Affairs. This organisation is responsible for the internal security of the Empire, and often conflicts with the Inquisition."
@@ -21,6 +31,10 @@ entries = {
 "Theatron": {
 "name": "Theatron",
 "text": "A device used to view broadcast messages. Common in almost every corner of the Empire."
+},
+"Warplate": {
+"name": "Warplate",
+"text": "A mechanical suit of armor, bristling with weaponry and piloted only by trained knights of noble birth. Warplates come in a variety of forms, but are often around four to eight meters tall and decorated in a multitude of colours and heraldric symbols."
 }
 }
 enabled = true

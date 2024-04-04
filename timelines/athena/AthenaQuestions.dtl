@@ -3,20 +3,21 @@ GanymedeAthena: Ganymede awaits for your questions in mocking silence.
 - "You were once an Imperial admiral. Why turn your back on your people?"
 	GanymedeAthena: "You turned your back on us!" The statement comes out almost as a bellow, accusatory and full of fire. "When you began to care more about your gilded castles and turned us against each other by your witch hunts, that was when I knew I was fighting for the wrong side."
 	- "The Empire is vast. There are those in power who abuse their stations, but that is not the will of the Imperial Couple."
-		GanymedeAthena: "The Imperial Couple. Another rung of tyrants. I have seen nothing to imply they were any different."
+		GanymedeAthena: "The Primum Imperii. Another rung of tyrants. I have seen nothing to imply they were any different."
 		- "Then you are blind. Your fanaticism has made you as bad as those you sought to destroy."
 			jump 
 		- "Interesting. I had other questions."
 			jump 
 	- "Why bring these abuses of power to the attention of the Empire?"
-		GanymedeAthena: Ganymede laughs coldly. "You're serious? I did! I told my superiors what I saw, but they told me to keep quiet and take the money. The whole system is corrupt. Every single one of them. All you can do is purge the entirety of the Empire and start anew. With people who actually care about something other than themselves."
+		GanymedeAthena: Ganymede laughs coldly. "You're serious? I did! I told my superiors what I saw, but they told me to keep quiet and take the money. The whole system is corrupt. Every single one of them. All you can do is purge the entirety of the Empire and start anew. With people who actually care about those beneath them."
 	- Do you truly believe your rebellion has a chance?"
 		GanymedeAthena: Athena's answer is immediate. "No", she says. "But someone else will carry it to the end. I am the spark that will light a great conflagration."
 	- "What do you even hope to achieve with this rebellion?"
 		GanymedeAthena: "Something you could never understand", she answers, her words full of venom, thick as honey and deadly as nuclear radiation. "We must uproot the Empire. Tear down all the false edifices. Throw down those who loom over us."
-		GanymedeAthena: "We have to rebuild the Empire from scratchs. Too many old families with illusions of grandeur, too many arrogant parasites feeding on the people who provide for them. We must have leaders who care. Leaders who serve the people, instead of the other way around."
+		GanymedeAthena: "We have to rebuild the Empire from scratch. Too many old families with illusions of grandeur, too many arrogant parasites feeding on the people who provide for them. We must have leaders who care. Leaders who serve the people, instead of the other way around."
 		- "You are delusional, Athena. This is the thrashing of a mad dog against its leash."
-			GanymedeAthena: "This is the death throes of an Empire", she responds. "If I do not succeed, someone else will."
+			GanymedeAthena: "These are the death throes of an Empire", she responds. "If I do not succeed, someone else will."
+			jump 
 		- "I see."
 			jump 
 	jump 

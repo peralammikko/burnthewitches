@@ -5,7 +5,23 @@ ThirlaMerina: "That unpleasantness? I assure thee, me and mine are untouched by 
 - "The truth will come out, whatever it may be."
 label thirla_questioning
 ThirlaMerina: "At last we meet, Quaestor."
-- jhjh
+- "Tell me about Kisle Lumis."
+	# This choice should only become available once the player has gone through the documents and identified Kisle Lumis.
+	ThirlaMerina: "Oh, my handmaiden? A loyal servant, but of low birth and thus no-one of consequence. Why wouldst thee know of her?"
+	- "She disappeared before our agents could question her."
+	ThirlaMerina: "Truly? How strange." A mocking smile creeps on her lips, barely contained within her visage of cool superiority.
+	- "Do you have any idea what could've happened to her?"
+		ThirlaMerina: "None, Quaestor." She dismisses your question with barely a thought.
+		jump 
+	- "Enough games, Merina. I know you know what happened to her."
+		# This line should become available once the player has found all clues and confirmed that Merina has no magic on her with the Speculator.
+		ThirlaMerina: "Thy overstep!" Her voice turns in an instance to a freezing, menacing growl. "Thine accusations are baseless and asinine, just as is this jest of a questioning."
+		- "You had her bewitch Reigna Astudore and then had her board a shuttle towards Astra König. The transport will never arrive, am I right?
+			ThirlaMerina: "Outrageous fantasies, Quaestor." Lady Merina barely manages to hide a scowl. "Had thy silly theorems naught but a speck of reason, they wouldst still be worthless. I am Thirla Merina and thus beyond thy judgments."
+			- "We will see, lady Merina."
+			jump 
+	- "I see. I had other questions."
+		jump 
 - "Lady Merina. Tell me about yourself."
 	ThirlaMerina: "Oh, Quaestor, doth thine parchments not detail the legacy of mine noble house in sufficient majesty?
 	- "Humor me."
@@ -18,6 +34,7 @@ ThirlaMerina: "At last we meet, Quaestor."
 - "What have you to say about the charges brought against you?"'
 	ThirlaMerina: The pleasant facade on Lady Merina's face cracks for a split second.\
 "Thy must understand, greatness such as that of I doth foster resentment. Doubtless these must be fabrications of fools not to be taken seriously."
+	- 
 	- "So you deny all accusations?"
 		ThirlaMerina: "I denounce all charges. If thee doth wish to prolong this farce, know that thine efforts are naught but waste."
 		jump thirla_questions/thirla_questioning
