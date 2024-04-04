@@ -11,8 +11,9 @@ func _ready():
 
 func _on_dialogic_signal(argument: String):
 	if argument == "mood_angry":
-		print("Switch to angery")
 		setFlameColor(mood_angry)
+	elif argument == "mood_calm":
+		setFlameColor(mood_calm)
 
 func setFlameColor(newMood):
 	$MoodFlame.process_material.set("color_ramp", newMood)
