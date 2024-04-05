@@ -35,7 +35,8 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			#tween.tween_property(self, "position", cameraCenter,0.2).set_ease(Tween.EASE_OUT)
 			global_position = cameraCenter
 			print("move to: ", cameraCenter)
-			scale = Vector2(2,2)
+			$Sprite2D.z_index = 10
+			scale = Vector2(4,4)
 	elif event.is_action_pressed("rightclick"):
 		if isOpen:
 			isOpen = false
@@ -44,6 +45,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			global_position = initialPosition
 			print("move back to: ", initialPosition)
 			scale = Vector2(1, 1)
+			$Sprite2D.z_index = 1
 
 
 func _on_click_areas_input_event(viewport, event, shape_idx):

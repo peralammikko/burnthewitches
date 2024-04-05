@@ -98,30 +98,30 @@ texture = ExtResource("2_0kgck")
 [node name="end_day_screen" parent="CanvasLayer" instance=ExtResource("2_yjm76")]
 visible = false
 
+[node name="Table" parent="." instance=ExtResource("1_2gpew")]
+position = Vector2(574, 748)
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 52.0
+offset_top = 43.0
+offset_right = 288.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(0.952941, 0, 0, 1)
+text = "Decide on the fate of suspect.
+Once done, click on door for new suspect to arrive."
+autowrap_mode = 2
+
 [node name="Label" type="Label" parent="."]
-offset_left = 15.0
-offset_top = 401.0
-offset_right = 265.0
-offset_bottom = 502.0
+offset_left = 822.0
+offset_top = 521.0
+offset_right = 1072.0
+offset_bottom = 622.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 14
 text = "Suspect view - SCROLL UP
 Desk view - SCROLL DOWN
 Inspect object - LEFT MOUSE
 Put down object - RIGHT MOUSE"
-
-[node name="Label2" type="Label" parent="."]
-offset_left = 876.0
-offset_top = 399.0
-offset_right = 1131.0
-offset_bottom = 500.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Hear out 3 suspects of witchcraft
-and decide on their fate
-before ending the day"
-horizontal_alignment = 2
-
-[node name="Table" parent="." instance=ExtResource("1_2gpew")]
-position = Vector2(574, 748)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 326)

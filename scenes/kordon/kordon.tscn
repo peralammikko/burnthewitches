@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bmw0f7c1sb5lk"]
 
-[ext_resource type="PackedScene" uid="uid://0jrr16woswug" path="res://scenes/thirla/thirla.tscn" id="1_8hyc3"]
+[ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/thirla/thirla.tscn" id="1_8hyc3"]
 [ext_resource type="Script" path="res://scenes/kordon/kordon.gd" id="2_6xw0y"]
 [ext_resource type="Texture2D" uid="uid://bel7a022q2wxt" path="res://assets/customers/Tw3_bram.webp" id="3_o2qkf"]
 
@@ -9,4 +9,5 @@ script = ExtResource("2_6xw0y")
 npcValues = null
 
 [node name="Sprite2D" parent="." index="0"]
+scale = Vector2(1.2, 1.2)
 texture = ExtResource("3_o2qkf")

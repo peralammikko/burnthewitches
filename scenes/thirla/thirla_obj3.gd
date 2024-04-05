@@ -5,4 +5,4 @@ func _on_click_areas_input_event(viewport, event, shape_idx):
 		print(shape_idx)
 		match shape_idx:
 			0:
-				Dialogic.start("thirla_obj1", "addendum")
+				Dialogic.start("thirla_obj1", "lumis")
