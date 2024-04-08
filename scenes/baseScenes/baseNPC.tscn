@@ -1,0 +1,38 @@
+[gd_scene load_steps=9 format=3 uid="uid://7wgtwtfrgyo4"]
+
+[ext_resource type="Script" path="res://scenes/baseScenes/baseNPC.gd" id="1_0p8kp"]
+[ext_resource type="JSON" path="res://scenes/thirla/thirla_values.json" id="2_u0jqi"]
+[ext_resource type="Texture2D" uid="uid://6fhj22ggcp88" path="res://assets/customers/Lady_Merina_final.png" id="3_64lnt"]
+[ext_resource type="PackedScene" uid="uid://g5sqtwjrcsb4" path="res://scenes/thirla/thirla_obj3.tscn" id="4_a54jn"]
+[ext_resource type="Script" path="res://scenes/thirla/thirla_obj3.gd" id="5_sahm3"]
+[ext_resource type="PackedScene" uid="uid://1r72nvltgc7i" path="res://scenes/thirla/thirla_obj2.tscn" id="6_ao28k"]
+[ext_resource type="PackedScene" uid="uid://dwchhbu2d6030" path="res://scenes/thirla/thirla_obj1.tscn" id="7_8ocep"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h321u"]
+size = Vector2(354, 556)
+
+[node name="baseNPC" type="Area2D" groups=["customer"]]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_0p8kp")
+npcValues = ExtResource("2_u0jqi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_64lnt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_h321u")
+
+[node name="thirla_obj3" parent="." instance=ExtResource("4_a54jn")]
+position = Vector2(354, 596)
+script = ExtResource("5_sahm3")
+
+[node name="thirla_obj2" parent="." instance=ExtResource("6_ao28k")]
+position = Vector2(-2, 600)
+
+[node name="thirla_obj1" parent="." instance=ExtResource("7_8ocep")]
+position = Vector2(-340, 596)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

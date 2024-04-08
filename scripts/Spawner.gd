@@ -26,9 +26,9 @@ func spawn_new_customer():
 	if !customer_in:
 		match dayNumber:
 			1:
-				customer = thirla.instantiate()
-			2: 
 				customer = kordon.instantiate()
+			2: 
+				customer = thirla.instantiate()
 			3:
 				customer = yra.instantiate()
 		add_child(customer)

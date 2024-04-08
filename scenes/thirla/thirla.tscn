@@ -1,38 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://7wgtwtfrgyo4"]
+[gd_scene load_steps=3 format=3 uid="uid://dxnomldy24wk3"]
 
 [ext_resource type="Script" path="res://scenes/thirla/thirla.gd" id="1_0af3p"]
-[ext_resource type="JSON" path="res://scenes/thirla/thirla_values.json" id="2_lb6jn"]
-[ext_resource type="Texture2D" uid="uid://6fhj22ggcp88" path="res://assets/customers/Lady_Merina_final.png" id="3_3duaj"]
-[ext_resource type="PackedScene" uid="uid://g5sqtwjrcsb4" path="res://scenes/thirla/thirla_obj3.tscn" id="4_517d6"]
-[ext_resource type="PackedScene" uid="uid://1r72nvltgc7i" path="res://scenes/thirla/thirla_obj2.tscn" id="4_p1i8a"]
-[ext_resource type="Script" path="res://scenes/thirla/thirla_obj3.gd" id="5_154ro"]
-[ext_resource type="PackedScene" uid="uid://dwchhbu2d6030" path="res://scenes/thirla/thirla_obj1.tscn" id="5_sl73x"]
+[ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/baseScenes/baseNPC.tscn" id="1_xd0yw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h321u"]
-size = Vector2(354, 556)
-
-[node name="GoodWitch" type="Area2D" groups=["customer"]]
-scale = Vector2(0.5, 0.5)
+[node name="thirla" instance=ExtResource("1_xd0yw")]
 script = ExtResource("1_0af3p")
-npcValues = ExtResource("2_lb6jn")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("3_3duaj")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_h321u")
-
-[node name="thirla_obj3" parent="." instance=ExtResource("4_517d6")]
-position = Vector2(354, 596)
-script = ExtResource("5_154ro")
-
-[node name="thirla_obj2" parent="." instance=ExtResource("4_p1i8a")]
-position = Vector2(-2, 600)
-
-[node name="thirla_obj1" parent="." instance=ExtResource("5_sl73x")]
-position = Vector2(-340, 596)
-
-[connection signal="input_event" from="." to="." method="_on_input_event"]
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+npcValues = null
