@@ -1,8 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxnomldy24wk3"]
+[gd_scene load_steps=7 format=3 uid="uid://dxnomldy24wk3"]
 
 [ext_resource type="Script" path="res://scenes/thirla/thirla.gd" id="1_0af3p"]
 [ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/baseScenes/baseNPC.tscn" id="1_xd0yw"]
+[ext_resource type="PackedScene" uid="uid://dwchhbu2d6030" path="res://scenes/thirla/thirla_obj1.tscn" id="3_44wkh"]
+[ext_resource type="PackedScene" uid="uid://1r72nvltgc7i" path="res://scenes/thirla/thirla_obj2.tscn" id="4_7egwj"]
+[ext_resource type="PackedScene" uid="uid://g5sqtwjrcsb4" path="res://scenes/thirla/thirla_obj3.tscn" id="5_7q1xt"]
+[ext_resource type="Script" path="res://scenes/thirla/thirla_obj3.gd" id="6_icx6m"]
 
 [node name="thirla" instance=ExtResource("1_xd0yw")]
 script = ExtResource("1_0af3p")
 npcValues = null
+
+[node name="thirla_obj1" parent="Objects" index="0" instance=ExtResource("3_44wkh")]
+position = Vector2(156, 166)
+
+[node name="tableThing" parent="Objects" index="1" instance=ExtResource("4_7egwj")]
+position = Vector2(502, 162)
+
+[node name="TableObject" parent="Objects" index="2" instance=ExtResource("5_7q1xt")]
+position = Vector2(860, 156)
+script = ExtResource("6_icx6m")

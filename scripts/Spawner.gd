@@ -8,6 +8,8 @@ var customer_type
 @export var thirla: PackedScene
 @export var kordon: PackedScene
 @export var yra: PackedScene
+@export var bunny: PackedScene
+@export var athena: PackedScene
 
 var doneCustomers = []
 var dayNumber: int = 1
@@ -26,9 +28,9 @@ func spawn_new_customer():
 	if !customer_in:
 		match dayNumber:
 			1:
-				customer = kordon.instantiate()
+				customer = bunny.instantiate()
 			2: 
-				customer = thirla.instantiate()
+				customer = kordon.instantiate()
 			3:
 				customer = yra.instantiate()
 		add_child(customer)

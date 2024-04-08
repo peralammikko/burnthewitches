@@ -19,6 +19,7 @@ config/icon="res://assets/objects/icon.svg"
 
 globalStats="*res://scripts/global.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+AudioManager="*res://scenes/room/audio_manager.gd"
 
 [dialogic]
 
