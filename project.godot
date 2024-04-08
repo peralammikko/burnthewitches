@@ -27,15 +27,15 @@ directories/dch_directory={
 "Bunny": "res://timelines/bunny/Bunny.dch",
 "GanymedeAthena": "res://timelines/athena/GanymedeAthena.dch",
 "Kordon_Alhambra": "res://timelines/kordon/Kordon_Alhambra.dch",
-"Suspect3": "res://assets/customers/Suspect3.dch",
-"ThirlaMerina": "res://timelines/thirla/ThirlaMerina.dch"
+"ThirlaMerina": "res://timelines/thirla/ThirlaMerina.dch",
+"YraOrellian": "res://timelines/yra/YraOrellian.dch"
 }
 directories/dtl_directory={
 "AthenaQuestions": "res://timelines/athena/AthenaQuestions.dtl",
 "Athena_intro": "res://timelines/athena/Athena_intro.dtl",
 "Bunny": "res://timelines/bunny/Bunny.dtl",
 "kordon_intro": "res://timelines/kordon/kordon_intro.dtl",
-"suspect_3": "res://assets/customers/suspect_3.dtl",
+"suspect_3": "res://timelines/yra/yra.dtl",
 "thirla_absolved_outro": "res://timelines/thirla/thirla_absolved_outro.dtl",
 "thirla_executed_outro": "res://timelines/thirla/thirla_executed_outro.dtl",
 "thirla_intro": "res://timelines/thirla/thirla_intro.dtl",

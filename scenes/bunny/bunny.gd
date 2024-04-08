@@ -6,7 +6,6 @@ func _ready():
 	saveValues = [+2, -1, -2, +1]
 	Dialogic.start("Bunny")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _on_input_event(viewport, event, shape_idx):
+	if event.is_action_pressed("leftclick"):
+		dialog = Dialogic.start("Bunny", "bunny_questions")
