@@ -18,8 +18,8 @@ config/icon="res://assets/objects/icon.svg"
 [autoload]
 
 globalStats="*res://scripts/global.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 AudioManager="*res://scenes/utilities/audio_manager.tscn"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
