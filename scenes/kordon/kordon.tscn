@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://bmw0f7c1sb5lk"]
+[gd_scene load_steps=8 format=3 uid="uid://bmw0f7c1sb5lk"]
 
 [ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/baseScenes/baseNPC.tscn" id="1_0ufk8"]
 [ext_resource type="Script" path="res://scenes/kordon/kordon.gd" id="2_6xw0y"]
 [ext_resource type="Texture2D" uid="uid://bel7a022q2wxt" path="res://assets/customers/Tw3_bram.webp" id="3_o2qkf"]
+[ext_resource type="PackedScene" uid="uid://c4iltambmbn30" path="res://scenes/kordon/kordon_obj1.tscn" id="4_edfle"]
+[ext_resource type="PackedScene" uid="uid://cc5onj5g5y42" path="res://scenes/kordon/kordon_doc1.tscn" id="5_uk1w0"]
+[ext_resource type="PackedScene" uid="uid://boiwlxs73bqox" path="res://scenes/kordon/kordon_doc2.tscn" id="6_1c5wu"]
+[ext_resource type="PackedScene" uid="uid://cbvcy8ymmtxfx" path="res://scenes/kordon/kordon_doc3.tscn" id="7_oyw1q"]
 
 [node name="kordon" instance=ExtResource("1_0ufk8")]
 script = ExtResource("2_6xw0y")
@@ -11,3 +15,15 @@ npcValues = null
 [node name="Sprite2D" parent="." index="0"]
 scale = Vector2(1.2, 1.2)
 texture = ExtResource("3_o2qkf")
+
+[node name="statue" parent="Objects" index="0" instance=ExtResource("4_edfle")]
+position = Vector2(470, 538)
+
+[node name="doc1" parent="Objects" index="1" instance=ExtResource("5_uk1w0")]
+position = Vector2(-510, 550)
+
+[node name="doc2" parent="Objects" index="2" instance=ExtResource("6_1c5wu")]
+position = Vector2(-154, 544)
+
+[node name="doc3" parent="Objects" index="3" instance=ExtResource("7_oyw1q")]
+position = Vector2(162, 538)

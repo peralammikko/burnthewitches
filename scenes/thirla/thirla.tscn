@@ -11,12 +11,15 @@
 script = ExtResource("1_0af3p")
 npcValues = null
 
-[node name="thirla_obj1" parent="Objects" index="0" instance=ExtResource("3_44wkh")]
-position = Vector2(156, 166)
+[node name="Objects" parent="." index="2"]
+position = Vector2(-500, 368)
 
-[node name="tableThing" parent="Objects" index="1" instance=ExtResource("4_7egwj")]
-position = Vector2(502, 162)
-
-[node name="TableObject" parent="Objects" index="2" instance=ExtResource("5_7q1xt")]
+[node name="obj3" parent="Objects" index="0" instance=ExtResource("5_7q1xt")]
 position = Vector2(860, 156)
 script = ExtResource("6_icx6m")
+
+[node name="thirla_obj1" parent="Objects" index="1" instance=ExtResource("3_44wkh")]
+position = Vector2(84, 144)
+
+[node name="tableThing" parent="Objects" index="2" instance=ExtResource("4_7egwj")]
+position = Vector2(494, 148)

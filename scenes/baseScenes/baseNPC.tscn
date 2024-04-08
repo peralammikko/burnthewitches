@@ -19,11 +19,7 @@ texture = ExtResource("3_64lnt")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_h321u")
 
-[node name="Objects" type="Container" parent="."]
-offset_left = -502.0
-offset_top = 364.0
-offset_right = 502.0
-offset_bottom = 710.0
+[node name="Objects" type="Area2D" parent="."]
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

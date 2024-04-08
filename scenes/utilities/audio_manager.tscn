@@ -1,0 +1,31 @@
+[gd_scene load_steps=8 format=3 uid="uid://bl7ph7jmb00vd"]
+
+[ext_resource type="Script" path="res://scenes/utilities/audio_manager.gd" id="1_x362e"]
+[ext_resource type="AudioStream" uid="uid://j7nxf64ch2rf" path="res://assets/audio/paper/paper-10.mp3" id="2_17538"]
+[ext_resource type="AudioStream" uid="uid://bxmn3qnnqkq84" path="res://assets/audio/door/door-open-2.mp3" id="3_jema3"]
+[ext_resource type="AudioStream" uid="uid://bgyuumoxn1fek" path="res://assets/audio/paper/paper-10-reversed.mp3" id="3_xbit8"]
+[ext_resource type="AudioStream" uid="uid://bhjdhsw30gln" path="res://assets/audio/door/door-shut.mp3" id="4_q1fpl"]
+[ext_resource type="AudioStream" uid="uid://cw22jhvo2uost" path="res://assets/audio/candle/match-lighting-candle.mp3" id="5_ns36q"]
+[ext_resource type="AudioStream" uid="uid://bxri2mslau34o" path="res://assets/audio/candle/blow-candle.mp3" id="6_vf6g8"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_x362e")
+
+[node name="paper_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_17538")
+
+[node name="paper_close_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_xbit8")
+
+[node name="door_open_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jema3")
+volume_db = -5.127
+
+[node name="door_close_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_q1fpl")
+
+[node name="candle_lit_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ns36q")
+
+[node name="candle_blow_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_vf6g8")

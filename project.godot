@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="WitchesPlease"
-run/main_scene="res://scenes/room/main_scene.tscn"
+run/main_scene="res://scenes/utilities/main_scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://assets/objects/icon.svg"
 
@@ -19,7 +19,7 @@ config/icon="res://assets/objects/icon.svg"
 
 globalStats="*res://scripts/global.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
-AudioManager="*res://scenes/room/audio_manager.gd"
+AudioManager="*res://scenes/utilities/audio_manager.tscn"
 
 [dialogic]
 

@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://1r72nvltgc7i"]
 
-[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/room/tableObject.tscn" id="1_s4cv0"]
+[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/utilities/tableObject.tscn" id="1_65cgk"]
 [ext_resource type="Script" path="res://scenes/thirla/thirla_obj2.gd" id="2_if687"]
 [ext_resource type="Texture2D" uid="uid://b5hmyk543jfiq" path="res://assets/objects/Thirla/thirla_doc2.png" id="3_u64sm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmwdk"]
 size = Vector2(216, 58)
 
-[node name="tableThing" instance=ExtResource("1_s4cv0")]
+[node name="tableThing" instance=ExtResource("1_65cgk")]
 script = ExtResource("2_if687")
 
 [node name="Sprite2D" parent="." index="0"]

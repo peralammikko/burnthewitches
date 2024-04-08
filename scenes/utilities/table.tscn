@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/Table.gd" id="1_2rnd6"]
 [ext_resource type="Texture2D" uid="uid://crsp2ubb1uasc" path="res://assets/objects/desk2.png" id="2_pnnx7"]
 [ext_resource type="Texture2D" uid="uid://dv7pdwmnppf4o" path="res://assets/objects/icence.png" id="3_v1o75"]
-[ext_resource type="Script" path="res://scenes/room/MoodDetector.gd" id="4_88bs8"]
+[ext_resource type="Script" path="res://scenes/utilities/MoodDetector.gd" id="4_88bs8"]
 [ext_resource type="Texture2D" uid="uid://bas7pusp634dy" path="res://styles/moodflames/mood_calm.tres" id="5_o3ah7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mjlbb"]

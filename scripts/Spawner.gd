@@ -28,7 +28,7 @@ func spawn_new_customer():
 	if !customer_in:
 		match dayNumber:
 			1:
-				customer = bunny.instantiate()
+				customer = thirla.instantiate()
 			2: 
 				customer = kordon.instantiate()
 			3:

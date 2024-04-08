@@ -1,6 +1,6 @@
 extends Camera2D
 
-@onready var low_camera = get_node("../lowerCamPos")
+@onready var low_camera = get_node("/root/MainScene/lowerCamPos")
 
 var upper_position: Vector2
 var camera_up = true

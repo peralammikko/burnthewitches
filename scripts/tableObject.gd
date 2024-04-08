@@ -28,22 +28,22 @@ func _on_area_2d_mouse_exited():
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("leftclick"):
 		if not isOpen:
+			AudioManager.paper_sound.play()
 			isOpen = true
 			initialPosition = global_position
-			print("now in: ", initialPosition)
 			#var tween = get_tree().create_tween()
 			#tween.tween_property(self, "position", cameraCenter,0.2).set_ease(Tween.EASE_OUT)
 			global_position = cameraCenter
-			print("move to: ", cameraCenter)
 			$Sprite2D.z_index = 10
 			scale = Vector2(4,4)
+			
 	elif event.is_action_pressed("rightclick"):
 		if isOpen:
+			AudioManager.paper_close_sound.play()
 			isOpen = false
 			#var tween = get_tree().create_tween()
 			#tween.tween_property(self, "position", initialPosition,0.2).set_ease(Tween.EASE_OUT)
 			global_position = initialPosition
-			print("move back to: ", initialPosition)
 			scale = Vector2(1, 1)
 			$Sprite2D.z_index = 1
 

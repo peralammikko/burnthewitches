@@ -1,12 +1,13 @@
-[gd_scene load_steps=15 format=3 uid="uid://bed68julghpmo"]
+[gd_scene load_steps=16 format=3 uid="uid://bed68julghpmo"]
 
-[ext_resource type="PackedScene" uid="uid://cuwxsa472wr2" path="res://scenes/room/table.tscn" id="1_2gpew"]
+[ext_resource type="PackedScene" uid="uid://cuwxsa472wr2" path="res://scenes/utilities/table.tscn" id="1_2gpew"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_kqbv6"]
 [ext_resource type="Texture2D" uid="uid://c2doilpsxhmle" path="res://assets/objects/background.png" id="2_0kgck"]
-[ext_resource type="PackedScene" uid="uid://brwjujr4ttow4" path="res://scenes/room/end_day_screen.tscn" id="2_yjm76"]
+[ext_resource type="PackedScene" uid="uid://brwjujr4ttow4" path="res://scenes/utilities/end_day_screen.tscn" id="2_yjm76"]
 [ext_resource type="Script" path="res://scripts/Camera2D.gd" id="3_5bdfg"]
-[ext_resource type="PackedScene" uid="uid://b28eo3lb5xdby" path="res://scenes/room/spawner.tscn" id="3_h7qsx"]
-[ext_resource type="Script" path="res://scenes/room/Door.gd" id="9_78vha"]
+[ext_resource type="PackedScene" uid="uid://b28eo3lb5xdby" path="res://scenes/utilities/spawner.tscn" id="3_h7qsx"]
+[ext_resource type="PackedScene" uid="uid://bl7ph7jmb00vd" path="res://scenes/utilities/audio_manager.tscn" id="8_cn3ri"]
+[ext_resource type="Script" path="res://scenes/utilities/Door.gd" id="9_78vha"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tfmu6"]
 size = Vector2(168, 312)
@@ -141,11 +142,11 @@ offset_right = 16.999
 offset_bottom = 313.0
 text = "v"
 
-[node name="Spawner" parent="." instance=ExtResource("3_h7qsx")]
-position = Vector2(571, 369)
-
 [node name="lowerCamPos" type="Node2D" parent="."]
 position = Vector2(576, 650)
+
+[node name="Spawner" parent="." instance=ExtResource("3_h7qsx")]
+position = Vector2(571, 369)
 
 [node name="Door" type="Area2D" parent="."]
 script = ExtResource("9_78vha")
@@ -171,6 +172,8 @@ offset_top = -81.0
 offset_right = 1562.0
 offset_bottom = 963.0
 texture = SubResource("CanvasTexture_0qemo")
+
+[node name="AudioManager" parent="." instance=ExtResource("8_cn3ri")]
 
 [connection signal="pressed" from="Camera2D/Camera_up_button" to="Camera2D" method="_on_camera_up_button_pressed"]
 [connection signal="pressed" from="Camera2D/Camera_down_button" to="Camera2D" method="_on_camera_down_button_pressed"]

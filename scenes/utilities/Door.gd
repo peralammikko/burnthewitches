@@ -20,5 +20,6 @@ func _on_animation_player_animation_finished(anim_name):
 func _on_input_event(viewport, event, shape_idx):
 	if Input.is_action_just_pressed('leftclick'):
 		if !spawner.customer_in:
+			AudioManager.door_open_sound.play()
 			$AnimationPlayer/CanvasLayer.show()
 			$AnimationPlayer.play("TransitionOut")
