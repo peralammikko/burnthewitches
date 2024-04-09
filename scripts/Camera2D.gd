@@ -44,4 +44,6 @@ func _on_camera_up_button_pressed():
 	if !camera_up:
 		camera_up = true
 	
-	
+func cameraReset():
+	global_position = upper_position
+	$Camera_up_button.hide()

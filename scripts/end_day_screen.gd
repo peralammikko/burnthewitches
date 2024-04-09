@@ -1,5 +1,9 @@
 extends Control
 
+@onready var animationplayer = get_node("/root/MainScene/Door/AnimationPlayer")
+@onready var spawner = get_node("/root/MainScene/Spawner")
+@onready var camera = get_node("/root/MainScene/Camera2D")
+
 var stats = globalStats.alignStats
 var endQuotes
 
@@ -25,7 +29,11 @@ func display_stats():
 
 func _on_continue_button_pressed():
 	hide()
-
+	camera.cameraReset()
+	spawner.spawn_new_customer()
+	animationplayer.play("TransitionIn")
+	
+	
 func getHighest():
 	var valueArr = []
 	for stat in globalStats.alignStats:

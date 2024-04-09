@@ -152,11 +152,12 @@ movie_quit_on_finish = true
 [node name="CanvasLayer" type="CanvasLayer" parent="Door/AnimationPlayer"]
 
 [node name="TextureRect" type="TextureRect" parent="Door/AnimationPlayer/CanvasLayer"]
-self_modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 0)
 offset_left = -478.0
 offset_top = -81.0
 offset_right = 1562.0
 offset_bottom = 963.0
+mouse_filter = 2
 texture = SubResource("CanvasTexture_0qemo")
 
 [node name="AudioManager" parent="." instance=ExtResource("8_cn3ri")]

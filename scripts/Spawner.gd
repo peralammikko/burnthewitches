@@ -26,6 +26,7 @@ func _process(delta):
 # Currently randoms customer type with 3 possible choices.
 func spawn_new_customer():
 	if !customer_in:
+		AudioManager.door_open_sound.play()
 		match dayNumber:
 			1:
 				customer = thirla.instantiate()
