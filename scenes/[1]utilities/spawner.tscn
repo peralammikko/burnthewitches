@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b28eo3lb5xdby"]
+[gd_scene load_steps=9 format=3 uid="uid://b28eo3lb5xdby"]
 
 [ext_resource type="Script" path="res://scripts/Spawner.gd" id="1_wysqh"]
 [ext_resource type="PackedScene" uid="uid://dxnomldy24wk3" path="res://scenes/thirla/thirla.tscn" id="3_0jxvu"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b04mujrpqdt7f" path="res://scenes/yra/yra.tscn" id="4_uprka"]
 [ext_resource type="PackedScene" uid="uid://bunofdw52vukq" path="res://scenes/bunny/bunny.tscn" id="5_a5c4p"]
 [ext_resource type="PackedScene" uid="uid://b0ndqwigsje3" path="res://scenes/athena/athena.tscn" id="6_6gggg"]
+[ext_resource type="PackedScene" uid="uid://s0wntmpvcosh" path="res://scenes/provost/provost.tscn" id="7_ex45o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4a7x1"]
 size = Vector2(190, 246)
@@ -17,6 +18,7 @@ kordon = ExtResource("3_r8mgv")
 yra = ExtResource("4_uprka")
 bunny = ExtResource("5_a5c4p")
 athena = ExtResource("6_6gggg")
+provost = ExtResource("7_ex45o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_4a7x1")

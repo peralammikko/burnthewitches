@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dqq51o4er0yns"]
 
-[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/utilities/tableObject.tscn" id="1_e3qu3"]
+[ext_resource type="PackedScene" uid="uid://ehh2ig14eqbk" path="res://scenes/[1]utilities/tableObject.tscn" id="1_e3qu3"]
 [ext_resource type="Texture2D" uid="uid://cfgpbgsw6s7kj" path="res://assets/objects/InvestigationDocMerina2.png" id="2_1jwxi"]
 
 [node name="Document" instance=ExtResource("1_e3qu3")]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dxnomldy24wk3"]
 
 [ext_resource type="Script" path="res://scenes/thirla/thirla.gd" id="1_0af3p"]
-[ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/baseScenes/baseNPC.tscn" id="1_xd0yw"]
+[ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/[0]baseScenes/baseNPC.tscn" id="1_xd0yw"]
 [ext_resource type="PackedScene" uid="uid://dwchhbu2d6030" path="res://scenes/thirla/thirla_obj1.tscn" id="3_44wkh"]
 [ext_resource type="PackedScene" uid="uid://1r72nvltgc7i" path="res://scenes/thirla/thirla_obj2.tscn" id="4_7egwj"]
 [ext_resource type="PackedScene" uid="uid://g5sqtwjrcsb4" path="res://scenes/thirla/thirla_obj3.tscn" id="5_7q1xt"]

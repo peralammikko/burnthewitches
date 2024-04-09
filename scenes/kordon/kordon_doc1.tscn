@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cc5onj5g5y42"]
 
-[ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/baseScenes/tableObject.tscn" id="1_tdas1"]
+[ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_tdas1"]
 [ext_resource type="Texture2D" uid="uid://qjfevvhukk0y" path="res://assets/objects/kordon/Alhambra1.png" id="2_ax2mh"]
 
 [node name="TableObject" instance=ExtResource("1_tdas1")]

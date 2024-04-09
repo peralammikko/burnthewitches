@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvpefihkagpwn"]
+
+[ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_bkdry"]
+[ext_resource type="Texture2D" uid="uid://bhm41rgg3nrjs" path="res://assets/objects/provost/Provost1.png" id="2_l5v7o"]
+
+[node name="TableObject" instance=ExtResource("1_bkdry")]
+
+[node name="Sprite2D" parent="." index="0"]
+z_index = 0
+texture = ExtResource("2_l5v7o")

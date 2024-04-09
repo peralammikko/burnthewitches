@@ -10,6 +10,7 @@ var customer_type
 @export var yra: PackedScene
 @export var bunny: PackedScene
 @export var athena: PackedScene
+@export var provost: PackedScene
 
 var doneCustomers = []
 var dayNumber: int = 1
@@ -29,7 +30,7 @@ func spawn_new_customer():
 		AudioManager.door_open_sound.play()
 		match dayNumber:
 			1:
-				customer = thirla.instantiate()
+				customer = provost.instantiate()
 			2: 
 				customer = kordon.instantiate()
 			3:

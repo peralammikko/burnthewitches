@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2ncsg45lcoym"]
+
+[ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_b215d"]
+[ext_resource type="Texture2D" uid="uid://dmacjdak4i52b" path="res://assets/objects/athena/Ganymede2.png" id="2_26uj1"]
+
+[node name="TableObject" instance=ExtResource("1_b215d")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_26uj1")

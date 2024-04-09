@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdby2rp5pcat1"]
+
+[ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_qonir"]
+[ext_resource type="Texture2D" uid="uid://dodspibgaliwv" path="res://assets/objects/bunny/bunny_object_final.png" id="2_ktgq0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ucev"]
+size = Vector2(297, 391)
+
+[node name="TableObject" instance=ExtResource("1_qonir")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_ktgq0")
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_1ucev")

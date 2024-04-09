@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bmw0f7c1sb5lk"]
 
-[ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/baseScenes/baseNPC.tscn" id="1_0ufk8"]
+[ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/[0]baseScenes/baseNPC.tscn" id="1_0ufk8"]
 [ext_resource type="Script" path="res://scenes/kordon/kordon.gd" id="2_6xw0y"]
 [ext_resource type="Texture2D" uid="uid://bel7a022q2wxt" path="res://assets/customers/Tw3_bram.webp" id="3_o2qkf"]
 [ext_resource type="PackedScene" uid="uid://c4iltambmbn30" path="res://scenes/kordon/kordon_obj1.tscn" id="4_edfle"]

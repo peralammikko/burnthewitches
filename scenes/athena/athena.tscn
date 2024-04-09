@@ -1,5 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0ndqwigsje3"]
+[gd_scene load_steps=7 format=3 uid="uid://b0ndqwigsje3"]
 
-[ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/baseScenes/baseNPC.tscn" id="1_81yk7"]
+[ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/[0]baseScenes/baseNPC.tscn" id="1_81yk7"]
+[ext_resource type="Texture2D" uid="uid://dlv30kvu6exw1" path="res://assets/customers/Ganymede_final.png" id="2_0gs6h"]
+[ext_resource type="PackedScene" uid="uid://c5mafcowfuws1" path="res://scenes/athena/athena_doc1.tscn" id="3_woltr"]
+[ext_resource type="PackedScene" uid="uid://b2ncsg45lcoym" path="res://scenes/athena/athena_doc2.tscn" id="4_rw2dt"]
+[ext_resource type="PackedScene" uid="uid://dbajkwbx0xilw" path="res://scenes/athena/athena_doc3.tscn" id="5_e4m7v"]
+[ext_resource type="PackedScene" uid="uid://dgckyr5tqya1o" path="res://scenes/athena/athena_doc4.tscn" id="6_602sp"]
 
 [node name="baseNPC" instance=ExtResource("1_81yk7")]
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_0gs6h")
+
+[node name="TableObject" parent="Objects" index="0" instance=ExtResource("3_woltr")]
+position = Vector2(-396, 526)
+
+[node name="TableObject2" parent="Objects" index="1" instance=ExtResource("4_rw2dt")]
+position = Vector2(-108, 530)
+
+[node name="TableObject3" parent="Objects" index="2" instance=ExtResource("5_e4m7v")]
+position = Vector2(172, 530)
+
+[node name="TableObject4" parent="Objects" index="3" instance=ExtResource("6_602sp")]
+position = Vector2(444, 530)

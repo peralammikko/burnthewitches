@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bl7ph7jmb00vd"]
 
-[ext_resource type="Script" path="res://scenes/utilities/audio_manager.gd" id="1_x362e"]
+[ext_resource type="Script" path="res://scenes/[1]utilities/audio_manager.gd" id="1_x362e"]
 [ext_resource type="AudioStream" uid="uid://j7nxf64ch2rf" path="res://assets/audio/paper/paper-10.mp3" id="2_17538"]
 [ext_resource type="AudioStream" uid="uid://bxmn3qnnqkq84" path="res://assets/audio/door/door-open-2.mp3" id="3_jema3"]
 [ext_resource type="AudioStream" uid="uid://bgyuumoxn1fek" path="res://assets/audio/paper/paper-10-reversed.mp3" id="3_xbit8"]
