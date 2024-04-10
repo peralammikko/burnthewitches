@@ -14,6 +14,11 @@ entries = {
 "name": "Imperial Academy",
 "text": "The academies are state-funded schools for the rich and powerful. They provide education for the future leaders of the Empire, focusing on subjects like economics, politics and military affairs."
 },
+"Maleficant": {
+"alternatives": ["maleficants"],
+"name": "Maleficant",
+"text": "Witches actively fighting against the authorities or using their powers against the Empire."
+},
 "Mechajoust": "Mechajousting",
 "Mechajousting": {
 "alternatives": ["Mechajoust"],
@@ -35,7 +40,8 @@ entries = {
 "Warplate": {
 "name": "Warplate",
 "text": "A mechanical suit of armor, bristling with weaponry and piloted only by trained knights of noble birth. Warplates come in a variety of forms, but are often around four to eight meters tall and decorated in a multitude of colours and heraldric symbols."
-}
+},
+"maleficants": "Maleficant"
 }
 enabled = true
 _translation_id = ""

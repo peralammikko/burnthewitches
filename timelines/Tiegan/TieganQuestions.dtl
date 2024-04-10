@@ -1,0 +1,22 @@
+"Explain the charges brought against you, Lord Provost."
+TieganWerle: The man before you is corpulent and well-dressed, as befits one of high standing within the Empire. With a voice straining under stress, he stammers out a reply.
+TieganWerle: "I have no idea what you are talking about, lord Interrogator. I have nothing to do with rebels, or their magic! Allow me to set the record straight on any potential misunderstandings to the contrary."
+- "So it appears to me as well. A man of your station would never associate with the rebel scum."
+	TieganWerle: "And indeed I would never have any dealings with the Maleficants! Any interest I have in the esoteric is purely academic." He hurries to correct himself, "if I had any, that is, of course!"
+	- "Do not lie to me, Werle. Our witnesses have told us that you distribute knowledge of the arcane and actively shelter witches!"
+		TieganWerle: "No, lord Interrogator!" Panic creeps in his voice as terror consumed the Lord Provost. "I am only studying these subjects, of idle academic curiosity! I have no knowledge of any rebels, nor any witches! I am innocent, lord Interrogator, I have done nothing wrong!"
+		jump 
+	# Examining the documentation will open this line.
+	- "Then how do you explain these witness testimonies?"
+		TieganWerle: "Oh, the lay folk like to talk, lord Interrogator", chuckles the Lord Provost nervously, "they must sometimes be so very confused by the world around them! Why, some must think the world is ending every time the sun goes down", his laughter is deep and joyful, but dies down into anxious, awkward giggle quickly.
+		TieganWerle: "In the end, I am simply a student of the world, my lord Interrogator. The importance of this often escapes those more mired in the mundane."
+		jump 
+- "It does not appear so."
+	TieganWerle: "I sense a condescending tone in your voice! I hope you will not let your prejudice cloud your judgement against the ancient ways."
+	- "I assure you, I am not prejudiced. I simply looking for the truth."
+		TieganWerle: "Well.." Lord Provost wrangles his hands, unsure of where to place them. Hesitation and a thin layer of hope battle in his voice. "The truth is, I have studied some.. questionable material in the past."
+		TieganWerle: "But I have not allowed any practical use, of course! I know nothing of rebels or maleficants, I am nothing more than a researcher, I assure you! Please, lord Interrogator, you must believe me!"
+		jump 
+	- "If you are not willing to admit your guilt, perhaps some of your students would be more willing to help."
+		TieganWerle: "Stay away from my students! They are just as innocent as I am! I will not let them be biased judgment!"
+		jump 
