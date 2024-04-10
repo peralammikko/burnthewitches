@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cuwxsa472wr2" path="res://scenes/[1]utilities/table.tscn" id="1_2gpew"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_kqbv6"]
-[ext_resource type="Texture2D" uid="uid://c2doilpsxhmle" path="res://assets/objects/background.png" id="2_0kgck"]
+[ext_resource type="Texture2D" uid="uid://b7spcg6xngiph" path="res://assets/objects/background_crispy2.png" id="2_pncuq"]
 [ext_resource type="PackedScene" uid="uid://brwjujr4ttow4" path="res://scenes/[1]utilities/end_day_screen.tscn" id="2_yjm76"]
 [ext_resource type="Script" path="res://scripts/Camera2D.gd" id="3_5bdfg"]
 [ext_resource type="PackedScene" uid="uid://b28eo3lb5xdby" path="res://scenes/[1]utilities/spawner.tscn" id="3_h7qsx"]
@@ -75,10 +75,9 @@ _data = {
 script = ExtResource("1_kqbv6")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(593.155, 344.588)
-rotation = -0.0261799
+position = Vector2(576, 647)
 scale = Vector2(0.341559, 0.286987)
-texture = ExtResource("2_0kgck")
+texture = ExtResource("2_pncuq")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -86,7 +85,7 @@ texture = ExtResource("2_0kgck")
 visible = false
 
 [node name="Spawner" parent="." instance=ExtResource("3_h7qsx")]
-position = Vector2(571, 369)
+position = Vector2(571, 381)
 
 [node name="Table" parent="." instance=ExtResource("1_2gpew")]
 position = Vector2(574, 748)
@@ -154,9 +153,9 @@ movie_quit_on_finish = true
 [node name="TextureRect" type="TextureRect" parent="Door/AnimationPlayer/CanvasLayer"]
 self_modulate = Color(0, 0, 0, 0)
 offset_left = -478.0
-offset_top = -81.0
+offset_top = -60.0
 offset_right = 1562.0
-offset_bottom = 963.0
+offset_bottom = 984.0
 mouse_filter = 2
 texture = SubResource("CanvasTexture_0qemo")
 

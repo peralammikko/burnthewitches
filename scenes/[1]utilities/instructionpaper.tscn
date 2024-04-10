@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bo5midldajjr1"]
+
+[ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_pnmp7"]
+[ext_resource type="Texture2D" uid="uid://bmll314g2j4rr" path="res://assets/objects/old_paper_stock_02_by_ftourini_d48ubt0-pre.png" id="2_ff5cn"]
+[ext_resource type="Script" path="res://scenes/[1]utilities/instructionpaper.gd" id="2_j5v2x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrhkt"]
+size = Vector2(186, 270)
+
+[node name="TableObject" instance=ExtResource("1_pnmp7")]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("2_j5v2x")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_ff5cn")
+
+[node name="Label" type="RichTextLabel" parent="." index="1"]
+z_index = 2
+offset_left = -82.0
+offset_top = -118.0
+offset_right = 86.0
+offset_bottom = 139.0
+mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 10
+theme_override_font_sizes/bold_font_size = 10
+bbcode_enabled = true
+text = "[b]Instructions[/b]
+
+[u]Diviner’s Incense[/u]
+[b][color=blue]Blue[/color][/b] - suspect is calm
+[b][color=black]Black[/color][/b] - suspect is frightened
+[b][color=green]Green[/color][/b] - suspect is nervous
+[b][color=red]Red[/color][/b] - suspect is angry"
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_xrhkt")
