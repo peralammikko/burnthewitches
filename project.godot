@@ -28,12 +28,14 @@ directories/dch_directory={
 "GanymedeAthena": "res://timelines/athena/GanymedeAthena.dch",
 "Kordon_Alhambra": "res://timelines/kordon/Kordon_Alhambra.dch",
 "ThirlaMerina": "res://timelines/thirla/ThirlaMerina.dch",
+"TieganWerle": "res://timelines/Tiegan/TieganWerle.dch",
 "YraOrellian": "res://timelines/yra/YraOrellian.dch"
 }
 directories/dtl_directory={
 "AthenaQuestions": "res://timelines/athena/AthenaQuestions.dtl",
 "Athena_intro": "res://timelines/athena/Athena_intro.dtl",
 "Bunny": "res://timelines/bunny/Bunny.dtl",
+"TieganQuestions": "res://timelines/Tiegan/TieganQuestions.dtl",
 "kordon_intro": "res://timelines/kordon/kordon_intro.dtl",
 "suspect_3": "res://timelines/yra/yra.dtl",
 "thirla_absolved_outro": "res://timelines/thirla/thirla_absolved_outro.dtl",
