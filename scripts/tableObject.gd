@@ -49,7 +49,6 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			scale = initScale
 			z_index = 1
 
-
 func _on_click_areas_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("leftclick") && isOpen:
 		print(shape_idx)

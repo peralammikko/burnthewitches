@@ -86,7 +86,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_the01")
 theme_override_font_sizes/font_size = 64
-text = "Witch Game"
+text = "Witchfinder"
 horizontal_alignment = 1
 
 [node name="Sprite2D3" type="Sprite2D" parent="MarginContainer"]
@@ -120,10 +120,10 @@ offset_bottom = 40.0
 
 [node name="creditsThing" parent="Credits" instance=ExtResource("5_n6bm1")]
 layout_mode = 1
-offset_left = 329.0
-offset_top = 363.0
-offset_right = 469.0
-offset_bottom = 492.0
+offset_left = 326.0
+offset_top = 367.0
+offset_right = 466.0
+offset_bottom = 496.0
 script = ExtResource("7_wglpi")
 exportText = "CREDITS"
 
@@ -139,10 +139,10 @@ offset_bottom = 40.0
 
 [node name="playThing" parent="Play" instance=ExtResource("5_n6bm1")]
 layout_mode = 1
-offset_left = 494.0
-offset_top = 268.0
-offset_right = 611.0
-offset_bottom = 504.0
+offset_left = 497.0
+offset_top = 275.0
+offset_right = 614.0
+offset_bottom = 511.0
 script = ExtResource("9_sack1")
 exportText = "PLAY"
 
@@ -171,10 +171,29 @@ offset_top = 411.0
 offset_right = 782.0
 offset_bottom = 492.0
 script = ExtResource("10_ry7py")
-exportText = "Quit"
+exportText = "QUIT"
 
 [node name="gun" type="Sprite2D" parent="Quit"]
 position = Vector2(751, 459)
 rotation = 0.230383
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("5_prjou")
+
+[node name="credits" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 9.0
+offset_top = 444.0
+offset_right = 344.0
+offset_bottom = 646.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+bbcode_enabled = true
+text = "[b][u]Witchfinder (2024)[/u][/b]
+
+[b]Project management[/b] - Salla Kettula
+[b]Game design[/b] - Joonas Hämeenniemi
+[b]Sound design[/b] - Mahdi Pakpur
+[b]Narrative design[/b] - Teoman Kars
+[b]Art design[/b] - Merielle Purunen
+[b]Programming & UI[/b] - Mikko Perälä
+"

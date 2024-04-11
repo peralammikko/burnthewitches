@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b8co6yj0hihcy"]
+[gd_scene load_steps=8 format=3 uid="uid://b8co6yj0hihcy"]
 
 [ext_resource type="Script" path="res://scenes/menus/introcard.gd" id="1_obs6w"]
 [ext_resource type="Texture2D" uid="uid://bmll314g2j4rr" path="res://assets/objects/old_paper_stock_02_by_ftourini_d48ubt0-pre.png" id="1_v6lug"]
+[ext_resource type="FontFile" uid="uid://b8uw3x24khlrf" path="res://assets/old_london/OldLondon.ttf" id="3_j4l13"]
 
 [sub_resource type="Animation" id="Animation_m6800"]
 resource_name = "TransitionIn"
@@ -98,10 +99,12 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Button" type="Button" parent="CenterContainer/Sprite2D"]
-offset_left = -96.0
-offset_top = 416.0
-offset_right = 76.0
-offset_bottom = 466.0
+offset_left = -144.0
+offset_top = 378.0
+offset_right = 112.0
+offset_bottom = 454.0
+theme_override_fonts/font = ExtResource("3_j4l13")
+theme_override_font_sizes/font_size = 40
 text = "Start the day"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
