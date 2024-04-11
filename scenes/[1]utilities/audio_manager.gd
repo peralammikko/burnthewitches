@@ -7,3 +7,4 @@ extends Node
 @onready var candle_lit_sound = $candle_lit_sfx
 @onready var candle_blow_sound = $candle_blow_sfx
 @onready var intro_jingle = $kiwi_scream
+@onready var stamp_sound = $stamp_sfx

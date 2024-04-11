@@ -24,7 +24,7 @@ func openJson():
 	
 func display_stats():
 	var dailyText = getEndQuote()
-	$witches_killed.text = "Order: " + str(stats["order"]) + " / Rebel: " + str(stats["rebel"]) + " / Good: " + str(stats["good"]) + " / Evil: " + str(stats["evil"])
+	#$witches_killed.text = "Order: " + str(stats["order"]) + " / Rebel: " + str(stats["rebel"]) + " / Good: " + str(stats["good"]) + " / Evil: " + str(stats["evil"])
 	$flavor_text.text = str(dailyText)
 
 func _on_continue_button_pressed():

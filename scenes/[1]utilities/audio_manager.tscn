@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bl7ph7jmb00vd"]
+[gd_scene load_steps=10 format=3 uid="uid://bl7ph7jmb00vd"]
 
 [ext_resource type="Script" path="res://scenes/[1]utilities/audio_manager.gd" id="1_x362e"]
 [ext_resource type="AudioStream" uid="uid://j7nxf64ch2rf" path="res://assets/audio/paper/paper-10.mp3" id="2_17538"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://bhjdhsw30gln" path="res://assets/audio/door/door-shut.mp3" id="4_q1fpl"]
 [ext_resource type="AudioStream" uid="uid://cw22jhvo2uost" path="res://assets/audio/candle/match-lighting-candle.mp3" id="5_ns36q"]
 [ext_resource type="AudioStream" uid="uid://bxri2mslau34o" path="res://assets/audio/candle/blow-candle.mp3" id="6_vf6g8"]
+[ext_resource type="AudioStream" uid="uid://dc7qs2wikwiib" path="res://assets/audio/stampsound.wav" id="8_5n6eo"]
 [ext_resource type="AudioStream" uid="uid://34clypa2c0q2" path="res://assets/kiwi_scream.mp3" id="8_t0jc3"]
 
 [node name="AudioManager" type="Node"]
@@ -30,6 +31,9 @@ stream = ExtResource("5_ns36q")
 
 [node name="candle_blow_sfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_vf6g8")
+
+[node name="stamp_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_5n6eo")
 
 [node name="kiwi_scream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_t0jc3")

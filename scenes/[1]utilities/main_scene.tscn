@@ -28,16 +28,6 @@ position = Vector2(571, 381)
 [node name="Table" parent="." instance=ExtResource("1_2gpew")]
 position = Vector2(574, 748)
 
-[node name="Label2" type="Label" parent="."]
-offset_left = 52.0
-offset_top = 43.0
-offset_right = 288.0
-offset_bottom = 118.0
-theme_override_colors/font_color = Color(0.952941, 0, 0, 1)
-text = "Decide on the fate of suspect.
-Once done, click on door for new suspect to arrive."
-autowrap_mode = 2
-
 [node name="Label" type="Label" parent="."]
 offset_left = 822.0
 offset_top = 521.0

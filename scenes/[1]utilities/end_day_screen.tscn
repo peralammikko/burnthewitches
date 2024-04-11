@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://brwjujr4ttow4"]
+[gd_scene load_steps=4 format=3 uid="uid://brwjujr4ttow4"]
 
 [ext_resource type="Script" path="res://scripts/end_day_screen.gd" id="1_1qo5b"]
 [ext_resource type="FontFile" uid="uid://b8uw3x24khlrf" path="res://assets/old_london/OldLondon.ttf" id="2_6a1qy"]
+[ext_resource type="Texture2D" uid="uid://46ayk6usinf2" path="res://assets/objects/stamp.png" id="3_lou62"]
 
 [node name="end_day_screen" type="Control"]
 layout_mode = 3
@@ -23,17 +24,6 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="witches_killed" type="Label" parent="."]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 214.0
-offset_right = 1150.0
-offset_bottom = 238.0
-theme_override_fonts/font = ExtResource("2_6a1qy")
-theme_override_font_sizes/font_size = 30
-text = "Stats"
-horizontal_alignment = 1
-
 [node name="continue_button" type="Button" parent="."]
 layout_mode = 0
 offset_left = 456.0
@@ -46,10 +36,10 @@ text = "Proceed to next day"
 
 [node name="date_text" type="Label" parent="."]
 layout_mode = 0
-offset_left = 3.0
-offset_top = 76.0
-offset_right = 1151.0
-offset_bottom = 108.0
+offset_left = 2.0
+offset_top = 103.0
+offset_right = 1150.0
+offset_bottom = 135.0
 theme_override_colors/font_color = Color(1, 0.8, 0.305882, 1)
 theme_override_fonts/font = ExtResource("2_6a1qy")
 theme_override_font_sizes/font_size = 40
@@ -67,5 +57,11 @@ theme_override_fonts/font = ExtResource("2_6a1qy")
 theme_override_font_sizes/font_size = 35
 text = "Loyalty is its own reward"
 horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575, 319)
+rotation = -0.0872665
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_lou62")
 
 [connection signal="pressed" from="continue_button" to="." method="_on_continue_button_pressed"]
