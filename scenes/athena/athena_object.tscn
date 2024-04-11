@@ -8,7 +8,7 @@
 size = Vector2(461, 65)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7u8qt"]
-size = Vector2(112.5, 73.5)
+size = Vector2(187.5, 102)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vigeb"]
 size = Vector2(81.25, 45.75)
@@ -27,7 +27,7 @@ shape = SubResource("RectangleShape2D_frxac")
 visible = false
 
 [node name="weapon" type="CollisionShape2D" parent="ClickAreas" index="0"]
-position = Vector2(-69.25, 13.25)
+position = Vector2(-31.75, -1)
 shape = SubResource("RectangleShape2D_7u8qt")
 
 [node name="muzzle" type="CollisionShape2D" parent="ClickAreas" index="1"]

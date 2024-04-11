@@ -18,4 +18,4 @@ position = Vector2(4, -136)
 
 [node name="TableObject" parent="Objects" index="0" instance=ExtResource("4_ppw31")]
 position = Vector2(2, 684)
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.7, 0.7)

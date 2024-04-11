@@ -38,8 +38,9 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			z_index = 10
 			scale = Vector2(4*initScale.x,4*initScale.y)
 			
-	elif event.is_action_pressed("rightclick"):
-		if isOpen:
+		else:
+	#elif event.is_action_pressed("rightclick"):
+		#if isOpen:
 			$ClickAreas.hide()
 			AudioManager.paper_close_sound.play()
 			isOpen = false
@@ -50,7 +51,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			z_index = 1
 
 func _on_click_areas_input_event(viewport, event, shape_idx):
-	if event.is_action_pressed("leftclick") && isOpen:
+	if event.is_action_pressed("rightclick") && isOpen:
 		print(shape_idx)
 
 func _on_click_areas_mouse_entered():

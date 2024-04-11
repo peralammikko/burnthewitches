@@ -17,6 +17,7 @@ texture = ExtResource("3_ndmls")
 
 [node name="statue" parent="Objects" index="0" instance=ExtResource("4_edfle")]
 position = Vector2(470, 538)
+scale = Vector2(0.9, 0.9)
 
 [node name="doc1" parent="Objects" index="1" instance=ExtResource("5_uk1w0")]
 position = Vector2(-510, 550)
