@@ -1,46 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://b8co6yj0hihcy"]
+[gd_scene load_steps=5 format=3 uid="uid://b8co6yj0hihcy"]
 
 [ext_resource type="Script" path="res://scenes/menus/introcard.gd" id="1_obs6w"]
 [ext_resource type="Texture2D" uid="uid://bmll314g2j4rr" path="res://assets/objects/old_paper_stock_02_by_ftourini_d48ubt0-pre.png" id="1_v6lug"]
 [ext_resource type="FontFile" uid="uid://b8uw3x24khlrf" path="res://assets/old_london/OldLondon.ttf" id="3_j4l13"]
-
-[sub_resource type="Animation" id="Animation_m6800"]
-resource_name = "TransitionIn"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/CanvasLayer/TextureRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_lrxnc"]
-resource_name = "TransitionOut"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/CanvasLayer/TextureRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_8dxwt"]
-_data = {
-"TransitionIn": SubResource("Animation_m6800"),
-"TransitionOut": SubResource("Animation_lrxnc")
-}
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_d07v2"]
+[ext_resource type="PackedScene" uid="uid://dnp8u0dcrgyaq" path="res://scenes/[1]utilities/fadeTransitions.tscn" id="4_lvp8o"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -107,23 +70,6 @@ theme_override_fonts/font = ExtResource("3_j4l13")
 theme_override_font_sizes/font_size = 40
 text = "Start the day"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_8dxwt")
-}
-movie_quit_on_finish = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="AnimationPlayer"]
-
-[node name="TextureRect" type="TextureRect" parent="AnimationPlayer/CanvasLayer"]
-self_modulate = Color(0, 0, 0, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-texture = SubResource("CanvasTexture_d07v2")
+[node name="AnimationPlayer" parent="." instance=ExtResource("4_lvp8o")]
 
 [connection signal="pressed" from="CenterContainer/Sprite2D/Button" to="." method="_on_button_pressed"]
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
