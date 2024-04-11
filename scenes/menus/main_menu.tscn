@@ -29,6 +29,7 @@ emission_ring_inner_radius = 300.0
 orbit_velocity_max = 0.735
 radial_velocity_max = 13.61
 gravity = Vector3(0, -20, 0)
+scale_max = 3.0
 color_ramp = SubResource("GradientTexture1D_pdgmr")
 
 [node name="MainMenu" type="Control"]
@@ -140,7 +141,7 @@ offset_bottom = 40.0
 [node name="playThing" parent="Play" instance=ExtResource("5_n6bm1")]
 layout_mode = 1
 offset_left = 497.0
-offset_top = 275.0
+offset_top = 247.0
 offset_right = 614.0
 offset_bottom = 511.0
 script = ExtResource("9_sack1")
@@ -182,18 +183,21 @@ texture = ExtResource("5_prjou")
 [node name="credits" type="RichTextLabel" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 9.0
-offset_top = 444.0
-offset_right = 344.0
-offset_bottom = 646.0
+offset_left = 19.0
+offset_top = 418.0
+offset_right = 354.0
+offset_bottom = 639.0
 theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/bold_font_size = 14
 bbcode_enabled = true
-text = "[b][u]Witchfinder (2024)[/u][/b]
+text = "[b][u]Witchfinder[/u][/b]
 
 [b]Project management[/b] - Salla Kettula
 [b]Game design[/b] - Joonas Hämeenniemi
-[b]Sound design[/b] - Mahdi Pakpur
+[b]Sound design[/b] - Mahdi Pakpour
 [b]Narrative design[/b] - Teoman Kars
 [b]Art design[/b] - Merielle Purunen
 [b]Programming & UI[/b] - Mikko Perälä
-"
+
+[b]Death Metal Kiwi Productions (2024)[/b]"
