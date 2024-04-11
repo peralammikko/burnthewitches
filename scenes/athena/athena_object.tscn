@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://bd4lunv60k5n1"]
+
+[ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_o6cc2"]
+[ext_resource type="Texture2D" uid="uid://brhrbsydocir1" path="res://assets/objects/athena/object_Ganymede.png" id="2_6puc6"]
+[ext_resource type="Script" path="res://scenes/athena/athena_object.gd" id="2_hmyea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_frxac"]
+size = Vector2(461, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7u8qt"]
+size = Vector2(112.5, 73.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vigeb"]
+size = Vector2(81.25, 45.75)
+
+[node name="TableObject" instance=ExtResource("1_o6cc2")]
+script = ExtResource("2_hmyea")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_6puc6")
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(-2.5, -11.5)
+shape = SubResource("RectangleShape2D_frxac")
+
+[node name="ClickAreas" parent="." index="2"]
+visible = false
+
+[node name="weapon" type="CollisionShape2D" parent="ClickAreas" index="0"]
+position = Vector2(-69.25, 13.25)
+shape = SubResource("RectangleShape2D_7u8qt")
+
+[node name="muzzle" type="CollisionShape2D" parent="ClickAreas" index="1"]
+position = Vector2(189, -21)
+shape = SubResource("RectangleShape2D_vigeb")

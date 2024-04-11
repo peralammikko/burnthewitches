@@ -3,8 +3,10 @@ extends BaseNPC
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	killValues = [1, 0, -1, 1]
+	saveValues = [-1, 2, 0, 1]
+	Dialogic.start("TieganQuestions")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _on_input_event(viewport, event, shape_idx):
+	if event.is_action_pressed("leftclick"):
+		dialog = Dialogic.start("TieganQuestions")

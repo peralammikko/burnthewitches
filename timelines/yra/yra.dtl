@@ -1,5 +1,6 @@
-YraOrellian: "Greetings, good sir."
+A middle aged woman who appears to be anxious but her movement is very controlled. Slowly but confidently moves, trying to hide her stress.
 label yra_questions
+YraOrellian: "Greetings, good sir."
 - What have you to explain about the charges against you?
 	- It doesn’t appear that way.
 		YraOrellian: "Please sir, you have to believe me! I have children! I did nothing of evil sorts, whatever I have did, I did for the sake of the townsfolk"
@@ -10,15 +11,14 @@ label yra_questions
 			YraOrellian: "That foreman was the embodiment of evil."
 			YraOrellian: "You can ask around and everyone will tell you the same, he enjoyed pushing the folks to their limits."
 			YraOrellian: "His death gave the townsfolk room to breathe once again. Please, do not look at others to punish when it was his greed that caused his death!"
-			jump suspect3_questioning
-	- Then, please explain why people think you are connected to the death of the foreman. (Positive)
+			jump yra_questions
+	- Then, please explain why people think you are connected to the death of the foreman.
 		YraOrellian: "I do not know, sir. I only know that whatever happened to that foreman was well deserved."
 		- How do you mean he deserved what happened to him?
 			YraOrellian: "He was a cruel man who almost killed my husband and children as well as every other miner who worked under him for his greed."
 			- I see your point.
 				jump yra_questions
-			A middle aged woman who appears to be anxious but her movement is very controlled. Slowly but confidently moves, trying to hide her stress.
-		- How can you think that you are the one to decide the fate of  a person above you?
-			: "Good sir, I did not mean to provide judgment but every townsfolk knew he was a cruel man who tortured people under him."
+		- How can you think that you are the one to decide the fate of a person above you?
+			YraOrellian: "Good sir, I did not mean to provide judgment but every townsfolk knew he was a cruel man who tortured people under him."
 			- Nevertheless, I shall decide on your fate!
 				jump yra_questions

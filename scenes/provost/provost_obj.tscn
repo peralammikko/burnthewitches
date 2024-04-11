@@ -1,12 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2dpj5rd0yl5s"]
+[gd_scene load_steps=8 format=3 uid="uid://b2dpj5rd0yl5s"]
 
 [ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_3gh1o"]
+[ext_resource type="Script" path="res://scenes/provost/provost_obj.gd" id="2_2dy5x"]
 [ext_resource type="Texture2D" uid="uid://d2vyhjpjs2g66" path="res://assets/objects/provost/Provost_object_final.png" id="2_okbyj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pl02l"]
 size = Vector2(361, 265)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dxram"]
+size = Vector2(181, 107)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g2n8u"]
+size = Vector2(123, 209.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pcxrk"]
+size = Vector2(66, 16)
+
 [node name="book" instance=ExtResource("1_3gh1o")]
+script = ExtResource("2_2dy5x")
 
 [node name="Sprite2D" parent="." index="0"]
 scale = Vector2(0.2, 0.2)
@@ -15,3 +26,18 @@ texture = ExtResource("2_okbyj")
 [node name="CollisionShape2D" parent="Area2D" index="0"]
 position = Vector2(2.5, 1.5)
 shape = SubResource("RectangleShape2D_pl02l")
+
+[node name="ClickAreas" parent="." index="2"]
+visible = false
+
+[node name="books" type="CollisionShape2D" parent="ClickAreas" index="0"]
+position = Vector2(-71.5, 56.5)
+shape = SubResource("RectangleShape2D_dxram")
+
+[node name="text" type="CollisionShape2D" parent="ClickAreas" index="1"]
+position = Vector2(94, 13)
+shape = SubResource("RectangleShape2D_g2n8u")
+
+[node name="binding" type="CollisionShape2D" parent="ClickAreas" index="2"]
+position = Vector2(131, -120)
+shape = SubResource("RectangleShape2D_pcxrk")

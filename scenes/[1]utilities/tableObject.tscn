@@ -18,6 +18,7 @@ scale = Vector2(0.261458, 0.261458)
 shape = SubResource("RectangleShape2D_abnth")
 
 [node name="ClickAreas" type="Area2D" parent="."]
+visible = false
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

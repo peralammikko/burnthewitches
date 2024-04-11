@@ -32,11 +32,15 @@ directories/dch_directory={
 "YraOrellian": "res://timelines/yra/YraOrellian.dch"
 }
 directories/dtl_directory={
-"AthenaQuestions": "res://timelines/athena/AthenaQuestions.dtl",
-"Athena_intro": "res://timelines/athena/Athena_intro.dtl",
-"Bunny": "res://timelines/bunny/Bunny.dtl",
-"TieganQuestions": "res://timelines/Tiegan/TieganQuestions.dtl",
+"AthenaQuestions": "res://timelines/athena/athena_questions.dtl",
+"Athena_intro": "res://timelines/athena/athena_intro.dtl",
+"Bunny": "res://timelines/bunny/bunny.dtl",
+"TieganQuestions": "res://timelines/Tiegan/tiegan_questions.dtl",
+"athena_objects": "res://timelines/athena/athena_objects.dtl",
+"bunny_objects": "res://timelines/bunny/bunny_objects.dtl",
 "kordon_intro": "res://timelines/kordon/kordon_intro.dtl",
+"kordon_objects": "res://timelines/kordon/kordon_objects.dtl",
+"provost_objects": "res://timelines/Tiegan/provost_objects.dtl",
 "suspect_3": "res://timelines/yra/yra.dtl",
 "thirla_absolved_outro": "res://timelines/thirla/thirla_absolved_outro.dtl",
 "thirla_executed_outro": "res://timelines/thirla/thirla_executed_outro.dtl",

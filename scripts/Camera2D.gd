@@ -31,9 +31,10 @@ func _on_camera_down_button_pressed():
 	$Camera_down_button.hide()
 	$Camera_up_button.show()
 	if camera_up:
+		#Dialogic.paused = true
+		#Dialogic.Text.hide_textbox()
 		Dialogic.end_timeline()
 		camera_up = false
-		#Dialogic.Text.hide_textbox()
 
 # Smooth camera scrolling up
 func _on_camera_up_button_pressed():
@@ -42,6 +43,8 @@ func _on_camera_up_button_pressed():
 	$Camera_up_button.hide()
 	$Camera_down_button.show()
 	if !camera_up:
+		#Dialogic.paused = false
+		#Dialogic.Text.show_textbox()
 		camera_up = true
 	
 func cameraReset():

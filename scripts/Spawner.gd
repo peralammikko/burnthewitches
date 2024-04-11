@@ -30,11 +30,17 @@ func spawn_new_customer():
 		AudioManager.door_open_sound.play()
 		match dayNumber:
 			1:
-				customer = thirla.instantiate()
+				customer = provost.instantiate()
 			2: 
 				customer = kordon.instantiate()
 			3:
 				customer = yra.instantiate()
+			4:
+				customer = bunny.instantiate()
+			5:
+				customer = athena.instantiate()
+			6:
+				customer = thirla.instantiate()
 		add_child(customer)
 		customer_in = true
 
@@ -44,7 +50,7 @@ func spawn_new_customer():
 func remove_customer():
 	remove_child(customer)
 	customer_in = false
-	if dayNumber >= 3:
+	if dayNumber >= 6:
 		dayNumber = 1
 	else:
 		dayNumber += 1

@@ -28,6 +28,7 @@ func _on_area_2d_mouse_exited():
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("leftclick"):
 		if not isOpen:
+			$ClickAreas.show()
 			AudioManager.paper_sound.play()
 			isOpen = true
 			initialPosition = global_position
@@ -39,6 +40,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			
 	elif event.is_action_pressed("rightclick"):
 		if isOpen:
+			$ClickAreas.hide()
 			AudioManager.paper_close_sound.play()
 			isOpen = false
 			#var tween = get_tree().create_tween()

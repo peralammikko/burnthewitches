@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsenfxeh3xx67"]
+
+[ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_de1ee"]
+[ext_resource type="Texture2D" uid="uid://i60b6ladc0q0" path="res://assets/objects/yra/Yra2.png" id="2_cqe5n"]
+
+[node name="TableObject" instance=ExtResource("1_de1ee")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_cqe5n")

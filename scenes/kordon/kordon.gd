@@ -1,8 +1,8 @@
 extends BaseNPC
 
 func _ready():
-	killValues = [-1, +2, +2, -1]
-	saveValues = [+2, -1, -2, +1]
+	killValues = [0, 1, 1, 0]
+	saveValues = [1, 0, 0, 0]
 	Dialogic.start("kordon_intro")
 	
 func _on_input_event(viewport, event, shape_idx):

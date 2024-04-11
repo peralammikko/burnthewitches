@@ -63,4 +63,4 @@ base_overrides = {
 "global_font_color": "Color(0, 0, 0, 1)"
 }
 layers = Array[ExtResource("2_j4ge6")]([SubResource("Resource_a60hq"), SubResource("Resource_iuw5x"), SubResource("Resource_hhq4y"), SubResource("Resource_ko2sl"), SubResource("Resource_kwjv6"), SubResource("Resource_ucknp"), SubResource("Resource_a67ld"), SubResource("Resource_reo4i")])
-metadata/_latest_layer = 5
+metadata/_latest_layer = 2
