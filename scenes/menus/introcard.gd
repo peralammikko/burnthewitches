@@ -1,9 +1,11 @@
 extends Control
+class_name IntroCard
 
-var game_scene = "res://scenes/[1]utilities/main_scene.tscn"
+@onready var game_scene = "res://scenes/[1]utilities/main_scene.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	AudioManager.paper_sound.play()
 	$AnimationPlayer.play("TransitionIn")
 
 func _on_button_pressed():

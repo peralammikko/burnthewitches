@@ -30,7 +30,8 @@ func display_stats():
 func _on_continue_button_pressed():
 	hide()
 	camera.cameraReset()
-	spawner.spawn_new_customer()
+	spawner.remove_customer()
+	#spawner.spawn_new_customer()
 	animationplayer.play("TransitionIn")
 	
 	

@@ -12,6 +12,8 @@ var customer_type
 @export var athena: PackedScene
 @export var provost: PackedScene
 
+@onready var endScreen = "res://scenes/menus/endcard.tscn"
+
 var doneCustomers = []
 var dayNumber: int = 1
 
@@ -51,9 +53,10 @@ func remove_customer():
 	remove_child(customer)
 	customer_in = false
 	if dayNumber >= 6:
-		dayNumber = 1
+		get_tree().change_scene_to_file(endScreen)
 	else:
 		dayNumber += 1
+		spawn_new_customer()
 
 # After timer ends, spawns a new customer to screen
 func _on_spawn_timer_timeout():

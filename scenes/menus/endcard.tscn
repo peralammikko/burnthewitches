@@ -1,0 +1,145 @@
+[gd_scene load_steps=9 format=3 uid="uid://cpn35xtiusuec"]
+
+[ext_resource type="Script" path="res://scenes/menus/endcard.gd" id="1_veepd"]
+[ext_resource type="Texture2D" uid="uid://bmll314g2j4rr" path="res://assets/objects/old_paper_stock_02_by_ftourini_d48ubt0-pre.png" id="2_ny7ao"]
+[ext_resource type="FontFile" uid="uid://b8uw3x24khlrf" path="res://assets/old_london/OldLondon.ttf" id="3_vdify"]
+[ext_resource type="Texture2D" uid="uid://46ayk6usinf2" path="res://assets/objects/stamp.png" id="4_otbvd"]
+
+[sub_resource type="Animation" id="Animation_m6800"]
+resource_name = "TransitionIn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/CanvasLayer/TextureRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_lrxnc"]
+resource_name = "TransitionOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/CanvasLayer/TextureRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8dxwt"]
+_data = {
+"TransitionIn": SubResource("Animation_m6800"),
+"TransitionOut": SubResource("Animation_lrxnc")
+}
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_d07v2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_veepd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="CenterContainer"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ny7ao")
+
+[node name="Label" type="Label" parent="CenterContainer/Sprite2D"]
+offset_left = -304.0
+offset_top = -428.0
+offset_right = 306.0
+offset_bottom = 495.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Congratulations, you made it through the week.
+
+Heretics were burned and innocent lives were saved.
+
+Or perhaps the other way around? 
+Who truly knows?
+
+Come now, Quaestor, our work is still in progress..."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="CenterContainer/Sprite2D"]
+offset_left = -296.0
+offset_top = 314.0
+offset_right = 314.0
+offset_bottom = 1237.0
+theme_override_colors/font_color = Color(0.27451, 0.27451, 0.27451, 1)
+theme_override_font_sizes/font_size = 22
+text = "(and so is this placeholder document)"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/Sprite2D"]
+offset_left = -144.0
+offset_top = 378.0
+offset_right = 112.0
+offset_bottom = 454.0
+theme_override_fonts/font = ExtResource("3_vdify")
+theme_override_font_sizes/font_size = 40
+text = "Return to menu"
+
+[node name="Sprite2D" type="Sprite2D" parent="CenterContainer/Sprite2D"]
+position = Vector2(-2, 176)
+rotation = -0.0872665
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_otbvd")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_8dxwt")
+}
+movie_quit_on_finish = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="AnimationPlayer"]
+
+[node name="TextureRect" type="TextureRect" parent="AnimationPlayer/CanvasLayer"]
+self_modulate = Color(0, 0, 0, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("CanvasTexture_d07v2")
+
+[connection signal="pressed" from="CenterContainer/Sprite2D/Button" to="." method="_on_button_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

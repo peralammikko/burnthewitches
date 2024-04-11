@@ -16,9 +16,6 @@ func _on_animation_player_animation_finished(anim_name):
 		AudioManager.stamp_sound.play()
 		end_screen.show()
 		end_screen.display_stats()
-		spawner.remove_customer()
-	elif anim_name == "TransitionIn":
-		pass
 
 func _on_input_event(viewport, event, shape_idx):
 	if Input.is_action_just_pressed('leftclick'):
