@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="WitchesPlease"
+config/name="Witchfinder"
 run/main_scene="res://scenes/menus/splash.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://assets/objects/icon.svg"
