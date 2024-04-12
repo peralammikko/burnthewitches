@@ -39,8 +39,6 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			scale = Vector2(4*initScale.x,4*initScale.y)
 			
 		else:
-	#elif event.is_action_pressed("rightclick"):
-		#if isOpen:
 			$ClickAreas.hide()
 			AudioManager.paper_close_sound.play()
 			isOpen = false

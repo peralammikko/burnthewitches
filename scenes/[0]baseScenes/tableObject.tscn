@@ -12,13 +12,14 @@ script = ExtResource("1_bjofx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 light_mask = 3
-visibility_layer = 3
+visibility_layer = 2
 z_index = 2
 position = Vector2(0, -1.90735e-06)
 scale = Vector2(0.261458, 0.261458)
 texture = ExtResource("2_2ohsl")
 
 [node name="Area2D" type="Area2D" parent="."]
+visibility_layer = 2
 z_index = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -26,6 +27,7 @@ position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_abnth")
 
 [node name="ClickAreas" type="Area2D" parent="."]
+visibility_layer = 2
 z_index = 2
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
