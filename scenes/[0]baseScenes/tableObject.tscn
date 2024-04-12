@@ -10,6 +10,32 @@ size = Vector2(245, 330)
 z_index = 1
 script = ExtResource("1_bjofx")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -739.0
+offset_top = -662.0
+offset_right = 737.0
+offset_bottom = 697.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0431373, 0.0431373, 0.0392157, 0.827451)
+
+[node name="guideText" type="Label" parent="."]
+offset_left = 178.0
+offset_top = 34.0
+offset_right = 266.0
+offset_bottom = 97.0
+theme_override_font_sizes/font_size = 12
+text = "Look for details
+----------------------
+RIGHT MOUSE
+"
+horizontal_alignment = 1
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 light_mask = 3
 visibility_layer = 2

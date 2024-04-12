@@ -28,6 +28,7 @@ func _on_area_2d_mouse_exited():
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("leftclick"):
 		if not isOpen:
+			$ColorRect.show()
 			$ClickAreas.show()
 			AudioManager.paper_sound.play()
 			isOpen = true
@@ -39,6 +40,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 			scale = Vector2(4*initScale.x,4*initScale.y)
 			
 		else:
+			$ColorRect.hide()
 			$ClickAreas.hide()
 			AudioManager.paper_close_sound.play()
 			isOpen = false
