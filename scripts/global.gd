@@ -1,5 +1,9 @@
 extends Node2D
 
+var selectedObject: Node
+var isInspecting = false
+var isCameraUp = true
+
 var alignStats = {
 	"order": 0,
 	"rebel": 0,

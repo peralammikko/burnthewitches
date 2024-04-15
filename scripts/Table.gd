@@ -21,23 +21,17 @@ func end_day(values):
 
 # When customer is saved, adds value to "this-customer-type saved" variable for end screen.
 func _on_pass_button_pressed():
-	if spawner.customer_in == false:
-		print("no customer")
-		pass
-	else:
-		var customerNode = get_tree().get_first_node_in_group("customer")
-		print("Values for ", customerNode, " : ", customerNode.saveValues)
-		end_day(customerNode.saveValues)
-	
+	if globalStats.isInspecting == false && spawner.customer_in:
+			var customerNode = get_tree().get_first_node_in_group("customer")
+			print("Values for ", customerNode, " : ", customerNode.saveValues)
+			end_day(customerNode.saveValues)
+		
 # When customer is killed, adds value to "this-customer-type killed" variable for end screen.
 func _on_burn_button_pressed():
-	if spawner.customer_in == false:
-		print("no customer")
-		pass
-	else:
-		var customerNode = get_tree().get_first_node_in_group("customer")
-		print("Values for ", customerNode, " : ", customerNode.killValues)
-		end_day(customerNode.killValues)
+	if globalStats.isInspecting == false && spawner.customer_in:
+			var customerNode = get_tree().get_first_node_in_group("customer")
+			print("Values for ", customerNode, " : ", customerNode.killValues)
+			end_day(customerNode.killValues)
 		
 func addTotalStats(valueArray):
 	globalStats.alignStats["order"] += valueArray[0]

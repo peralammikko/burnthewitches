@@ -13,7 +13,7 @@ func _ready():
 	pass
 
 func _on_input_event(viewport, event, shape_idx):
-	if event.is_action_pressed("leftclick"):
+	if event.is_action_pressed("leftclick") && globalStats.isCameraUp:
 		pass
 		
 func _on_mouse_entered():

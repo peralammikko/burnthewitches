@@ -1,0 +1,77 @@
+[gd_scene load_steps=9 format=3 uid="uid://bed68julghpmo"]
+
+[ext_resource type="PackedScene" uid="uid://cuwxsa472wr2" path="res://scenes/[1]utilities/table.tscn" id="1_2gpew"]
+[ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_kqbv6"]
+[ext_resource type="Texture2D" uid="uid://b7spcg6xngiph" path="res://assets/objects/background_crispy2.png" id="2_pncuq"]
+[ext_resource type="PackedScene" uid="uid://brwjujr4ttow4" path="res://scenes/[1]utilities/end_day_screen.tscn" id="2_yjm76"]
+[ext_resource type="Script" path="res://scripts/Camera2D.gd" id="3_5bdfg"]
+[ext_resource type="PackedScene" uid="uid://b28eo3lb5xdby" path="res://scenes/[1]utilities/spawner.tscn" id="3_h7qsx"]
+[ext_resource type="PackedScene" uid="uid://c2ygo26d7t8xh" path="res://scenes/[1]utilities/animation_player.tscn" id="7_4fm6d"]
+[ext_resource type="PackedScene" uid="uid://bl7ph7jmb00vd" path="res://scenes/[1]utilities/audio_manager.tscn" id="8_cn3ri"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_kqbv6")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(576, 647)
+scale = Vector2(0.341559, 0.286987)
+texture = ExtResource("2_pncuq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="end_day_screen" parent="CanvasLayer" instance=ExtResource("2_yjm76")]
+visible = false
+
+[node name="Spawner" parent="." instance=ExtResource("3_h7qsx")]
+position = Vector2(571, 381)
+
+[node name="Table" parent="." instance=ExtResource("1_2gpew")]
+position = Vector2(574, 748)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 822.0
+offset_top = 521.0
+offset_right = 1072.0
+offset_bottom = 622.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 14
+text = "Suspect view - SCROLL UP
+Desk view - SCROLL DOWN"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 60.0
+offset_top = 765.0
+offset_right = 320.0
+offset_bottom = 866.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 14
+text = "Pick up/put down object - LEFT MOUSE"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 326)
+script = ExtResource("3_5bdfg")
+
+[node name="Camera_up_button" type="Button" parent="Camera2D"]
+offset_left = -34.9989
+offset_top = -313.0
+offset_right = 11.0011
+offset_bottom = -282.0
+text = "^"
+
+[node name="Camera_down_button" type="Button" parent="Camera2D"]
+offset_left = -29.001
+offset_top = 282.0
+offset_right = 16.999
+offset_bottom = 313.0
+text = "v"
+
+[node name="lowerCamPos" type="Node2D" parent="."]
+position = Vector2(576, 650)
+
+[node name="Door" parent="." instance=ExtResource("7_4fm6d")]
+position = Vector2(-634, 167)
+
+[node name="AudioManager" parent="." instance=ExtResource("8_cn3ri")]
+
+[connection signal="pressed" from="Camera2D/Camera_up_button" to="Camera2D" method="_on_camera_up_button_pressed"]
+[connection signal="pressed" from="Camera2D/Camera_down_button" to="Camera2D" method="_on_camera_down_button_pressed"]

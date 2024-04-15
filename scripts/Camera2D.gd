@@ -3,7 +3,6 @@ extends Camera2D
 @onready var low_camera = get_node("/root/MainScene/lowerCamPos")
 
 var upper_position: Vector2
-var camera_up = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,7 +18,7 @@ func _process(delta):
 	elif Input.is_action_just_pressed("scrollup"):
 		_on_camera_up_button_pressed()
 	elif Input.is_action_just_pressed("spacebar"):
-		if camera_up:
+		if globalStats.isCameraUp:
 			_on_camera_down_button_pressed()
 		else:
 			_on_camera_up_button_pressed()
@@ -30,11 +29,12 @@ func _on_camera_down_button_pressed():
 	tween.tween_property(self, "position", low_camera.global_position, 0.2).set_ease(Tween.EASE_OUT)
 	$Camera_down_button.hide()
 	$Camera_up_button.show()
-	if camera_up:
+	if globalStats.isCameraUp:
 		#Dialogic.paused = true
 		#Dialogic.Text.hide_textbox()
 		Dialogic.end_timeline()
-		camera_up = false
+		globalStats.isCameraUp = false
+		print("Cam status: ", globalStats.isCameraUp)
 
 # Smooth camera scrolling up
 func _on_camera_up_button_pressed():
@@ -42,12 +42,12 @@ func _on_camera_up_button_pressed():
 	tween.tween_property(self, "position", upper_position, 0.2).set_ease(Tween.EASE_OUT)
 	$Camera_up_button.hide()
 	$Camera_down_button.show()
-	if !camera_up:
+	if !globalStats.isCameraUp:
 		#Dialogic.paused = false
 		#Dialogic.Text.show_textbox()
-		camera_up = true
+		globalStats.isCameraUp = true
 	
 func cameraReset():
 	global_position = upper_position
-	camera_up = true
+	globalStats.isCameraUp = true
 	$Camera_up_button.hide()

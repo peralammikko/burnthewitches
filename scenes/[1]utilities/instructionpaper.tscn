@@ -29,7 +29,7 @@ text = "[b]Instructions[/b]
 [b][color=green]Green[/color][/b] - suspect is nervous
 [b][color=red]Red[/color][/b] - suspect is angry"
 
-[node name="Sprite2D" parent="." index="2"]
+[node name="Sprite2D" parent="." index="3"]
 texture = ExtResource("2_ff5cn")
 
 [node name="CollisionShape2D" parent="Area2D" index="0"]

@@ -9,5 +9,5 @@ func _ready():
 	Dialogic.start("Athena_intro")
 
 func _on_input_event(viewport, event, shape_idx):
-	if event.is_action_pressed("leftclick"):
+	if event.is_action_pressed("leftclick") && globalStats.isCameraUp:
 		dialog = Dialogic.start("AthenaQuestions")

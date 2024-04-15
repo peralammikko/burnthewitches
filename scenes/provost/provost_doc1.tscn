@@ -11,9 +11,6 @@ offset_top = -1070.0
 offset_right = 1020.0
 offset_bottom = 844.0
 
-[node name="Label3" parent="ColorRect" index="0"]
-layout_mode = 0
-
-[node name="Sprite2D" parent="." index="1"]
+[node name="Sprite2D" parent="." index="2"]
 z_index = 0
 texture = ExtResource("2_l5v7o")
