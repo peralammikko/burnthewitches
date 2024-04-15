@@ -1,3 +1,4 @@
+set {canScroll} = false
 GanymedeAthena: Ganymede awaits for your questions in mocking silence.
 - "You were once an Imperial admiral. Why turn your back on your people?"
 	GanymedeAthena: "You turned your back on us!" The statement comes out almost as a bellow, accusatory and full of fire. "When you began to care more about your gilded castles and turned us against each other by your witch hunts, that was when I knew I was fighting for the wrong side."
@@ -39,6 +40,10 @@ GanymedeAthena: Ganymede awaits for your questions in mocking silence.
 	- "Thank you. I had other questions."
 	jump 
 - "How were you captured?"
+	<Empty Text Event>
 	GanymedeAthena: Ganymede Athena scoffs. "Your documents don't tell you? Or do you just want to make me relieve that shame?" The admiral lets out a sigh, venting her frustrations. "I was betrayed. I meant to meet a contact with my retinue, but instead I met inquisitorial agents. Lost a lot of good people that day. People far better than you or me."
 	- "I had other questions."
 	jump AthenaQuestions/
+- [Inspect evidence]
+	set {canScroll} = true
+	[end_timeline]

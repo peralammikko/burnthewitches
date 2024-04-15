@@ -49,8 +49,8 @@ directories/dtl_directory={
 "thirla_questions": "res://timelines/thirla/thirla_questions.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://Default Style.tres"]
-layout/default_style="res://Default Style.tres"
+layout/style_list=["res://styles/layouts/Default Style.tres"]
+layout/default_style="res://styles/layouts/Default Style.tres"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -72,12 +72,15 @@ variables={
 "Thirla": {
 "EyesFound": false,
 "Mood": "calm"
+},
+"canScroll": false
 }
-}
+glossary/default_color=Color(0.113725, 0.270588, 0.407843, 1)
 
 [display]
 
 window/stretch/mode="canvas_items"
+window/main_scene="res://scenes/[1]utilities/main_scene.tscn"
 
 [editor]
 

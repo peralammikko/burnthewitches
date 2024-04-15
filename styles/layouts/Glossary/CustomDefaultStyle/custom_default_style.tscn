@@ -1,0 +1,52 @@
+[gd_scene load_steps=10 format=3 uid="uid://cqpb3ie51rwl5"]
+
+[ext_resource type="Script" path="res://styles/layouts/Glossary/CustomDefaultStyle/default_layout_base.gd" id="1_ifsho"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_xkbf4"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="4_8yj41"]
+[ext_resource type="PackedScene" uid="uid://dspfolbmy5vqj" path="res://styles/layouts/VisualNovelTextbox/custom_vn_textbox_layer.tscn" id="6_l4yfi"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="8_j86p0"]
+[ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="10_nq123"]
+[ext_resource type="PackedScene" uid="uid://byy7m8ml2pefh" path="res://styles/layouts/CenteredChoices/custom_vn_choice_layer.tscn" id="12_xla5j"]
+[ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="14_iwnyg"]
+[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="16_ytscb"]
+
+[node name="Custom" type="CanvasLayer"]
+script = ExtResource("1_ifsho")
+
+[node name="BackgroundLayer" parent="." instance=ExtResource("2_xkbf4")]
+apply_overrides_on_ready = true
+
+[node name="VN_PortraitLayer" parent="." instance=ExtResource("4_8yj41")]
+apply_overrides_on_ready = true
+
+[node name="VN_TextboxLayer" parent="." instance=ExtResource("6_l4yfi")]
+apply_overrides_on_ready = true
+
+[node name="FullAdvanceInputLayer" parent="." instance=ExtResource("8_j86p0")]
+apply_overrides_on_ready = true
+
+[node name="Glossary" parent="." instance=ExtResource("10_nq123")]
+offset_left = -4.0
+offset_right = -4.0
+apply_overrides_on_ready = true
+
+[node name="VN_ChoiceLayer" parent="." instance=ExtResource("12_xla5j")]
+font_size_use_global = false
+font_size_custom = 13
+text_color_use_global = false
+apply_overrides_on_ready = true
+
+[node name="TextInputLayer" parent="." instance=ExtResource("14_iwnyg")]
+offset_top = -225.0
+offset_bottom = -225.0
+apply_overrides_on_ready = true
+
+[node name="ExampleHistoryScene" parent="." instance=ExtResource("16_ytscb")]
+font_use_global_size = true
+font_custom_size = 15
+font_use_global_fonts = true
+font_custom_normal = ""
+font_custom_bold = ""
+font_custom_italics = ""
+disabled = false
+apply_overrides_on_ready = true

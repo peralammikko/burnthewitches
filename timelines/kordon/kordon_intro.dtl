@@ -1,3 +1,4 @@
+set {canScroll} = false
 The man before you sits before you straight-backed and confident, greeting you with a solemn nod.
 - "Kordon Alhambra. It says here you were a.. gunnery sergeant?"
 	Kordon_Alhambra: The man responds with a curt nod. "Gloria Imperatrix was my latest command."\
@@ -43,3 +44,6 @@ He seems as about to continue, but bites his tongue.
 			- "It does. Thank you. I had other questions."
 		- "My papers say you were involved in Spacer Guild activities."
 			Kordon_Alhambra: "I was, sir. I was our ships' liaison to the Spacers' Guild and scribe of our war log. Mainly I recorded the activities of the ship as whole for the future generations and passed along any Guild messages to the crew."
+	- [Inspect evidence]
+		set {canScroll} = true
+		[end_timeline]

@@ -1,5 +1,8 @@
+set {canScroll} = false
 "Explain the charges brought against you, Lord Provost."
 TieganWerle: The man before you is corpulent and well-dressed, as befits one of high standing within the Empire. With a voice straining under stress, he stammers out a reply.
+label provost_branching
+set {canScroll} = false
 TieganWerle: "I have no idea what you are talking about, lord Interrogator. I have nothing to do with rebels, or their magic! Allow me to set the record straight on any potential misunderstandings to the contrary."
 - "So it appears to me as well. A man of your station would never associate with the rebel scum."
 	TieganWerle: "And indeed I would never have any dealings with the Maleficants! Any interest I have in the esoteric is purely academic." He hurries to correct himself, "if I had any, that is, of course!"
@@ -20,3 +23,6 @@ TieganWerle: "I have no idea what you are talking about, lord Interrogator. I ha
 	- "If you are not willing to admit your guilt, perhaps some of your students would be more willing to help."
 		TieganWerle: "Stay away from my students! They are just as innocent as I am! I will not let them be biased judgment!"
 		jump 
+- [Inspect evidence]
+	set {canScroll} = true
+	[end_timeline]

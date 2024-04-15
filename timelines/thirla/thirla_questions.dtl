@@ -1,3 +1,4 @@
+set {canScroll} = true
 ThirlaMerina: "At last we meet, Quaestor."
 - "Lady Thirla Merina. I trust you know why you are here."
 ThirlaMerina: Thirla Merina smiles. A practiced, cold smile that betrays nothing behind it.
@@ -48,3 +49,6 @@ ThirlaMerina: "At last we meet, Quaestor."
 				ThirlaMerina: "Even the brighest of us may err once now and then. And believe mine word, Reigna was hardly a shining star." There is a venomous undercurrent in her voice at the mention of Reigna Astudore, which lady Merina gives little effort to hide.
 				- "I had other questions, if you will."
 				jump thirla_questioning
+- [Inspect evidence]
+	set {canScroll} = true
+	[end_timeline]

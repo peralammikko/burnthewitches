@@ -1,3 +1,4 @@
+set {canScroll} = false
 label bunny_questions
 Bunny: ...
 - ...
@@ -15,4 +16,7 @@ Bunny: ...
 					- "Very funny."
 						"You're the one talking to a bunny. I think that's funny."
 						- "I'd like to wake up now."
+							label bunny_ending
 							Bunny: "Don't let me stop you, kid. Have fun sending people to their deaths!"
+							set {canScroll} = true
+							[end_timeline]

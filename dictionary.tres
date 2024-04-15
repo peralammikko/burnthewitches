@@ -7,6 +7,7 @@ script = ExtResource("1_02ws1")
 entries = {
 "Astra Nova": {
 "case_sensitive": true,
+"color": Color(0.113725, 0.270588, 0.407843, 1),
 "name": "Astra Nova",
 "text": "A segment of space ruled over by the house of Mercurio. Known for the asteroid belts they mine for ice to import to other systems."
 },

@@ -4,23 +4,23 @@
 [ext_resource type="Texture2D" uid="uid://bxxec7gvb0eyk" path="res://assets/objects/kordon/Alhambra_object_final.png" id="2_11ulj"]
 [ext_resource type="Script" path="res://scenes/kordon/kordon_obj1.gd" id="2_sdwws"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hxvpc"]
-size = Vector2(99, 79.5)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wxr41"]
 size = Vector2(79.5, 65.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hxvpc"]
+size = Vector2(99, 79.5)
 
 [node name="TableObject" instance=ExtResource("1_vhbso")]
 scale = Vector2(0.6, 0.6)
 script = ExtResource("2_sdwws")
 
-[node name="Sprite2D" parent="." index="0"]
+[node name="Sprite2D" parent="." index="2"]
 texture = ExtResource("2_11ulj")
 
-[node name="ship" type="CollisionShape2D" parent="ClickAreas" index="0"]
-position = Vector2(-2.5, 12.25)
-shape = SubResource("RectangleShape2D_hxvpc")
-
-[node name="runes" type="CollisionShape2D" parent="ClickAreas" index="1"]
+[node name="runes" type="CollisionShape2D" parent="ClickAreas" index="0"]
 position = Vector2(-2, -122)
 shape = SubResource("RectangleShape2D_wxr41")
+
+[node name="ship" type="CollisionShape2D" parent="ClickAreas" index="1"]
+position = Vector2(-2.5, 12.25)
+shape = SubResource("RectangleShape2D_hxvpc")

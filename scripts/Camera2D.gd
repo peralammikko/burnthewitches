@@ -13,15 +13,17 @@ func _ready():
 # If player pushes 'down' or 's', camera moves down.
 # If player pushes 'up' or 'w', camera moves up.
 func _process(delta):
-	if Input.is_action_just_pressed("scrolldown"):
-		_on_camera_down_button_pressed()
-	elif Input.is_action_just_pressed("scrollup"):
-		_on_camera_up_button_pressed()
-	elif Input.is_action_just_pressed("spacebar"):
-		if globalStats.isCameraUp:
+	print("can scroll? ", Dialogic.VAR.canScroll)
+	if Dialogic.VAR.canScroll == true:
+		if Input.is_action_just_pressed("scrolldown"):
 			_on_camera_down_button_pressed()
-		else:
+		elif Input.is_action_just_pressed("scrollup"):
 			_on_camera_up_button_pressed()
+		elif Input.is_action_just_pressed("spacebar"):
+			if globalStats.isCameraUp:
+				_on_camera_down_button_pressed()
+			else:
+				_on_camera_up_button_pressed()
 
 # Smooth camera scrolling down
 func _on_camera_down_button_pressed():
@@ -29,12 +31,11 @@ func _on_camera_down_button_pressed():
 	tween.tween_property(self, "position", low_camera.global_position, 0.2).set_ease(Tween.EASE_OUT)
 	$Camera_down_button.hide()
 	$Camera_up_button.show()
-	if globalStats.isCameraUp:
-		#Dialogic.paused = true
-		#Dialogic.Text.hide_textbox()
+	if globalStats.isCameraUp && Dialogic.Text.is_textbox_visible():
 		Dialogic.end_timeline()
+		#Dialogic.Text.hide_textbox()
+		#Dialogic.Choices.hide_all_choices()
 		globalStats.isCameraUp = false
-		print("Cam status: ", globalStats.isCameraUp)
 
 # Smooth camera scrolling up
 func _on_camera_up_button_pressed():
@@ -42,9 +43,9 @@ func _on_camera_up_button_pressed():
 	tween.tween_property(self, "position", upper_position, 0.2).set_ease(Tween.EASE_OUT)
 	$Camera_up_button.hide()
 	$Camera_down_button.show()
-	if !globalStats.isCameraUp:
-		#Dialogic.paused = false
+	if not globalStats.isCameraUp:
 		#Dialogic.Text.show_textbox()
+		#Dialogic.Choices.show_current_choices()
 		globalStats.isCameraUp = true
 	
 func cameraReset():

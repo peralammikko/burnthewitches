@@ -51,18 +51,15 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		scale = initScale
 		z_index = 1
 		globalStats.isInspecting = false
-		
-	elif event.is_action_pressed("leftclick") && globalStats.isInspecting:
-		pass
 	
 func _on_click_areas_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("rightclick") && openObject == self:
 		print(shape_idx)
 
 func _on_click_areas_mouse_entered():
-	if openObject == self:
+	if globalStats.isInspecting:
 		Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
 
 func _on_click_areas_mouse_exited():
-	if openObject == self:
+	if globalStats.isInspecting:
 		Input.set_default_cursor_shape(Input.CURSOR_ARROW)

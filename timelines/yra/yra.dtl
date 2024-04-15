@@ -1,7 +1,9 @@
+set {canScroll} = false
 A middle aged woman who appears to be anxious but her movement is very controlled. Slowly but confidently moves, trying to hide her stress.
 label yra_questions
 YraOrellian: "Greetings, good sir."
 - What have you to explain about the charges against you?
+	"Good sir, I swear I am innocent. I have done nothing wrong."
 	- It doesn’t appear that way.
 		YraOrellian: "Please sir, you have to believe me! I have children! I did nothing of evil sorts, whatever I have did, I did for the sake of the townsfolk"
 		- So, do you admit to your crime, witch?
@@ -22,3 +24,6 @@ YraOrellian: "Greetings, good sir."
 			YraOrellian: "Good sir, I did not mean to provide judgment but every townsfolk knew he was a cruel man who tortured people under him."
 			- Nevertheless, I shall decide on your fate!
 				jump yra_questions
+	- [Inspect evidence]
+		set {canScroll} = true
+		[end_timeline]
