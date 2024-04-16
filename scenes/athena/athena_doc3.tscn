@@ -1,9 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://dbajkwbx0xilw"]
+[gd_scene load_steps=6 format=3 uid="uid://dbajkwbx0xilw"]
 
 [ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_en3hn"]
+[ext_resource type="Script" path="res://scenes/athena/athena_doc3.gd" id="2_2i0bp"]
 [ext_resource type="Texture2D" uid="uid://daydb8v7i1n1j" path="res://assets/objects/athena/Ganymede4.png" id="2_qgoh1"]
 
-[node name="TableObject" instance=ExtResource("1_en3hn")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26obc"]
+size = Vector2(208, 46)
 
-[node name="Sprite2D" parent="." index="0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ssk3b"]
+size = Vector2(82, 20)
+
+[node name="TableObject" instance=ExtResource("1_en3hn")]
+script = ExtResource("2_2i0bp")
+
+[node name="Sprite2D" parent="." index="2"]
 texture = ExtResource("2_qgoh1")
+
+[node name="accusations" type="CollisionShape2D" parent="ClickAreas" index="0"]
+position = Vector2(6, 32)
+shape = SubResource("RectangleShape2D_26obc")
+
+[node name="coven" type="CollisionShape2D" parent="ClickAreas" index="1"]
+position = Vector2(-62, 76)
+shape = SubResource("RectangleShape2D_ssk3b")

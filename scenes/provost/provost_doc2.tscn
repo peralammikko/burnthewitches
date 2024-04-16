@@ -1,9 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://c1ywiof2bo1o4"]
+[gd_scene load_steps=6 format=3 uid="uid://c1ywiof2bo1o4"]
 
 [ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_25lte"]
 [ext_resource type="Texture2D" uid="uid://d012ogmmcokfm" path="res://assets/objects/provost/Provost2.png" id="2_ptg3v"]
+[ext_resource type="Script" path="res://scenes/provost/provost_doc2.gd" id="2_vcqex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7klay"]
+size = Vector2(114, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lx1w"]
+size = Vector2(207, 27)
 
 [node name="TableObject" instance=ExtResource("1_25lte")]
+script = ExtResource("2_vcqex")
 
-[node name="Sprite2D" parent="." index="0"]
+[node name="Sprite2D" parent="." index="2"]
 texture = ExtResource("2_ptg3v")
+
+[node name="arts" type="CollisionShape2D" parent="ClickAreas" index="0"]
+position = Vector2(32, -42)
+shape = SubResource("RectangleShape2D_7klay")
+
+[node name="name" type="CollisionShape2D" parent="ClickAreas" index="1"]
+position = Vector2(0.5, -1.5)
+shape = SubResource("RectangleShape2D_3lx1w")

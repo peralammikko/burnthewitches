@@ -1,11 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://bdhs3n20633su"]
+[gd_scene load_steps=6 format=3 uid="uid://bdhs3n20633su"]
 
 [ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_l2q7q"]
 [ext_resource type="Script" path="res://scenes/thirla/thirla_obj2.gd" id="2_if687"]
 [ext_resource type="Texture2D" uid="uid://b5hmyk543jfiq" path="res://assets/objects/Thirla/thirla_doc2.png" id="3_u64sm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bdtl8"]
+size = Vector2(91, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5vjb"]
+size = Vector2(108.5, 17)
 
 [node name="TableObject" instance=ExtResource("1_l2q7q")]
 script = ExtResource("2_if687")
 
 [node name="Sprite2D" parent="." index="2"]
 texture = ExtResource("3_u64sm")
+
+[node name="features" type="CollisionShape2D" parent="ClickAreas" index="0"]
+position = Vector2(23, -67)
+shape = SubResource("RectangleShape2D_bdtl8")
+
+[node name="mechajousting" type="CollisionShape2D" parent="ClickAreas" index="1"]
+position = Vector2(-15.25, -4.5)
+shape = SubResource("RectangleShape2D_h5vjb")

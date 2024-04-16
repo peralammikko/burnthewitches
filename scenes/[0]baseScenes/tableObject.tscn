@@ -21,7 +21,7 @@ offset_right = 737.0
 offset_bottom = 697.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 1
+mouse_filter = 2
 color = Color(0.0431373, 0.0431373, 0.0392157, 0.827451)
 
 [node name="guideText" type="Label" parent="."]

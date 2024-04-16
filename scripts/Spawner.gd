@@ -30,19 +30,22 @@ func _process(delta):
 func spawn_new_customer():
 	if !customer_in:
 		AudioManager.door_open_sound.play()
+		# TESTING ONLY, REMOVE AFTERWARDS
+		#dayNumber = 1
+		
 		match dayNumber:
 			1:
-				customer = thirla.instantiate()
+				customer = provost.instantiate()
 			2: 
-				customer = kordon.instantiate()
-			3:
 				customer = yra.instantiate()
+			3:
+				customer = kordon.instantiate()
 			4:
 				customer = bunny.instantiate()
 			5:
-				customer = athena.instantiate()
+				customer = thirla.instantiate()
 			6:
-				customer = provost.instantiate()
+				customer = athena.instantiate()
 		add_child(customer)
 		customer_in = true
 

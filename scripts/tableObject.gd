@@ -58,6 +58,7 @@ func _on_click_areas_input_event(viewport, event, shape_idx):
 
 func _on_click_areas_mouse_entered():
 	if globalStats.isInspecting:
+		print("Cursor now pointing")
 		Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
 
 func _on_click_areas_mouse_exited():
