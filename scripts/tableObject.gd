@@ -30,7 +30,6 @@ func _on_area_2d_mouse_exited():
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("leftclick") && openObject == null:
 		openObject = self
-		print("Open now: ", openObject)
 		$ColorRect.show()
 		$ClickAreas.show()
 		AudioManager.paper_sound.play()
@@ -43,7 +42,6 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		
 	elif event.is_action_pressed("leftclick") && openObject == self:
 		openObject = null
-		print("Hiding things")
 		$ColorRect.hide()
 		$ClickAreas.hide()
 		AudioManager.paper_close_sound.play()
