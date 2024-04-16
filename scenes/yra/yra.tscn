@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://b04mujrpqdt7f"]
+[gd_scene load_steps=5 format=3 uid="uid://b04mujrpqdt7f"]
 
 [ext_resource type="PackedScene" uid="uid://7wgtwtfrgyo4" path="res://scenes/[0]baseScenes/baseNPC.tscn" id="1_kbfbc"]
 [ext_resource type="Script" path="res://scenes/yra/yra.gd" id="2_63va0"]
 [ext_resource type="Texture2D" uid="uid://bw6qq16dm0v6c" path="res://assets/customers/Yra_Orellian_crop.png" id="3_dsp06"]
-[ext_resource type="PackedScene" uid="uid://c33pc55sbclus" path="res://scenes/yra/yra_doc1.tscn" id="4_hp75f"]
 [ext_resource type="PackedScene" uid="uid://dsenfxeh3xx67" path="res://scenes/yra/yra_doc2.tscn" id="5_kxtrg"]
 
 [node name="yra" instance=ExtResource("1_kbfbc")]
@@ -15,8 +14,5 @@ texture = ExtResource("3_dsp06")
 [node name="Objects" parent="." index="2"]
 position = Vector2(0, -166)
 
-[node name="TableObject" parent="Objects" index="0" instance=ExtResource("4_hp75f")]
-position = Vector2(-182, 710)
-
-[node name="TableObject2" parent="Objects" index="1" instance=ExtResource("5_kxtrg")]
-position = Vector2(180, 708)
+[node name="TableObject2" parent="Objects" index="0" instance=ExtResource("5_kxtrg")]
+position = Vector2(0, 756)

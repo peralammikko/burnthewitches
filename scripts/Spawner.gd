@@ -32,7 +32,7 @@ func spawn_new_customer():
 		AudioManager.door_open_sound.play()
 		match dayNumber:
 			1:
-				customer = provost.instantiate()
+				customer = thirla.instantiate()
 			2: 
 				customer = kordon.instantiate()
 			3:
@@ -42,7 +42,7 @@ func spawn_new_customer():
 			5:
 				customer = athena.instantiate()
 			6:
-				customer = thirla.instantiate()
+				customer = provost.instantiate()
 		add_child(customer)
 		customer_in = true
 

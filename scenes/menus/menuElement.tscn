@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bfqph1j5fipce"]
+[gd_scene load_steps=8 format=3 uid="uid://bfqph1j5fipce"]
 
 [ext_resource type="Script" path="res://scenes/menus/menuElement.gd" id="1_x3ruo"]
+[ext_resource type="FontFile" uid="uid://b8uw3x24khlrf" path="res://assets/old_london/OldLondon.ttf" id="2_5clt8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sftwu"]
 
@@ -37,9 +38,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -77.0
-offset_top = -70.5
+offset_top = -134.0
 offset_right = 77.0
-offset_bottom = 70.5
+offset_bottom = 57.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_sftwu")
@@ -61,10 +62,11 @@ offset_right = 20.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5clt8")
 text = "Text"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="mouse_entered" from="button" to="." method="_on_credits_button_mouse_entered"]
-[connection signal="mouse_exited" from="button" to="." method="_on_credits_button_mouse_exited"]
+[connection signal="mouse_entered" from="button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="button" to="." method="_on_button_mouse_exited"]
 [connection signal="pressed" from="button" to="." method="_on_button_pressed"]

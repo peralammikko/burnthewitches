@@ -25,6 +25,7 @@ mouse_filter = 1
 color = Color(0.0431373, 0.0431373, 0.0392157, 0.827451)
 
 [node name="guideText" type="Label" parent="."]
+visible = false
 offset_left = 178.0
 offset_top = 34.0
 offset_right = 266.0

@@ -5,5 +5,8 @@
 
 [node name="TableObject" instance=ExtResource("1_de1ee")]
 
-[node name="Sprite2D" parent="." index="0"]
+[node name="guideText" parent="." index="1"]
+visible = false
+
+[node name="Sprite2D" parent="." index="2"]
 texture = ExtResource("2_cqe5n")

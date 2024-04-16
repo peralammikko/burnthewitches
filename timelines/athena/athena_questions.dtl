@@ -9,7 +9,8 @@ GanymedeAthena: Ganymede awaits for your questions in mocking silence.
 		- "Interesting. I had other questions."
 			jump 
 	- "Why bring these abuses of power to the attention of the Empire?"
-		GanymedeAthena: Ganymede laughs coldly. "You're serious? I did! I told my superiors what I saw, but they told me to keep quiet and take the money. The whole system is corrupt. Every single one of them. All you can do is purge the entirety of the Empire and start anew. With people who actually care about those beneath them."
+		GanymedeAthena: Ganymede laughs coldly. "You're serious? I did! I told my superiors what I saw, but they told me to keep quiet and take the money."
+		"The whole system is corrupt. Every single one of them. All you can do is purge the entirety of the Empire and start anew. With people who actually care about those beneath them."
 	- Do you truly believe your rebellion has a chance?"
 		GanymedeAthena: Athena's answer is immediate. "No", she says. "But someone else will carry it to the end. I am the spark that will light a great conflagration."
 	- "What do you even hope to achieve with this rebellion?"
@@ -40,7 +41,6 @@ GanymedeAthena: Ganymede awaits for your questions in mocking silence.
 	- "Thank you. I had other questions."
 	jump 
 - "How were you captured?"
-	<Empty Text Event>
 	GanymedeAthena: Ganymede Athena scoffs. "Your documents don't tell you? Or do you just want to make me relieve that shame?" The admiral lets out a sigh, venting her frustrations. "I was betrayed. I meant to meet a contact with my retinue, but instead I met inquisitorial agents. Lost a lot of good people that day. People far better than you or me."
 	- "I had other questions."
 	jump AthenaQuestions/

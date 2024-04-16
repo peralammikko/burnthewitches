@@ -27,16 +27,18 @@ He seems as about to continue, but bites his tongue.
 	- "Where was your ship stationed?"
 		Kordon_Alhambra: "At Astra Bohetia, sir. It's an Imperial holding, but far out. We often have misunderstandings between the local counts and other lords there, and sometimes we would have to step in before things escalated. Or put an end to things after they did."
 		- "So you have seen your share of combat, then?"
-			Kordon_Alhambra: "Yes, sir." As if to demonstrate, the man lifts up his right hand, which ends at an elbow. The attachment ports tell you that his implant was confiscated when the sergeant was apprehended.
+			Kordon_Alhambra: "Yes, sir." As if to demonstrate, the man lifts up his left hand, which ends at an elbow. The attachment ports tell you that his implant was confiscated when the sergeant was apprehended.
 			Kordon_Alhambra: "Lost this arm during an action. Boarding torch seared the limb right to the bone. And I've been part in more engagements than I care to remember, sir."
 			- "Enough. I had other questions."
 				jump kordon_questions
 		- "I see. Astra Bohetia is a far-flung system. How did you end up there?"
-			Kordon_Alhambra: "No exciting story here, sir, I'm afraid. The ship I previously served on as a quartermaster was decommisioned. Udatná Duše. An Owl-class signal sloop. I happened to hear that there was an open gunnery sergeant position on the Gloria, and requested to be transfered there. Serving on an Empress-class had always been a dream of mine, sir. Nothing else to it."
+			Kordon_Alhambra: "No exciting story here, sir, I'm afraid. The ship I previously served on as a quartermaster was decommisioned. Udatná Duše. An Owl-class signal sloop."
+			Kordon_Alhambra: "I happened to hear that there was an open gunnery sergeant position on the Gloria, and requested to be transfered there. Serving on an Empress-class had always been a dream of mine, sir. Nothing else to it."
 			- "Enough. I had other questions."
 				jump kordon_questions
 	- "Can you tell me about your duties aboard the Gloria?"
-		Kordon_Alhambra: "Yes, sir. I was assigned to the second starboard broadside battery and was responsible for the training of cannoneers and the maintenance of equipment. I also upheld discipline and acted as tactical counsel to the Mistress-at-Arms."
+		Kordon_Alhambra: "Yes, sir. I was assigned to the second starboard broadside battery and was responsible for the training of cannoneers and the maintenance of equipment."
+		Kordon_Alhambra:  "I also upheld discipline and acted as tactical counsel to the Mistress-at-Arms."
 		- "I am not familiar with fleet hierarchy. Mistress-at-Arms?"
 			Kordon_Alhambra: "Apologies, sir. Master, or Mistress-at-Arms, is the person responsible for the operation and command of a gunnery group, subordinate to the Tac-Com."
 			Kordon_Alhambra: "Gloria Imperatrix had three such positions, one for each broadside and one for auxilary systems." The explanation comes out as if directly from the pages of a fleet training manual."

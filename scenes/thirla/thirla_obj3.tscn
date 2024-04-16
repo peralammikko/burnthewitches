@@ -8,7 +8,7 @@ size = Vector2(213, 23)
 
 [node name="TableObject" instance=ExtResource("1_kod8m")]
 
-[node name="Sprite2D" parent="." index="0"]
+[node name="Sprite2D" parent="." index="2"]
 texture = ExtResource("2_5wu35")
 
 [node name="kisle" type="CollisionShape2D" parent="ClickAreas" index="0"]

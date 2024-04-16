@@ -13,7 +13,6 @@ func _ready():
 # If player pushes 'down' or 's', camera moves down.
 # If player pushes 'up' or 'w', camera moves up.
 func _process(delta):
-	print("can scroll? ", Dialogic.VAR.canScroll)
 	if Dialogic.VAR.canScroll == true:
 		if Input.is_action_just_pressed("scrolldown"):
 			_on_camera_down_button_pressed()

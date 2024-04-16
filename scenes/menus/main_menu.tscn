@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bfqph1j5fipce" path="res://scenes/menus/menuElement.tscn" id="5_n6bm1"]
 [ext_resource type="Texture2D" uid="uid://brhrbsydocir1" path="res://assets/objects/athena/object_Ganymede.png" id="5_prjou"]
 [ext_resource type="Script" path="res://scenes/menus/creditsThing.gd" id="7_wglpi"]
-[ext_resource type="Script" path="res://scenes/menus/playThing.gd" id="9_sack1"]
+[ext_resource type="PackedScene" uid="uid://bc10g2svtkee0" path="res://scenes/menus/play_thing.tscn" id="8_dnjds"]
 [ext_resource type="Script" path="res://scenes/menus/quitThing.gd" id="10_ry7py"]
 
 [sub_resource type="Gradient" id="Gradient_fdhdc"]
@@ -126,7 +126,7 @@ offset_top = 367.0
 offset_right = 466.0
 offset_bottom = 496.0
 script = ExtResource("7_wglpi")
-exportText = "CREDITS"
+exportText = "Credits"
 
 [node name="book" type="Sprite2D" parent="Credits"]
 position = Vector2(418, 436)
@@ -138,17 +138,16 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="playThing" parent="Play" instance=ExtResource("5_n6bm1")]
+[node name="menuElement" parent="Play" instance=ExtResource("8_dnjds")]
 layout_mode = 1
 offset_left = 497.0
-offset_top = 247.0
-offset_right = 614.0
-offset_bottom = 511.0
-script = ExtResource("9_sack1")
-exportText = "PLAY"
+offset_top = 283.0
+offset_right = 617.0
+offset_bottom = 518.0
+exportText = "Play"
 
 [node name="magic" type="Sprite2D" parent="Play"]
-position = Vector2(572, 370)
+position = Vector2(572, 386)
 scale = Vector2(0.08, 0.08)
 texture = ExtResource("4_2tl5d")
 
@@ -172,7 +171,7 @@ offset_top = 411.0
 offset_right = 782.0
 offset_bottom = 492.0
 script = ExtResource("10_ry7py")
-exportText = "QUIT"
+exportText = "Quit"
 
 [node name="gun" type="Sprite2D" parent="Quit"]
 position = Vector2(751, 459)

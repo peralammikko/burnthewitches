@@ -31,6 +31,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("leftclick") && openObject == null:
 		openObject = self
 		$ColorRect.show()
+		$guideText.show()
 		$ClickAreas.show()
 		AudioManager.paper_sound.play()
 		initialPosition = global_position
@@ -43,6 +44,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 	elif event.is_action_pressed("leftclick") && openObject == self:
 		openObject = null
 		$ColorRect.hide()
+		$guideText.hide()
 		$ClickAreas.hide()
 		AudioManager.paper_close_sound.play()
 		global_position = initialPosition
