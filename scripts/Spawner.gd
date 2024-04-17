@@ -30,8 +30,8 @@ func _process(delta):
 func spawn_new_customer():
 	if !customer_in:
 		AudioManager.door_open_sound.play()
-		# TESTING ONLY, REMOVE AFTERWARDS
-		#dayNumber = 1
+		# TESTING ONLY, COMMENT AFTERWARDS
+		# dayNumber = 5
 		
 		match dayNumber:
 			1:

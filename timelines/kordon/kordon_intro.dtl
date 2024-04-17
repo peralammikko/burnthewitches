@@ -1,9 +1,9 @@
 set {canScroll} = false
-# Alhambra mood starts at Agitated (green)
+# Alhambra mood starts at Agitated (yellow)
+[signal arg="mood_nervous"]
 The man before you sits before you straight-backed and confident, greeting you with a solemn nod.
 - "Kordon Alhambra. It says here you were a.. gunnery sergeant?"
-	Kordon_Alhambra: The man responds with a curt nod. "Gloria Imperatrix was my latest command."\
-He seems as about to continue, but bites his tongue.
+	Kordon_Alhambra: The man responds with a curt nod. "Gloria Imperatrix was my latest command." He seems as about to continue, but bites his tongue.
 	label kordon_questions
 	- "Was there something else you wanted to say?"
 		Kordon_Alhambra: "No, sir."
@@ -14,23 +14,27 @@ He seems as about to continue, but bites his tongue.
 		Kordon_Alhambra: "Nothing of import, sir. Simply wanted to say that's she's a fine ship and a commendable crew with her.
 		- "What was service aboard the Gloria like?"
 			# Mood turns to Calm
+			[signal arg="mood_calm"]
 			Kordon_Alhambra: "Some of my best years aboard that ship, sir. She's an Empress-class Destroyer; they don't make them as they used to anymore."
 			Kordon_Alhambra: "Fast and reliable. Low profile and every inch of hull fitted with cannon. Nothing but good things to say about the Gloria and the crew."
 			- "Not even if I told you that one of the crew revealed your involvement with the occult?"
 				The man sighs heavily.
 				Kordon_Alhambra: "I had some inkling, sir. I don't wish to know who it was, won't make a difference, and I want to go to the gallows thinking the best of all my colleagues."
+				jump kordon_questions
 			- "Then what purpose did your witchcraft aboard the Gloria serve?"
 				# Mood turns to Angry (red)
+				[signal arg="mood_angry"]
 				The expression on the old soldiers' face turns sour, before he catches himself.
 				Kordon_Alhambra: "There was no witchcraft performed on my part, nor by any personnel aboard. I swear on my life. But that isn't what this is about, is it?"
 				- "What do you think this is about, then?"
 					Kordon_Alhambra: "Same as ever, sir, had I to hazard a guess. Have to make an example every now and then, and what's one old soldier in the grand scheme of things?"
 					- "What do you mean by grand scheme of things?"
-						Kordon_Alhambra: "Had I to hazard a guess, sir, you have to make an example every now and then, and what's one old soldier in the grand scheme of things?" 
+						Kordon_Alhambra: "Had I to hazard a guess, sir, you have to make an example every now and then, and what's one old soldier in the grand scheme of things?"
 					- "You claim innocence?"
 						Kordon_Alhambra: "I swear on my immortal soul I did no witchcraft, nor do I know anyone else who did either. Take that as you will, Interrogator, sir."
 						jump kordon_intro/kordon_questions
 				# Below option only available if inspected Alhambra's object, specifically the runes on it.
+			if {Kordon.runesFound} == true:
 				- "How do you explain all the carved bones and runes, then?"
 					Kordon_Alhambra: "Pardon me saying so, sir, but I suppose you've never been aboard a ship, or at least not deep enough in the guts to see what spacers get up to. No malice here, or any witchery either."
 					Kordon_Alhambra: "All spacers know that sailing the stars is a dangerous trade and these scrimshaws and runes keep us safe. At least it's easier to face the Void that way."
@@ -40,27 +44,29 @@ He seems as about to continue, but bites his tongue.
 							jump 
 						- "You mentioned dangers?"
 							jump Dangers
-					- "What do you mean by dangers?"
-						label Dangers
-						Kordon_Alhambra: "Any spacer worth their salt knows that service aboard a military ship is a good way to an early grave. Accidents aboard ships, combat engagements are frequent, void debris.. and that's not to mention the other stuff."
-						Kordon_Alhambra: The older man leans closer, lowering his voice as if speaking to a fellow conspirator.. or worried that something else might hear him.
-						Kordon_Alhambra: "Halo sirens luring men to space themselves or even dragging entire ships to their doom. Ghosts of less fortunate spacers looming hungry in the cold dark. Things in deep space no ship could match, monsters lurking in the abyss of distant nebulae or in the black depths of collapsars."
-						- "Superstitions. I had thought spacers to be of sterner stock."
-							# Turns mood to Angry.
-							Kordon_Alhambra: There's a glint of anger in the sergeants' eyes. It quickly fades and the quiet resignation returns to his manner. "As you say, sir."\
-
-							jump 
-						- "Surely you know these to be but tall tales?"
-							Kordon_Alhambra: "You are clearly not a Spacer, sir, and I mean no offense by me saying so." The man ponders briefly, then continues.
-							Kordon_Alhambra: "I'm simply saying, that when a man sails the stars long enough, long enough that soil beneath your boots feels unfamiliar.. well, you see things, things you can't explain. Some are amazing. Others you wish you hadn't."
-							- "I had other questions."
-								jump 
+			- "What do you mean by dangers?"
+				label Dangers
+				Kordon_Alhambra: "Any spacer worth their salt knows that service aboard a military ship is a good way to an early grave. Accidents aboard ships, combat engagements are frequent, void debris.. and that's not to mention the other stuff."
+				Kordon_Alhambra: The older man leans closer, lowering his voice as if speaking to a fellow conspirator.. or worried that something else might hear him.
+				Kordon_Alhambra: "Halo sirens luring men to space themselves or even dragging entire ships to their doom. Ghosts of less fortunate spacers looming hungry in the cold dark."
+				"Things in deep space no ship could match, monsters lurking in the abyss of distant nebulae or in the black depths of collapsars."
+				- "Superstitions. I had thought spacers to be of sterner stock."
+					# Turns mood to Angry.
+					Kordon_Alhambra: There's a glint of anger in the sergeants' eyes. It quickly fades and the quiet resignation returns to his manner. "As you say, sir."
+					[signal arg="mood_angry"]
+					jump kordon_questions
+				- "Surely you know these to be but tall tales?"
+					Kordon_Alhambra: "You are clearly not a Spacer, sir, and I mean no offense by me saying so." The man ponders briefly, then continues.
+					Kordon_Alhambra: "I'm simply saying, that when a man sails the stars long enough, long enough that soil beneath your boots feels unfamiliar.. well, you see things, things you can't explain. Some are amazing. Others you wish you hadn't."
+					- "I had other questions."
+						jump 
 		- "You seem very attached."
 			Kordon_Alhambra: "I.. yes, sir. I served with them for over two decades. I knew some of those crew better than I know my own family." "
-			jump 
+			jump kordon_questions
 	- "Where was your ship stationed?"
 		# Mood turns to Calm.
 		Kordon_Alhambra: "At Astra Bohetia, sir. It's an Imperial holding, but far out. We often have misunderstandings between the local counts and other lords there, and sometimes we would have to step in before things escalated. Or put an end to things after they did."
+		[signal arg="mood_calm"]
 		- "So you have seen your share of combat, then?"
 			Kordon_Alhambra: "Yes, sir." As if to demonstrate, the man lifts up his left hand, which ends at an elbow. The attachment ports tell you that his implant was confiscated when the sergeant was apprehended.
 			Kordon_Alhambra: "Lost this arm during an action. Boarding torch seared the limb right to the bone. And I've been part in more engagements than I care to remember, sir."
@@ -69,18 +75,18 @@ He seems as about to continue, but bites his tongue.
 		- "I see. Astra Bohetia is a far-flung system. How did you end up there?"
 			Kordon_Alhambra: "No exciting story here, sir, I'm afraid. The ship I previously served on as a quartermaster was decommisioned. Udatná Duše. An Owl-class signal sloop."
 			Kordon_Alhambra: "I happened to hear that there was an open gunnery sergeant position on the Gloria, and requested to be transfered there. Serving on an Empress-class had always been a dream of mine, sir. Nothing else to it."
-			- "Enough. I had other questions."
-				jump kordon_questions
+		- "Enough. I had other questions."
+			jump kordon_questions
 	- "Can you tell me about your duties aboard the Gloria?"
 		Kordon_Alhambra: "Yes, sir. I was assigned to the second starboard broadside battery and was responsible for the training of cannoneers and the maintenance of equipment."
 		Kordon_Alhambra: "I also upheld discipline and acted as tactical counsel to the Mistress-at-Arms."
 		- "I am not familiar with fleet hierarchy. Mistress-at-Arms?"
 			Kordon_Alhambra: "Apologies, sir. Master, or Mistress-at-Arms, is the person responsible for the operation and command of a gunnery group, subordinate to the Tac-Com."
 			Kordon_Alhambra: "Gloria Imperatrix had three such positions, one for each broadside and one for auxilary systems." The explanation comes out as if directly from the pages of a fleet training manual."
-			Kordon_Alhambra: "Does this answer your question sufficiently, sir?"
-			- "It does. Thank you. I had other questions."
-		- "My papers say you were involved in Spacer Guild activities."
-			Kordon_Alhambra: "I was, sir. I was our ships' liaison to the Spacers' Guild and scribe of our war log. Mainly I recorded the activities of the ship as whole for the future generations and passed along any Guild messages to the crew."
+	Kordon_Alhambra: "Does this answer your question sufficiently, sir?"
+	- "It does. Thank you. I had other questions."
+	- "My papers say you were involved in Spacer Guild activities."
+		Kordon_Alhambra: "I was, sir. I was our ships' liaison to the Spacers' Guild and scribe of our war log. Mainly I recorded the activities of the ship as whole for the future generations and passed along any Guild messages to the crew."
 	- "Thank you. I will review my documents before we continue."
 		set {canScroll} = true
 		[end_timeline]

@@ -33,7 +33,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "AthenaQuestions": "res://timelines/athena/athena_questions.dtl",
-"Athena_intro": "res://timelines/athena/athena_intro.dtl",
+"Athena_intro": "res://timelines/athena/Athena_intro.dtl",
 "Bunny": "res://timelines/bunny/bunny.dtl",
 "TieganQuestions": "res://timelines/Tiegan/tiegan_questions.dtl",
 "athena/Athena_intro": "res://timelines/athena/Athena_intro.dtl",
@@ -71,9 +71,20 @@ save/encryption_on_exports_only=true
 text/autopauses={}
 glossary/glossary_files=["res://dictionary.tres"]
 variables={
+"Kordon": {
+"currentMood": "",
+"runesFound": false
+},
+"Provost": {
+"currentMood": "",
+"noteFound": false
+},
 "Thirla": {
-"EyesFound": false,
-"Mood": "calm"
+"allCluesFound": false,
+"currentMood": "",
+"eyesFound": false,
+"lumisFound": false,
+"mechajoustFound": false
 },
 "canScroll": false
 }

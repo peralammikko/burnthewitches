@@ -6,7 +6,7 @@ ThirlaMerina: "That unpleasantness? I assure thee, me and mine are untouched by 
 - "The truth will come out, whatever it may be."
 label thirla_questioning
 ThirlaMerina: "At last we meet, Quaestor."
-- "Tell me about Kisle Lumis."
+- "Tell me about Kisle Lumis." [if {Thirla.lumisFound} == true][else="hide"]
 	# This choice should only become available once the player has gone through the documents and identified Kisle Lumis.
 	ThirlaMerina: "Oh, my handmaiden? A loyal servant, but of low birth and thus no-one of consequence. Why wouldst thee know of her?"
 	- "She disappeared before our agents could question her."
@@ -14,10 +14,11 @@ ThirlaMerina: "At last we meet, Quaestor."
 	- "Do you have any idea what could've happened to her?"
 		ThirlaMerina: "None, Quaestor." She dismisses your question with barely a thought.
 		jump thirla_questioning
-	- "Enough games, Merina. I know you know what happened to her."
+	- "Enough games, Merina. I know you know what happened to her." [if {Thirla.allCluesFound} == true][else="hide"]
 		# This line should become available once the player has found all interactables relating to Kisle and the field report.
 		ThirlaMerina: "Thy overstep!" Her voice turns in an instance to a freezing, menacing growl. "Thine accusations are baseless and asinine, just as is this jest of a questioning."
-		- "You had her bewitch Reigna Astudore and then had her board a shuttle towards Astra König. The transport will never arrive, am I right?
+		- "You had her bewitch Reigna Astudore and then had her board a shuttle towards Astra König."
+			- "The transport will never arrive, am I right?"
 			ThirlaMerina: "Outrageous fantasies, Quaestor." Lady Merina barely manages to hide a scowl. "Had thy silly theorems naught but a speck of reason, they wouldst still be worthless. I am Thirla Merina and thus beyond thy judgments."
 			- "We will see, lady Merina."
 				jump thirla_questioning

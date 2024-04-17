@@ -4,31 +4,31 @@ TieganWerle: The man before you is corpulent and well-dressed, as befits one of 
 label provost_branching
 set {canScroll} = false
 TieganWerle: "I have no idea what you are talking about, lord Interrogator. I have nothing to do with rebels, or their magic! Allow me to set the record straight on any potential misunderstandings to the contrary."
-- "I found this note. Explain it."
+- "I found this note. Explain it." [if {Provost.noteFound} == true][else="hide"]
 	# This line only appears after finding the note inside the book.
 	TieganWerle: "Wha.. ah, I don't.." The Provost sweats, wipes his forehead, glancing around with the quiet panic of a beast in line to the slaughterhouse.
 	- "You performed a favor for someone, and they gave you these books. Who was it, and what did you do?"
 		TieganWerle: Werle collapses, utterly defeated in that moment. "I simply passed a message for someone. That is all I know, I swear!"
-		jump 
+		jump provost_branching
 - "So it appears to me as well. A man of your station would never associate with the rebel scum."
 	TieganWerle: "And indeed I would never have any dealings with the Maleficants! Any interest I have in the esoteric is purely academic." He hurries to correct himself, "if I had any, that is, of course!"
 	- "Do not lie to me, Werle. Our witnesses have told us that you distribute knowledge of the arcane and actively shelter witches!"
 		TieganWerle: "No, lord Interrogator!" Panic creeps in his voice as terror consumed the Lord Provost. "I am only studying these subjects, of idle academic curiosity! I have no knowledge of any rebels, nor any witches! I am innocent, lord Interrogator, I have done nothing wrong!"
-		jump 
+		jump provost_branching
 	# Examining the documentation will open this line.
 	- "Then how do you explain these witness testimonies?"
 		TieganWerle: "Oh, the lay folk like to talk, lord Interrogator", chuckles the Lord Provost nervously, "they must sometimes be so very confused by the world around them! Why, some must think the world is ending every time the sun goes down", his laughter is deep and joyful, but dies down into anxious, awkward giggle quickly.
 		TieganWerle: "In the end, I am simply a student of the world, my lord Interrogator. The importance of this often escapes those more mired in the mundane."
-		jump 
+		jump provost_branching
 - "It does not appear so."
 	TieganWerle: "I sense a condescending tone in your voice! I hope you will not let your prejudice cloud your judgement against the ancient ways."
 	- "I assure you, I am not prejudiced. I simply looking for the truth."
 		TieganWerle: "Well.." Lord Provost wrangles his hands, unsure of where to place them. Hesitation and a thin layer of hope battle in his voice. "The truth is, I have studied some.. questionable material in the past."
 		TieganWerle: "But I have not allowed any practical use, of course! I know nothing of rebels or maleficants. I am nothing more than a researcher, I assure you! Please, lord Interrogator, you must believe me!"
-		jump 
+		jump provost_branching
 	- "If you are not willing to admit your guilt, perhaps some of your students would be more willing to help."
 		TieganWerle: "Stay away from my students! They are just as innocent as I am! I will not let them be subject to your biased judgment!"
-		jump 
+		jump provost_branching
 - "I will ask further questions after reviewing my documents."
 	set {canScroll} = true
 	[end_timeline]

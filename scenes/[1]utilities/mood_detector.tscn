@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dv7pdwmnppf4o" path="res://assets/objects/icence.png" id="1_0lunv"]
 [ext_resource type="Script" path="res://scenes/[1]utilities/MoodDetector.gd" id="2_u0ddq"]
-[ext_resource type="Texture2D" uid="uid://bas7pusp634dy" path="res://styles/moodflames/mood_calm.tres" id="3_yug0i"]
+[ext_resource type="Texture2D" uid="uid://buex7ju558jf5" path="res://styles/moodflames/mood_nervous.tres" id="3_g0fna"]
 
 [sub_resource type="Curve" id="Curve_khe0s"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -13,19 +13,20 @@ curve = SubResource("Curve_khe0s")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ek8bh"]
 particle_flag_disable_z = true
-angle_min = 122.8
-angle_max = 145.1
-radial_velocity_min = 16.67
-radial_velocity_max = 33.33
-gravity = Vector3(0, -50, 0)
-scale_min = 8.0
-scale_max = 14.0
+angle_min = 45.0
+angle_max = 45.0
+velocity_pivot = Vector3(0, 1, 0)
+direction = Vector3(0, -1, 0)
+spread = 180.0
+initial_velocity_min = 300.0
+initial_velocity_max = 600.0
+gravity = Vector3(0, -60, 0)
+scale_min = 6.0
+scale_max = 8.0
 scale_curve = SubResource("CurveTexture_1o0ux")
 scale_over_velocity_max = 708.33
-color_ramp = ExtResource("3_yug0i")
+color_ramp = ExtResource("3_g0fna")
 turbulence_enabled = true
-turbulence_noise_strength = 12.4
-turbulence_noise_scale = 8.295
 
 [node name="MoodDetector" type="Sprite2D"]
 position = Vector2(-337, -323)
@@ -34,7 +35,7 @@ texture = ExtResource("1_0lunv")
 script = ExtResource("2_u0ddq")
 
 [node name="MoodFlame" type="GPUParticles2D" parent="."]
-position = Vector2(7.91676, -696.682)
-amount = 40
+position = Vector2(7.91676, -720.433)
+amount = 200
 process_material = SubResource("ParticleProcessMaterial_ek8bh")
 lifetime = 4.0

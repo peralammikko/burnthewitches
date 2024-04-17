@@ -9,3 +9,4 @@ func _on_click_areas_input_event(viewport, event, shape_idx):
 				Dialogic.start("provost_objects", "text")
 			2:
 				Dialogic.start("provost_objects", "binding")
+				Dialogic.VAR.Provost.noteFound = true
