@@ -15,23 +15,21 @@ ThirlaMerina: "At last we meet, Quaestor."
 		ThirlaMerina: "None, Quaestor." She dismisses your question with barely a thought.
 		jump thirla_questioning
 	- "Enough games, Merina. I know you know what happened to her."
-		# This line should become available once the player has found all clues and confirmed that Merina has no magic on her with the Speculator.
+		# This line should become available once the player has found all interactables relating to Kisle and the field report.
 		ThirlaMerina: "Thy overstep!" Her voice turns in an instance to a freezing, menacing growl. "Thine accusations are baseless and asinine, just as is this jest of a questioning."
 		- "You had her bewitch Reigna Astudore and then had her board a shuttle towards Astra König. The transport will never arrive, am I right?
 			ThirlaMerina: "Outrageous fantasies, Quaestor." Lady Merina barely manages to hide a scowl. "Had thy silly theorems naught but a speck of reason, they wouldst still be worthless. I am Thirla Merina and thus beyond thy judgments."
 			- "We will see, lady Merina."
-			jump thirla_questioning
+				jump thirla_questioning
 	- "I see. I had other questions."
 		jump thirla_questioning
 - "Lady Merina. Tell me about yourself."
 	ThirlaMerina: "Oh, Quaestor, doth thine parchments not detail the legacy of mine noble house in sufficient majesty?
 	- "Humor me."
 		ThirlaMerina: "As thy wish. I am the daughter and heir of Lord Agustine Merina, Landgrave and Lord of Astra Nova, loyal servant of Grand Duchess Jillian Mercuno. Our line is old as the First Empire."
-		- ...
-			ThirlaMerina: The noblewoman eyes you closely. Her emerald eye seems to sparkle in the darkness of the room like a corona in the darkness of space. Her gaze is that of a bird of prey instead of a prisoner being interrogated.
-			- ...
-				ThirlaMerina: "Deeds of our line number countless as the stars, accolades upon accolades are heaped at our feet. Doth this not answer thy inquiry? I hold the fate of millions in mine grasp, mine wealth and influence matchless as the brightness of sun to a candle."
-				jump thirla_questions/thirla_questioning
+		ThirlaMerina: The noblewoman eyes you closely. Her emerald eye seems to sparkle in the darkness of the room like a corona in the darkness of space. The manner in which she looks at you is that of a bird of prey.
+		ThirlaMerina: "Deeds of our line number countless as the stars, accolades upon accolades are heaped at our feet. Doth this not answer thy inquiry? I hold the fate of millions in mine grasp, mine wealth and influence matchless as the brightness of sun to a candle."
+		jump thirla_questions/thirla_questioning
 - "What have you to say about the charges brought against you?"'
 	ThirlaMerina: The pleasant facade on Lady Merina's face cracks for a split second.\
 "Thy must understand, greatness such as that of I doth foster resentment. Doubtless these must be fabrications of fools not to be taken seriously."
@@ -49,6 +47,6 @@ ThirlaMerina: "At last we meet, Quaestor."
 				ThirlaMerina: "Even the brighest of us may err once now and then. And believe mine word, Reigna was hardly a shining star." There is a venomous undercurrent in her voice at the mention of Reigna Astudore, which lady Merina gives little effort to hide.
 				- "I had other questions, if you will."
 				jump thirla_questioning
-- [Inspect evidence]
+- "I will resume questioning in a moment, after I've reviewed my documents, lady Merina."
 	set {canScroll} = true
 	[end_timeline]

@@ -9,8 +9,9 @@ GanymedeAthena: Ganymede awaits for your questions in mocking silence.
 		- "Interesting. I had other questions."
 			jump 
 	- "Why bring these abuses of power to the attention of the Empire?"
-		GanymedeAthena: Ganymede laughs coldly. "You're serious? I did! I told my superiors what I saw, but they told me to keep quiet and take the money."
-		"The whole system is corrupt. Every single one of them. All you can do is purge the entirety of the Empire and start anew. With people who actually care about those beneath them."
+		GanymedeAthena: Ganymede laughs coldly. 
+		GanymedeAthena: "You're serious? I did! I told my superiors what I saw, but they told me to keep quiet and take the money."
+		GanymedeAthena: "The whole system is corrupt. Every single one of them. All you can do is purge the entirety of the Empire and start anew. With people who actually care about those beneath them."
 	- Do you truly believe your rebellion has a chance?"
 		GanymedeAthena: Athena's answer is immediate. "No", she says. "But someone else will carry it to the end. I am the spark that will light a great conflagration."
 	- "What do you even hope to achieve with this rebellion?"
@@ -31,19 +32,22 @@ GanymedeAthena: Ganymede awaits for your questions in mocking silence.
 		GanymedeAthena: "You would help me?" Ganymede almost lets out a half-hearted chuckle. "I won't fall for your tricks, Imperial lapdog."
 		jump 
 	- "Describe to me your offenses."
-		GanymedeAthena: "If that will end this charade more expediently." Ganymede rattles the manacles holding her to the chair. "I used it as a weapon, just like one would a gun. I had spells cast that would divine the future to ensure victory, others that would cripple the crews of enemy ships with disease."
+		GanymedeAthena: "If that will end this charade more expediently." Ganymede rattles the manacles holding her to the chair. 
+		GanymedeAthena: "I used it as a weapon, just like one would a blade. I had spells cast that would divine the future to ensure victory, others that would cripple the crews of enemy ships with disease."
 	- "Understood."
 	jump 
 - "Tell me of your service in the Imperial fleet."
-	GanymedeAthena: Ganymede sighs heavily, with the weight of both troubled memories and fond nostalgia. "Why?" She dismisses the question before you can respond, and continues. "I graduated from the Imperial Academy at twenty-five. Went on to serve as a midshipman, before being given my own command after a few years."
+	GanymedeAthena: Ganymede sighs heavily, with the weight of both troubled memories and fond nostalgia. "Why?" She dismisses the question before you can respond, and continues. 
+	GanymedeAthena: "I graduated from the Imperial Academy at twenty-five. Went on to serve as a midshipman, before being given my own command after a few years."
 	GanymedeAthena: "I was captain of the Lanza de Voluntad, a light frigate, and first to arrive in Astra Lux during the Luxor Revolt. That war made me a hero and an admiral. Many people paid with their lives for that title."
 	GanymedeAthena: "Afterwards, as you certainly know, I served as the captain of the battlecruiser known as the Forge of Will and the admiral of Fleet Ferrum. That was where I saw through the veil of deception that the Empire has laid over us."
 	- "Thank you. I had other questions."
 	jump 
 - "How were you captured?"
-	GanymedeAthena: Ganymede Athena scoffs. "Your documents don't tell you? Or do you just want to make me relieve that shame?" The admiral lets out a sigh, venting her frustrations. "I was betrayed. I meant to meet a contact with my retinue, but instead I met inquisitorial agents. Lost a lot of good people that day. People far better than you or me."
+	GanymedeAthena: Ganymede Athena scoffs. "Your documents don't tell you? Or do you just want to make me relieve that shame?" The admiral lets out a sigh, venting her frustrations. 
+	GanymedeAthena: "I was betrayed. I meant to meet a contact with my retinue, but instead I met inquisitorial agents. Lost a lot of good people that day. People far better than you or me."
 	- "I had other questions."
 	jump AthenaQuestions/
-- [Inspect evidence]
+- "I will review my documents and return to questioning soon."
 	set {canScroll} = true
 	[end_timeline]

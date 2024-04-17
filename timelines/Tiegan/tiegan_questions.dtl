@@ -4,6 +4,12 @@ TieganWerle: The man before you is corpulent and well-dressed, as befits one of 
 label provost_branching
 set {canScroll} = false
 TieganWerle: "I have no idea what you are talking about, lord Interrogator. I have nothing to do with rebels, or their magic! Allow me to set the record straight on any potential misunderstandings to the contrary."
+- "I found this note. Explain it."
+	# This line only appears after finding the note inside the book.
+	TieganWerle: "Wha.. ah, I don't.." The Provost sweats, wipes his forehead, glancing around with the quiet panic of a beast in line to the slaughterhouse.
+	- "You performed a favor for someone, and they gave you these books. Who was it, and what did you do?"
+		TieganWerle: Werle collapses, utterly defeated in that moment. "I simply passed a message for someone. That is all I know, I swear!"
+		jump 
 - "So it appears to me as well. A man of your station would never associate with the rebel scum."
 	TieganWerle: "And indeed I would never have any dealings with the Maleficants! Any interest I have in the esoteric is purely academic." He hurries to correct himself, "if I had any, that is, of course!"
 	- "Do not lie to me, Werle. Our witnesses have told us that you distribute knowledge of the arcane and actively shelter witches!"
@@ -18,11 +24,11 @@ TieganWerle: "I have no idea what you are talking about, lord Interrogator. I ha
 	TieganWerle: "I sense a condescending tone in your voice! I hope you will not let your prejudice cloud your judgement against the ancient ways."
 	- "I assure you, I am not prejudiced. I simply looking for the truth."
 		TieganWerle: "Well.." Lord Provost wrangles his hands, unsure of where to place them. Hesitation and a thin layer of hope battle in his voice. "The truth is, I have studied some.. questionable material in the past."
-		TieganWerle: "But I have not allowed any practical use, of course! I know nothing of rebels or maleficants, I am nothing more than a researcher, I assure you! Please, lord Interrogator, you must believe me!"
+		TieganWerle: "But I have not allowed any practical use, of course! I know nothing of rebels or maleficants. I am nothing more than a researcher, I assure you! Please, lord Interrogator, you must believe me!"
 		jump 
 	- "If you are not willing to admit your guilt, perhaps some of your students would be more willing to help."
-		TieganWerle: "Stay away from my students! They are just as innocent as I am! I will not let them be biased judgment!"
+		TieganWerle: "Stay away from my students! They are just as innocent as I am! I will not let them be subject to your biased judgment!"
 		jump 
-- [Inspect evidence]
+- "I will ask further questions after reviewing my documents."
 	set {canScroll} = true
 	[end_timeline]
