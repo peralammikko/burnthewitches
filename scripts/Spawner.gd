@@ -32,7 +32,7 @@ func spawn_new_customer():
 		AudioManager.door_open_sound.play()
 		AudioManager.background_ambiance.play()
 		# TESTING ONLY, COMMENT AFTERWARDS
-		dayNumber = 3
+		# dayNumber = 3
 		
 		match dayNumber:
 			1:
