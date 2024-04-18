@@ -1,4 +1,5 @@
 set {canScroll} = false
+[signal arg="mood_calm"]
 A middle aged woman appears to be anxious but her movements are very controlled. She hides her stress well.
 label yra_questions
 YraOrellian: "Greetings, good sir."

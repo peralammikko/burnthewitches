@@ -1,4 +1,5 @@
 set {canScroll} = false
+[signal arg="mood_calm"]
 ThirlaMerina: "At last we meet, Quaestor."
 - "Lady Thirla Merina. I trust you know why you are here."
 ThirlaMerina: Thirla Merina smiles. A practiced, cold smile that betrays nothing behind it.
@@ -17,6 +18,7 @@ ThirlaMerina: "At last we meet, Quaestor."
 	- "Enough games, Merina. I know you know what happened to her." [if {Thirla.allCluesFound} == true][else="hide"]
 		# This line should become available once the player has found all interactables relating to Kisle and the field report.
 		ThirlaMerina: "Thy overstep!" Her voice turns in an instance to a freezing, menacing growl. "Thine accusations are baseless and asinine, just as is this jest of a questioning."
+		[signal arg="mood_angry"]
 		- "You had her bewitch Reigna Astudore and then had her board a shuttle towards Astra König."
 			- "The transport will never arrive, am I right?"
 			ThirlaMerina: "Outrageous fantasies, Quaestor." Lady Merina barely manages to hide a scowl. "Had thy silly theorems naught but a speck of reason, they wouldst still be worthless. I am Thirla Merina and thus beyond thy judgments."

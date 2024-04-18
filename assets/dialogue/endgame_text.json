@@ -1,0 +1,26 @@
+{
+  "good": [
+    "The Spring Blossoms in the Empire",
+    "The witchfinder general is not impressed by your judgement. The empire is suspicious of you allowing witches to go free and now you are under heavy investigation.",
+    "However, you are proud of your work knowing that you have judged people fairly and not according to an outdated and biased law. The order still is maintained but the people are happier and more hopeful knowing that there are officials working for the good of the empire. There are vigilantes gaining popularity among the people and becoming a symbol of freedom.",
+    "Your morality has caused the people to be more hopeful for the future of the empire. You have helped them have a better life."
+  ],
+  "evil": [
+    "Pure Chaos Reigns",
+    "Unchecked, the evils of the world have created a reign of terror. The empire has crumbled without any hope of reformation. Everyday there are new kingdoms of outlaws being built. Their rule is even more vicious than the empire ever was. All the people are living their lives as slaves of these forces of evil.",
+    "Gradually, the people who have lost everything start forming vigilante groups to deal with this vicious rule. They disobey and fight against them for a better future. It is not clear who will come out on top at the end of this civil war.",
+    "Your decisions have doomed the empire."
+],
+  "rebel": [
+    "The Galaxy burns.",
+    "The spark of revolution has become a great conflagration that consumes lives, worlds and stars. The Empire is tearing itself apart, petty kingdoms forming and being subsumed by others every day. Alliances are formed and broken, with warlords and ambitious officers all striving to carve out their own realm out of the still-warm carcass of the great behemoth that was the Empire.",
+    "Yet all is not dark. Those decreed witches, criminals and miscreants by the Empire flock together into a single united front to create a better world for all of mankind. Perhaps they will succeed where the Empire failed.",
+    "Whether knowingly or not, your actions have burned away the old, so that new life may grow from the ashes."
+  ],
+  "order": [
+    "All must serve the Primum Imperii.",
+  "Your actions have been instrumental in cutting out the tumorous growth of rebellion and anarchy in the Empire. For your service, you have been granted a duchy of your own and are now an instrumental part of the Imperial machinery, a cog in the flawless engine of bureaucracy and order.",
+  "Life is good. The Empire prospers. Trade flourishes. People are happy and well-cared for. Any subversive thought or action is punished harshly and without mercy. Those who do not fit into the perfect machine are excised and destroyed - you must either conform or die. Blood of anarchists must be the oil that greases the gears of progress.",
+  "All must serve the Primum Imperii."
+]
+}

@@ -1,4 +1,5 @@
 set {canScroll} = false
+[signal arg="mood_calm"]
 "Explain the charges brought against you, Lord Provost."
 TieganWerle: The man before you is corpulent and well-dressed, as befits one of high standing within the Empire. With a voice straining under stress, he stammers out a reply.
 label provost_branching
@@ -9,6 +10,7 @@ TieganWerle: "I have no idea what you are talking about, lord Interrogator. I ha
 	TieganWerle: "Wha.. ah, I don't.." The Provost sweats, wipes his forehead, glancing around with the quiet panic of a beast in line to the slaughterhouse.
 	- "You performed a favor for someone, and they gave you these books. Who was it, and what did you do?"
 		TieganWerle: Werle collapses, utterly defeated in that moment. "I simply passed a message for someone. That is all I know, I swear!"
+		[signal arg="mood_scared"]
 		jump provost_branching
 - "So it appears to me as well. A man of your station would never associate with the rebel scum."
 	TieganWerle: "And indeed I would never have any dealings with the Maleficants! Any interest I have in the esoteric is purely academic." He hurries to correct himself, "if I had any, that is, of course!"

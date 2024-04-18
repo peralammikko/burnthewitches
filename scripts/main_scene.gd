@@ -3,3 +3,4 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	globalStats.resetStats()
+	AudioManager.background_ambiance.play()

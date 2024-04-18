@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg7t4svpf8w51"]
+
+[ext_resource type="Script" path="res://endgameText.gd" id="1_fi41t"]
+[ext_resource type="FontFile" uid="uid://b8uw3x24khlrf" path="res://assets/old_london/OldLondon.ttf" id="2_q4urh"]
+[ext_resource type="PackedScene" uid="uid://dnp8u0dcrgyaq" path="res://scenes/[1]utilities/fadeTransitions.tscn" id="3_w8xia"]
+
+[node name="endgameText" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fi41t")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextTimer" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -334.0
+offset_top = -242.0
+offset_right = 336.0
+offset_bottom = 243.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="quoteText" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(670, 485)
+layout_direction = 1
+layout_mode = 2
+text = "The Spring Blossoms in the Empire
+
+The witchfinder general is not impressed by your judgement. The empire is suspicious of you allowing witches to go free and now you are under heavy investigation. 
+
+However, you are proud of your work knowing that you have judged people fairly and not according to an outdated and biased law. The order still is maintained but the people are happier and more hopeful knowing that there are officials working for the good of the empire. There are vigilantes gaining popularity among the people and becoming a symbol of freedom. 
+
+Your morality has caused the people to be more hopeful for the future of the empire. You have helped them have a better life.
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 242.0
+offset_top = 569.0
+offset_right = 912.0
+offset_bottom = 569.0
+alignment = 1
+
+[node name="quitButton" type="Button" parent="HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_q4urh")
+theme_override_font_sizes/font_size = 30
+text = "End game"
+
+[node name="AnimationPlayer" parent="." instance=ExtResource("3_w8xia")]
+
+[connection signal="timeout" from="TextTimer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="HBoxContainer/quitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

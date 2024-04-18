@@ -12,7 +12,7 @@ var customer_type
 @export var athena: PackedScene
 @export var provost: PackedScene
 
-@onready var endScreen = "res://scenes/menus/endcard.tscn"
+@onready var endScreen = "res://scenes/menus/end_text.tscn"
 
 var doneCustomers = []
 var dayNumber: int = 1
@@ -30,8 +30,8 @@ func _process(delta):
 func spawn_new_customer():
 	if !customer_in:
 		AudioManager.door_open_sound.play()
+		AudioManager.background_ambiance.play()
 		# TESTING ONLY, COMMENT AFTERWARDS
-		# dayNumber = 5
 		
 		match dayNumber:
 			1:

@@ -23,7 +23,6 @@ func openJson():
 		endQuotes = json_as_dict
 	
 func display_stats():
-	print(globalStats.alignStats)
 	var dailyText = getEndQuote()
 	$flavor_text.text = str(dailyText)
 
@@ -31,20 +30,11 @@ func _on_continue_button_pressed():
 	hide()
 	camera.cameraReset()
 	spawner.remove_customer()
-	#spawner.spawn_new_customer()
 	animationplayer.play("TransitionIn")
-	
-	
-func getHighest():
-	var valueArr = []
-	for stat in globalStats.alignStats:
-		valueArr.push_back(globalStats.alignStats[stat])
-	var topStat = valueArr.max()
-	return topStat
 	
 func getEndQuote():
 	var quote: String = "The Empire may yet survive."
-	var statValue: int = getHighest()
+	var statValue: int = globalStats.getHighest()
 	var alignmentType: String = stats.find_key(statValue)
 	var statLevel: int = getStatLevel(statValue)
 	match alignmentType:

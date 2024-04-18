@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bl7ph7jmb00vd"]
+[gd_scene load_steps=13 format=3 uid="uid://bl7ph7jmb00vd"]
 
 [ext_resource type="Script" path="res://scenes/[1]utilities/audio_manager.gd" id="1_x362e"]
 [ext_resource type="AudioStream" uid="uid://j7nxf64ch2rf" path="res://assets/audio/paper/paper-10.mp3" id="2_17538"]
@@ -9,6 +9,9 @@
 [ext_resource type="AudioStream" uid="uid://bxri2mslau34o" path="res://assets/audio/candle/blow-candle.mp3" id="6_vf6g8"]
 [ext_resource type="AudioStream" uid="uid://dc7qs2wikwiib" path="res://assets/audio/stampsound.wav" id="8_5n6eo"]
 [ext_resource type="AudioStream" uid="uid://34clypa2c0q2" path="res://assets/kiwi_scream.mp3" id="8_t0jc3"]
+[ext_resource type="AudioStream" uid="uid://llpox8akmjoy" path="res://assets/audio/Misc_BreathAttack.wav" id="10_xmwft"]
+[ext_resource type="AudioStream" uid="uid://bxwj35jlr15fq" path="res://assets/audio/Amb_Space_Groan_LOOP.wav" id="11_oiitb"]
+[ext_resource type="AudioStream" uid="uid://ctyhx67sc4ga1" path="res://assets/audio/Amb_InnerMind_LOOP.wav" id="12_m01tv"]
 
 [node name="AudioManager" type="Node"]
 script = ExtResource("1_x362e")
@@ -37,3 +40,15 @@ stream = ExtResource("8_5n6eo")
 
 [node name="kiwi_scream" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_t0jc3")
+
+[node name="end_text" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_xmwft")
+volume_db = -10.0
+
+[node name="background_ambiance" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_oiitb")
+volume_db = -9.0
+
+[node name="end_ambiance" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_m01tv")
+volume_db = -15.0

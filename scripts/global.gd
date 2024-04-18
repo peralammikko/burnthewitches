@@ -17,3 +17,9 @@ func resetStats():
 	alignStats["good"] = 0
 	alignStats["evil"] = 0
 
+func getHighest():
+	var valueArr = []
+	for stat in alignStats:
+		valueArr.push_back(alignStats[stat])
+	var topStat = valueArr.max()
+	return topStat

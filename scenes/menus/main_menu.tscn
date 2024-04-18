@@ -182,10 +182,10 @@ texture = ExtResource("5_prjou")
 [node name="credits" type="RichTextLabel" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 19.0
-offset_top = 418.0
-offset_right = 354.0
-offset_bottom = 639.0
+offset_left = 10.0
+offset_top = 375.0
+offset_right = 345.0
+offset_bottom = 640.0
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/normal_font_size = 14
 theme_override_font_sizes/bold_font_size = 14
@@ -194,9 +194,12 @@ text = "[b][u]Witchfinder[/u][/b]
 
 [b]Project management[/b] - Salla Kettula
 [b]Game design[/b] - Joonas Hämeenniemi
-[b]Sound design[/b] - Mahdi Pakpour
+[b]Sound design[/b] - Mahdi Pakpour, Mikko Perälä
 [b]Narrative design[/b] - Teoman Kars
 [b]Art design[/b] - Merielle Purunen
 [b]Programming & UI[/b] - Mikko Perälä
 
-[b]Death Metal Kiwi Productions (2024)[/b]"
+[b]Death Metal Kiwi Productions (2024)[/b]
+
+[b]Additional sound effects:[/b]
+Sci-Fi SFX Pack by Chris Logsdon (2022)"

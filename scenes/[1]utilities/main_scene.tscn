@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bed68julghpmo"]
+[gd_scene load_steps=10 format=3 uid="uid://bed68julghpmo"]
 
 [ext_resource type="PackedScene" uid="uid://cuwxsa472wr2" path="res://scenes/[1]utilities/table.tscn" id="1_2gpew"]
 [ext_resource type="Script" path="res://scripts/main_scene.gd" id="1_kqbv6"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b28eo3lb5xdby" path="res://scenes/[1]utilities/spawner.tscn" id="3_h7qsx"]
 [ext_resource type="PackedScene" uid="uid://c2ygo26d7t8xh" path="res://scenes/[1]utilities/animation_player.tscn" id="7_4fm6d"]
 [ext_resource type="PackedScene" uid="uid://bl7ph7jmb00vd" path="res://scenes/[1]utilities/audio_manager.tscn" id="8_cn3ri"]
+[ext_resource type="AudioStream" uid="uid://bxwj35jlr15fq" path="res://assets/audio/Amb_Space_Groan_LOOP.wav" id="9_4m5gn"]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_kqbv6")
@@ -52,6 +53,7 @@ position = Vector2(576, 326)
 script = ExtResource("3_5bdfg")
 
 [node name="Camera_up_button" type="Button" parent="Camera2D"]
+visible = false
 offset_left = -34.9989
 offset_top = -313.0
 offset_right = 11.0011
@@ -59,6 +61,7 @@ offset_bottom = -282.0
 text = "^"
 
 [node name="Camera_down_button" type="Button" parent="Camera2D"]
+visible = false
 offset_left = -29.001
 offset_top = 282.0
 offset_right = 16.999
@@ -72,6 +75,10 @@ position = Vector2(576, 650)
 position = Vector2(-634, 167)
 
 [node name="AudioManager" parent="." instance=ExtResource("8_cn3ri")]
+
+[node name="backgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_4m5gn")
+volume_db = -8.0
 
 [connection signal="pressed" from="Camera2D/Camera_up_button" to="Camera2D" method="_on_camera_up_button_pressed"]
 [connection signal="pressed" from="Camera2D/Camera_down_button" to="Camera2D" method="_on_camera_down_button_pressed"]

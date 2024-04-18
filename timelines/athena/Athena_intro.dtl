@@ -1,4 +1,5 @@
 set {canScroll} = false
+[signal arg="mood_calm"]
 The woman before you is familiar from theatron broadcasts. She sits in silence, hands bound to the chair for your safety, keenly observing the room you both inhabit.
 GanymedeAthena: "I am pleased to see that the blood of my brothers and sisters has bought you such a pleasant office, Interrogator."
 - "Thank you. The desk is authentic iroko from Nova Qarth'Hadasht."

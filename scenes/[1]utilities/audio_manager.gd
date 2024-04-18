@@ -8,3 +8,6 @@ extends Node
 @onready var candle_blow_sound = $candle_blow_sfx
 @onready var intro_jingle = $kiwi_scream
 @onready var stamp_sound = $stamp_sfx
+@onready var end_text_appear = $end_text
+@onready var end_ambiance = $end_ambiance
+@onready var background_ambiance = $background_ambiance
