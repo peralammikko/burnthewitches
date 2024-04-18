@@ -19,6 +19,7 @@ ThirlaMerina: "At last we meet, Quaestor."
 		# This line should become available once the player has found all interactables relating to Kisle and the field report.
 		ThirlaMerina: "Thy overstep!" Her voice turns in an instance to a freezing, menacing growl. "Thine accusations are baseless and asinine, just as is this jest of a questioning."
 		[signal arg="mood_angry"]
+		set {Thirla.currentMood} = "angry"
 		- "You had her bewitch Reigna Astudore and then had her board a shuttle towards Astra König."
 			- "The transport will never arrive, am I right?"
 			ThirlaMerina: "Outrageous fantasies, Quaestor." Lady Merina barely manages to hide a scowl. "Had thy silly theorems naught but a speck of reason, they wouldst still be worthless. I am Thirla Merina and thus beyond thy judgments."
