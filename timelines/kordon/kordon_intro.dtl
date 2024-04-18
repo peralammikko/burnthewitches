@@ -7,7 +7,6 @@ The man before you sits before you straight-backed and confident, greeting you w
 	label kordon_questions
 	- "Was there something else you wanted to say?"
 		Kordon_Alhambra: "No, sir."
-	- "What of these bon
 	- "You were going to say something earlier?"
 		# This node replaces the one above if Alhambra Mood = Calm 
 		Kordon_Alhambra: Sergeant Alhambra struggles with himself for just a moment, and the strict formality of a professional soldier fades just slightly.
