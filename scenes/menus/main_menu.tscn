@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://twy6d4qkgu6h"]
+[gd_scene load_steps=16 format=3 uid="uid://twy6d4qkgu6h"]
 
 [ext_resource type="Script" path="res://scenes/menus/main_menu.gd" id="1_ltww4"]
 [ext_resource type="AudioStream" uid="uid://bg816yv857bhf" path="res://assets/audio/menumusic.mp3" id="2_cl3ye"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://brhrbsydocir1" path="res://assets/objects/athena/object_Ganymede.png" id="5_prjou"]
 [ext_resource type="Script" path="res://scenes/menus/creditsThing.gd" id="7_wglpi"]
 [ext_resource type="PackedScene" uid="uid://bc10g2svtkee0" path="res://scenes/menus/play_thing.tscn" id="8_dnjds"]
+[ext_resource type="Script" path="res://scenes/menus/playThing.gd" id="9_o8gp6"]
 [ext_resource type="Script" path="res://scenes/menus/quitThing.gd" id="10_ry7py"]
 
 [sub_resource type="Gradient" id="Gradient_fdhdc"]
@@ -144,6 +145,7 @@ offset_left = 497.0
 offset_top = 283.0
 offset_right = 617.0
 offset_bottom = 518.0
+script = ExtResource("9_o8gp6")
 exportText = "Play"
 
 [node name="magic" type="Sprite2D" parent="Play"]
