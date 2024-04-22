@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmhmv8kaoe0dw"]
+
+[ext_resource type="PackedScene" uid="uid://cmrgvyu4yf8b4" path="res://scenes/[0]baseScenes/tableObject.tscn" id="1_bu8fr"]
+[ext_resource type="Texture2D" uid="uid://cyqg5g50rygso" path="res://assets/objects/yra/Yra_object.png" id="2_tcbyq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_32512"]
+size = Vector2(289, 220)
+
+[node name="TableObject" instance=ExtResource("1_bu8fr")]
+
+[node name="Sprite2D" parent="." index="2"]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("2_tcbyq")
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(-3.5, 0)
+shape = SubResource("RectangleShape2D_32512")
